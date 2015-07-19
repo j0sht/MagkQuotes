@@ -8,8 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MagkQuoteViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var heartLabel: UILabel!
+    @IBOutlet weak var quoteLabel: UILabel!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

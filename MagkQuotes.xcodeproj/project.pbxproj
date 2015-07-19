@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1542FE291B5C398C00056E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE281B5C398C00056E13 /* AppDelegate.swift */; };
-		1542FE2B1B5C398C00056E13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE2A1B5C398C00056E13 /* ViewController.swift */; };
+		1542FE2B1B5C398C00056E13 /* MagkQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE2A1B5C398C00056E13 /* MagkQuoteViewController.swift */; };
 		1542FE2E1B5C398C00056E13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1542FE2C1B5C398C00056E13 /* Main.storyboard */; };
 		1542FE301B5C398C00056E13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1542FE2F1B5C398C00056E13 /* Images.xcassets */; };
 		1542FE3F1B5C398C00056E13 /* MagkQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE3E1B5C398C00056E13 /* MagkQuotesTests.swift */; };
@@ -36,7 +36,7 @@
 		1542FE231B5C398C00056E13 /* MagkQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagkQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1542FE271B5C398C00056E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1542FE281B5C398C00056E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1542FE2A1B5C398C00056E13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1542FE2A1B5C398C00056E13 /* MagkQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagkQuoteViewController.swift; sourceTree = "<group>"; };
 		1542FE2D1B5C398C00056E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1542FE2F1B5C398C00056E13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1542FE381B5C398C00056E13 /* MagkQuotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagkQuotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				1542FE561B5C3A6100056E13 /* Helpers */,
-				1542FE2A1B5C398C00056E13 /* ViewController.swift */,
+				1542FE2A1B5C398C00056E13 /* MagkQuoteViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -280,7 +280,7 @@
 				1542FE5A1B5C3A8B00056E13 /* MagickColors.swift in Sources */,
 				1542FE591B5C3A8B00056E13 /* ImageResourceName.swift in Sources */,
 				1542FE511B5C3A2000056E13 /* QuoteCollection.swift in Sources */,
-				1542FE2B1B5C398C00056E13 /* ViewController.swift in Sources */,
+				1542FE2B1B5C398C00056E13 /* MagkQuoteViewController.swift in Sources */,
 				1542FE291B5C398C00056E13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

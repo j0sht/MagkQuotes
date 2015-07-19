@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F6a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Magk Quote View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MagkQuoteViewController" customModule="MagkQuotes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,63 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M▲GK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUW-pX-DHL">
+                                <rect key="frame" x="16" y="28" width="568" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="❤︎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgw-ml-0gG">
+                                <rect key="frame" x="285" y="537" width="31" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="62x-WJ-lvG"/>
+                                    <constraint firstAttribute="width" constant="31" id="qDZ-j6-pwf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="quoteLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kaa-5F-cDK">
+                                <rect key="frame" x="16" y="71" width="568" height="458"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Caput_mortuum" translatesAutoresizingMaskIntoConstraints="NO" id="vjK-od-2la">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="vjK-od-2la" secondAttribute="centerX" id="4Tq-0P-IjI"/>
+                            <constraint firstItem="rgw-ml-0gG" firstAttribute="top" secondItem="Kaa-5F-cDK" secondAttribute="bottom" constant="8" id="6T5-oW-N84"/>
+                            <constraint firstItem="Kaa-5F-cDK" firstAttribute="top" secondItem="TUW-pX-DHL" secondAttribute="bottom" constant="8" id="8ph-sD-w9T"/>
+                            <constraint firstAttribute="centerX" secondItem="rgw-ml-0gG" secondAttribute="centerX" id="EcH-1k-qNP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kaa-5F-cDK" secondAttribute="trailing" id="H9Y-KX-GhC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rgw-ml-0gG" secondAttribute="bottom" constant="20" id="NjS-rL-uPV"/>
+                            <constraint firstAttribute="centerY" secondItem="Kaa-5F-cDK" secondAttribute="centerY" id="PgD-zh-zOz"/>
+                            <constraint firstItem="Kaa-5F-cDK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="be4-LM-T0u"/>
+                            <constraint firstItem="TUW-pX-DHL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lcy-jW-BcE"/>
+                            <constraint firstAttribute="centerY" secondItem="vjK-od-2la" secondAttribute="centerY" id="n9a-Mm-Ec6"/>
+                            <constraint firstAttribute="centerX" secondItem="Kaa-5F-cDK" secondAttribute="centerX" id="nGl-WK-gAm"/>
+                            <constraint firstItem="TUW-pX-DHL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="sKH-2W-l1a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TUW-pX-DHL" secondAttribute="trailing" id="vMw-CO-gyU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heartLabel" destination="rgw-ml-0gG" id="zHq-V1-x9j"/>
+                        <outlet property="imageView" destination="vjK-od-2la" id="Cou-0w-2lL"/>
+                        <outlet property="quoteLabel" destination="Kaa-5F-cDK" id="L29-12-FZH"/>
+                        <outlet property="titleLabel" destination="TUW-pX-DHL" id="e0a-55-RTE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Caput_mortuum" width="200" height="200"/>
+    </resources>
 </document>

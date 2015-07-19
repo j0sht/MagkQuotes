@@ -18,25 +18,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M▲GK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUW-pX-DHL">
-                                <rect key="frame" x="16" y="28" width="568" height="35"/>
+                                <rect key="frame" x="16" y="28" width="568" height="42"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="xS6-ZM-QgE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="❤︎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgw-ml-0gG">
-                                <rect key="frame" x="285" y="537" width="31" height="43"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="62x-WJ-lvG"/>
-                                    <constraint firstAttribute="width" constant="31" id="qDZ-j6-pwf"/>
-                                </constraints>
+                                <rect key="frame" x="285" y="530" width="31" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="quoteLabel" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Kaa-5F-cDK">
-                                <rect key="frame" x="16" y="71" width="568" height="458"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="quoteLabel" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75000000000000022" translatesAutoresizingMaskIntoConstraints="NO" id="Kaa-5F-cDK">
+                                <rect key="frame" x="16" y="78" width="568" height="444"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -46,19 +45,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="vjK-od-2la" secondAttribute="centerX" id="4Tq-0P-IjI"/>
-                            <constraint firstItem="rgw-ml-0gG" firstAttribute="top" secondItem="Kaa-5F-cDK" secondAttribute="bottom" constant="8" id="6T5-oW-N84"/>
-                            <constraint firstItem="Kaa-5F-cDK" firstAttribute="top" secondItem="TUW-pX-DHL" secondAttribute="bottom" constant="8" id="8ph-sD-w9T"/>
-                            <constraint firstAttribute="centerX" secondItem="rgw-ml-0gG" secondAttribute="centerX" id="EcH-1k-qNP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Kaa-5F-cDK" secondAttribute="trailing" id="H9Y-KX-GhC"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rgw-ml-0gG" secondAttribute="bottom" constant="20" id="NjS-rL-uPV"/>
-                            <constraint firstAttribute="centerY" secondItem="Kaa-5F-cDK" secondAttribute="centerY" id="PgD-zh-zOz"/>
-                            <constraint firstItem="Kaa-5F-cDK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="be4-LM-T0u"/>
-                            <constraint firstItem="TUW-pX-DHL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lcy-jW-BcE"/>
-                            <constraint firstAttribute="centerY" secondItem="vjK-od-2la" secondAttribute="centerY" id="n9a-Mm-Ec6"/>
-                            <constraint firstAttribute="centerX" secondItem="Kaa-5F-cDK" secondAttribute="centerX" id="nGl-WK-gAm"/>
-                            <constraint firstItem="TUW-pX-DHL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="sKH-2W-l1a"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TUW-pX-DHL" secondAttribute="trailing" id="vMw-CO-gyU"/>
+                            <constraint firstItem="rgw-ml-0gG" firstAttribute="top" secondItem="Kaa-5F-cDK" secondAttribute="bottom" constant="8" id="3pa-PQ-eOh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rgw-ml-0gG" secondAttribute="bottom" constant="20" id="3uF-Xa-5pw"/>
+                            <constraint firstItem="TUW-pX-DHL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9Ua-Xx-drd"/>
+                            <constraint firstItem="Kaa-5F-cDK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9hR-5E-UyM"/>
+                            <constraint firstAttribute="centerY" secondItem="Kaa-5F-cDK" secondAttribute="centerY" id="Fi3-Ra-RiD"/>
+                            <constraint firstAttribute="centerX" secondItem="vjK-od-2la" secondAttribute="centerX" id="Ie1-RC-sVU"/>
+                            <constraint firstAttribute="centerX" secondItem="Kaa-5F-cDK" secondAttribute="centerX" id="gRL-AE-pmg"/>
+                            <constraint firstItem="TUW-pX-DHL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="l93-ib-zUR"/>
+                            <constraint firstItem="TUW-pX-DHL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="n3Y-Hc-huc"/>
+                            <constraint firstItem="Kaa-5F-cDK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nEb-Cn-my8"/>
+                            <constraint firstAttribute="centerX" secondItem="rgw-ml-0gG" secondAttribute="centerX" id="tHe-WX-VLo"/>
+                            <constraint firstAttribute="centerY" secondItem="vjK-od-2la" secondAttribute="centerY" id="xyc-bD-xb2"/>
+                            <constraint firstItem="Kaa-5F-cDK" firstAttribute="top" secondItem="TUW-pX-DHL" secondAttribute="bottom" constant="8" id="yZx-96-USa"/>
                         </constraints>
                     </view>
                     <connections>

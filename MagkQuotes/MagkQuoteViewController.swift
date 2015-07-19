@@ -49,8 +49,9 @@ class MagkQuoteViewController: UIViewController {
         super.viewWillAppear(animated)
         
         view.backgroundColor = Grey1
-        quoteLabel.hidden = true
-        imageView.hidden = false
+        quoteLabel.alpha = 0.0
+        quoteLabel.text = nil
+        imageView.alpha = 1.0
         
         imageView.startAnimating()
     }
@@ -65,16 +66,46 @@ class MagkQuoteViewController: UIViewController {
     func longPress(press: UILongPressGestureRecognizer) {
         
         if press.state == UIGestureRecognizerState.Began {
-            // TODO: Animations
-            imageView.hidden = true
-            let authorAndQuote = authorQuotePairs.removeLast()
-            let quoteText = quoteCollection.authorQuoteString(authorAndQuote)
-            quoteLabel.text = quoteText
-            quoteLabel.hidden = false
+            let authorAndQuote = self.authorQuotePairs.removeLast()
+            let quoteText = self.quoteCollection.authorQuoteString(authorAndQuote)
+            self.quoteLabel.text = quoteText
+            
+            chainedAnimationsWith(
+                duration: 0.2,
+                completion: nil,
+                animations: [
+                    {
+                        self.setRandomColor()
+                        self.imageView.alpha = 0.0
+                        self.quoteLabel.alpha = 1.0
+                        
+                        self.quoteLabel.transform = CGAffineTransformMakeScale(1.03, 1.03)
+                    },
+                    {
+
+                        self.quoteLabel.transform = CGAffineTransformMakeScale(0.97, 0.97)
+                    },
+                    {
+                        self.quoteLabel.transform = CGAffineTransformMakeScale(1, 1)
+                    }
+                ]
+            )
+
         } else if press.state == UIGestureRecognizerState.Ended {
-            quoteLabel.hidden = true
-            quoteLabel.text = nil
-            imageView.hidden = false
+
+            chainedAnimationsWith(duration: 0.2,
+                completion: { _ in
+                    self.quoteLabel.text = nil
+                },
+                animations: [
+                    {
+                        self.view.backgroundColor = self.Grey1
+                        self.imageView.alpha = 1.0
+                        self.quoteLabel.alpha = 0.0
+                    }
+                ]
+            )
+        
         }
     }
     
@@ -92,6 +123,10 @@ class MagkQuoteViewController: UIViewController {
         layer.beginTime = 0.0
         let timeSincePause = layer.convertTime(CACurrentMediaTime(), fromLayer: nil) - pausedTime
         layer.beginTime = timeSincePause
+    }
+    
+    private func setRandomColor() {
+        view.backgroundColor = getRandomColor()
     }
 }
 

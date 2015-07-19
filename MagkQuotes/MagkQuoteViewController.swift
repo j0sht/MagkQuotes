@@ -12,6 +12,7 @@ class MagkQuoteViewController: UIViewController {
     
     private struct MagickSelectors {
         static let LongPress = Selector("longPress:")
+        static let LongPressScreenShot = Selector("longPressScreenshot")
     }
 
     // MARK:- Properties
@@ -26,6 +27,9 @@ class MagkQuoteViewController: UIViewController {
     
     private var quoteCollection: QuoteCollection!
     private var authorQuotePairs: [(author: Author, quote: Quote)]!
+    private var currentAuthorQuotePair: (author: Author, quote: Quote)!
+    
+    private var longpressScreenshotTimer: NSTimer!
     
     // MARK:- UIViewController Methods
     override func viewDidLoad() {
@@ -72,8 +76,8 @@ class MagkQuoteViewController: UIViewController {
                 if self.authorQuotePairs.isEmpty {
                     self.authorQuotePairs = self.quoteCollection.generateAuthorQuotePairList()
                 }
-                let authorAndQuote = self.authorQuotePairs.removeLast()
-                let quoteText = self.quoteCollection.authorQuoteString(authorAndQuote)
+                self.currentAuthorQuotePair = self.authorQuotePairs.removeLast()
+                let quoteText = self.quoteCollection.authorQuoteString(self.currentAuthorQuotePair)
                 
                 dispatch_async(dispatch_get_main_queue()) {
                     self.quoteLabel.text = quoteText
@@ -86,11 +90,11 @@ class MagkQuoteViewController: UIViewController {
                                 self.imageView.alpha = 0.0
                                 self.quoteLabel.alpha = 1.0
                                 
-                                self.quoteLabel.transform = CGAffineTransformMakeScale(1.04, 1.04)
+                                self.quoteLabel.transform = CGAffineTransformMakeScale(0.96, 0.96)
                             },
                             {
                                 
-                                self.quoteLabel.transform = CGAffineTransformMakeScale(0.96, 0.96)
+                                self.quoteLabel.transform = CGAffineTransformMakeScale(1.02, 1.02)
                             },
                             {
                                 self.quoteLabel.transform = CGAffineTransformMakeScale(1, 1)
@@ -99,43 +103,90 @@ class MagkQuoteViewController: UIViewController {
                     )
                 }
             }
-            // TODO: Add ability to take and share screenshot
-        } else if press.state == UIGestureRecognizerState.Ended {
-
-            chainedAnimationsWith(duration: 0.2,
-                completion: { _ in
-                    self.quoteLabel.text = nil
-                },
-                animations: [
-                    {
-                        self.view.backgroundColor = self.Grey1
-                        self.imageView.alpha = 1.0
-                        self.quoteLabel.alpha = 0.0
-                    }
-                ]
+            longpressScreenshotTimer = NSTimer.scheduledTimerWithTimeInterval(2,
+                target: self,
+                selector: MagickSelectors.LongPressScreenShot,
+                userInfo: nil,
+                repeats: false
             )
-        
+        } else if press.state == UIGestureRecognizerState.Ended {
+            longpressScreenshotTimer.invalidate()
+            animateFadeQuote()
         }
     }
     
-    // MARK: Private Methods
-    private func pauseLayer(layer: CALayer) {
-        let pausedTime = layer.convertTime(CACurrentMediaTime(), fromLayer: nil)
-        layer.speed = 0.0
-        layer.timeOffset = pausedTime
+    func longPressScreenshot() {
+        let screenshot = generateScreenShot(before: nil, after: nil)
+        chainedAnimationsWith(duration: 0.2,
+            completion: { _ in
+                self.presentAcitvityViewControllerWithScreenShot(screenshot)
+            },
+            animations: [
+                {
+                    self.heartLabel.alpha = 0.0
+                    self.heartLabel.transform = CGAffineTransformMakeScale(1.10, 1.10)
+                },
+                {
+                    self.heartLabel.alpha = 1.0
+                    self.heartLabel.transform = CGAffineTransformMakeScale(0.98, 0.98)
+                },
+                {
+                    self.heartLabel.transform = CGAffineTransformMakeScale(1, 1)
+                }
+            ]
+        )
     }
     
-    private func resumeLayer(layer: CALayer) {
-        let pausedTime = layer.timeOffset
-        layer.speed = 1.0
-        layer.timeOffset = 0.0
-        layer.beginTime = 0.0
-        let timeSincePause = layer.convertTime(CACurrentMediaTime(), fromLayer: nil) - pausedTime
-        layer.beginTime = timeSincePause
+    // MARK: Private Methods
+    private func generateScreenShot(#before: (() -> Void)?, after: (() -> Void)?) -> UIImage {
+        
+        if let before = before { before() }
+        
+        if UIScreen.mainScreen().respondsToSelector(Selector("scale")) {
+            UIGraphicsBeginImageContextWithOptions(self.view.frame.size, false, UIScreen.mainScreen().scale)
+        } else {
+            UIGraphicsBeginImageContext(self.view.frame.size)
+        }
+        self.view.drawViewHierarchyInRect(self.view.frame, afterScreenUpdates: true)
+        
+        let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        if let after = after { after() }
+        
+        return screenshot
     }
     
     private func setRandomColor() {
         view.backgroundColor = getRandomColor()
+    }
+    
+    private func animateFadeQuote() {
+        chainedAnimationsWith(duration: 0.2,
+            completion: { _ in
+                self.quoteLabel.text = nil
+            },
+            animations: [
+                {
+                    self.view.backgroundColor = self.Grey1
+                    self.imageView.alpha = 1.0
+                    self.quoteLabel.alpha = 0.0
+                }
+            ]
+        )
+    }
+    
+    private func presentAcitvityViewControllerWithScreenShot(screenshot: UIImage) {
+        let authorName = join("", self.currentAuthorQuotePair.author.name.componentsSeparatedByString(" "))
+        let msg = "M▲GK from #\(authorName)"
+        let activityVC = UIActivityViewController(activityItems: [msg,screenshot], applicationActivities: nil)
+        activityVC.completionWithItemsHandler = {
+            (s: String!, ok: Bool, items: [AnyObject]!, err: NSError!) -> Void in
+            // Where you do something when the activity view is completed.
+            self.animateFadeQuote()
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        self.presentViewController(activityVC, animated: true, completion: nil)
     }
 }
 

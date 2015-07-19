@@ -32,7 +32,7 @@ class MagkQuoteViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         imageView.animationImages = ImageResource.images
-        imageView.animationDuration = 0.55
+        imageView.animationDuration = 0.6
         
         let longPressToPauseAnimation = UILongPressGestureRecognizer(
             target: self,
@@ -99,7 +99,7 @@ class MagkQuoteViewController: UIViewController {
                     )
                 }
             }
-            
+            // TODO: Add ability to take and share screenshot
         } else if press.state == UIGestureRecognizerState.Ended {
 
             chainedAnimationsWith(duration: 0.2,

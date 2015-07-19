@@ -17,7 +17,7 @@
 		1542FE511B5C3A2000056E13 /* QuoteCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE4D1B5C3A2000056E13 /* QuoteCollection.swift */; };
 		1542FE521B5C3A2000056E13 /* QuotePropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1542FE4E1B5C3A2000056E13 /* QuotePropertyList.plist */; };
 		1542FE551B5C3A4800056E13 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE541B5C3A4800056E13 /* GlobalFunctions.swift */; };
-		1542FE591B5C3A8B00056E13 /* ImageResourceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE571B5C3A8B00056E13 /* ImageResourceName.swift */; };
+		1542FE591B5C3A8B00056E13 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE571B5C3A8B00056E13 /* ImageResource.swift */; };
 		1542FE5A1B5C3A8B00056E13 /* MagickColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE581B5C3A8B00056E13 /* MagickColors.swift */; };
 		1542FE5C1B5C3E0E00056E13 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1542FE5B1B5C3E0E00056E13 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
@@ -47,7 +47,7 @@
 		1542FE4D1B5C3A2000056E13 /* QuoteCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteCollection.swift; sourceTree = "<group>"; };
 		1542FE4E1B5C3A2000056E13 /* QuotePropertyList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QuotePropertyList.plist; sourceTree = "<group>"; };
 		1542FE541B5C3A4800056E13 /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
-		1542FE571B5C3A8B00056E13 /* ImageResourceName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResourceName.swift; sourceTree = "<group>"; };
+		1542FE571B5C3A8B00056E13 /* ImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
 		1542FE581B5C3A8B00056E13 /* MagickColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagickColors.swift; sourceTree = "<group>"; };
 		1542FE5B1B5C3E0E00056E13 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,7 +167,7 @@
 		1542FE561B5C3A6100056E13 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				1542FE571B5C3A8B00056E13 /* ImageResourceName.swift */,
+				1542FE571B5C3A8B00056E13 /* ImageResource.swift */,
 				1542FE581B5C3A8B00056E13 /* MagickColors.swift */,
 			);
 			name = Helpers;
@@ -278,7 +278,7 @@
 				1542FE4F1B5C3A2000056E13 /* Author.swift in Sources */,
 				1542FE551B5C3A4800056E13 /* GlobalFunctions.swift in Sources */,
 				1542FE5A1B5C3A8B00056E13 /* MagickColors.swift in Sources */,
-				1542FE591B5C3A8B00056E13 /* ImageResourceName.swift in Sources */,
+				1542FE591B5C3A8B00056E13 /* ImageResource.swift in Sources */,
 				1542FE511B5C3A2000056E13 /* QuoteCollection.swift in Sources */,
 				1542FE2B1B5C398C00056E13 /* MagkQuoteViewController.swift in Sources */,
 				1542FE291B5C398C00056E13 /* AppDelegate.swift in Sources */,

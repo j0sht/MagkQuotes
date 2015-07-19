@@ -8,10 +8,9 @@
 
 import UIKit
 
-enum ImageResourceName: String {
+enum ImageResource: String {
     
     case CaputMortuum = "Caput_mortuum"
-    case ChaosStar = "Chaos_star"
     case CrossedCircle = "Crossed_circle"
     case EightSpokedWheel = "Eight-spoked_wheel"
     case EyeOfProvidence = "Eye_of_Providence"
@@ -22,18 +21,18 @@ enum ImageResourceName: String {
     
     static var names: [String] {
         return [
-            ImageResourceName.EyeOfProvidence.rawValue,
-            ImageResourceName.SquaredCircle.rawValue,
-            ImageResourceName.InvertedPentagram.rawValue,
-            ImageResourceName.EightSpokedWheel.rawValue,
-            ImageResourceName.CrossedCircle.rawValue,
-            ImageResourceName.CaputMortuum.rawValue,
-            ImageResourceName.SunSymbol.rawValue,
-            ImageResourceName.ChaosStar.rawValue,
+            ImageResource.CaputMortuum.rawValue,
+            ImageResource.CrossedCircle.rawValue,
+            ImageResource.EightSpokedWheel.rawValue,
+            ImageResource.EyeOfProvidence.rawValue,
+            ImageResource.InvertedPentagram.rawValue,
+            ImageResource.SquaredCircle.rawValue,
+            ImageResource.SunSymbol.rawValue,
+            ImageResource.ErisSymbol.rawValue
         ]
     }
     
     static var images: [UIImage] {
-        return ImageResourceName.names.map { UIImage(named: $0)! }
+        return ImageResource.names.map { UIImage(named: $0)! }
     }
 }

@@ -66,31 +66,40 @@ class MagkQuoteViewController: UIViewController {
     func longPress(press: UILongPressGestureRecognizer) {
         
         if press.state == UIGestureRecognizerState.Began {
-            let authorAndQuote = self.authorQuotePairs.removeLast()
-            let quoteText = self.quoteCollection.authorQuoteString(authorAndQuote)
-            self.quoteLabel.text = quoteText
+            dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)) {
+                
+                // Put expensive code here
+                if self.authorQuotePairs.isEmpty {
+                    self.authorQuotePairs = self.quoteCollection.generateAuthorQuotePairList()
+                }
+                let authorAndQuote = self.authorQuotePairs.removeLast()
+                let quoteText = self.quoteCollection.authorQuoteString(authorAndQuote)
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.quoteLabel.text = quoteText
+                    chainedAnimationsWith(
+                        duration: 0.2,
+                        completion: nil,
+                        animations: [
+                            {
+                                self.setRandomColor()
+                                self.imageView.alpha = 0.0
+                                self.quoteLabel.alpha = 1.0
+                                
+                                self.quoteLabel.transform = CGAffineTransformMakeScale(1.04, 1.04)
+                            },
+                            {
+                                
+                                self.quoteLabel.transform = CGAffineTransformMakeScale(0.96, 0.96)
+                            },
+                            {
+                                self.quoteLabel.transform = CGAffineTransformMakeScale(1, 1)
+                            }
+                        ]
+                    )
+                }
+            }
             
-            chainedAnimationsWith(
-                duration: 0.2,
-                completion: nil,
-                animations: [
-                    {
-                        self.setRandomColor()
-                        self.imageView.alpha = 0.0
-                        self.quoteLabel.alpha = 1.0
-                        
-                        self.quoteLabel.transform = CGAffineTransformMakeScale(1.03, 1.03)
-                    },
-                    {
-
-                        self.quoteLabel.transform = CGAffineTransformMakeScale(0.97, 0.97)
-                    },
-                    {
-                        self.quoteLabel.transform = CGAffineTransformMakeScale(1, 1)
-                    }
-                ]
-            )
-
         } else if press.state == UIGestureRecognizerState.Ended {
 
             chainedAnimationsWith(duration: 0.2,

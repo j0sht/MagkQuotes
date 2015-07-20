@@ -27,7 +27,6 @@ class MagkQuoteViewController: UIViewController {
     private let Grey1 = UIColor(red: 242, green: 242, blue: 242)
     
     private var quoteCollection: QuoteCollection!
-    private var authorQuotePairs: [(author: Author, quote: Quote)]!
     private var currentAuthorQuotePair: (author: Author, quote: Quote)!
     
     private var longpressScreenshotTimer: NSTimer!
@@ -41,7 +40,6 @@ class MagkQuoteViewController: UIViewController {
         imageView.animationDuration = 0.6
         
         quoteCollection = QuoteCollection(fileName: "QuotePropertyList")
-        authorQuotePairs = quoteCollection.generateAuthorQuotePairList()
         
         introAnimation()
     }
@@ -54,10 +52,7 @@ class MagkQuoteViewController: UIViewController {
             dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)) {
                 
                 // Put expensive code here
-                if self.authorQuotePairs.isEmpty {
-                    self.authorQuotePairs = self.quoteCollection.generateAuthorQuotePairList()
-                }
-                self.currentAuthorQuotePair = self.authorQuotePairs.removeLast()
+                self.currentAuthorQuotePair = self.quoteCollection.getAuthorQuotePair()
                 let quoteText = self.quoteCollection.authorQuoteString(self.currentAuthorQuotePair)
                 
                 dispatch_async(dispatch_get_main_queue()) {
@@ -84,6 +79,7 @@ class MagkQuoteViewController: UIViewController {
                     )
                 }
             }
+            
             longpressScreenshotTimer = NSTimer.scheduledTimerWithTimeInterval(2,
                 target: self,
                 selector: MagickSelectors.LongPressScreenShot,
@@ -100,18 +96,18 @@ class MagkQuoteViewController: UIViewController {
     
     func longPressScreenshot() {
         let screenshot = generateScreenShot(before: nil, after: nil)
-        chainedAnimationsWith(duration: 0.2,
+        chainedAnimationsWith(duration: 0.24,
             completion: { _ in
                 self.presentAcitvityViewControllerWithScreenShot(screenshot)
             },
             animations: [
                 {
                     self.heartLabel.alpha = 0.0
-                    self.heartLabel.transform = CGAffineTransformMakeScale(1.10, 1.10)
+                    self.heartLabel.transform = CGAffineTransformMakeScale(1.4, 1.4)
                 },
                 {
                     self.heartLabel.alpha = 1.0
-                    self.heartLabel.transform = CGAffineTransformMakeScale(0.98, 0.98)
+                    self.heartLabel.transform = CGAffineTransformMakeScale(0.9, 0.9)
                 },
                 {
                     self.heartLabel.transform = CGAffineTransformMakeScale(1, 1)

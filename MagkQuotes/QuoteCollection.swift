@@ -11,6 +11,7 @@ import Foundation
 struct QuoteCollection: Printable {
     
     private(set)var authors: [Author] = []
+    private var authorQuotePairs: [(author: Author, quote: Quote)]!
     
     init(fileName: String) {
         if let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "plist") {
@@ -39,6 +40,7 @@ struct QuoteCollection: Printable {
                 }
             }
         }
+        authorQuotePairs = generateAuthorQuotePairList()
     }
     
     var description: String {
@@ -66,6 +68,13 @@ struct QuoteCollection: Printable {
         
         result.shuffle()
         return result
+    }
+    
+    mutating func getAuthorQuotePair() -> (author: Author, quote: Quote) {
+        if authorQuotePairs.isEmpty {
+            authorQuotePairs = generateAuthorQuotePairList()
+        }
+        return authorQuotePairs.removeLast()
     }
     
     func authorQuoteString(authorQuotePair: (author: Author, quote: Quote)) -> String {

@@ -21,6 +21,7 @@ class MagkQuoteViewController: UIViewController {
     @IBOutlet weak var heartLabel: UILabel!
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var countdownLabel: UILabel!
     
     // MARK: Private Properties
     private let Grey1 = UIColor(red: 242, green: 242, blue: 242)
@@ -47,17 +48,19 @@ class MagkQuoteViewController: UIViewController {
         
         quoteCollection = QuoteCollection(fileName: "QuotePropertyList")
         authorQuotePairs = quoteCollection.generateAuthorQuotePairList()
+        
+        introAnimation()
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        view.backgroundColor = Grey1
-        quoteLabel.alpha = 0.0
-        quoteLabel.text = nil
-        imageView.alpha = 1.0
-        
-        imageView.startAnimating()
+//        
+//        view.backgroundColor = Grey1
+//        quoteLabel.alpha = 0.0
+//        quoteLabel.text = nil
+//        imageView.alpha = 1.0
+//        
+//        imageView.startAnimating()
     }
 
     override func didReceiveMemoryWarning() {
@@ -193,6 +196,47 @@ class MagkQuoteViewController: UIViewController {
                 self.presentViewController(activityVC, animated: true, completion: nil)
             }
         }
+    }
+    
+    private func introAnimation() {
+        view.backgroundColor = Grey1
+        quoteLabel.alpha = 0.0
+        quoteLabel.text = nil
+        imageView.alpha = 0.0
+        
+        chainedAnimationsWith(duration: 0.5,
+            completion: {_ in
+                self.countdownLabel.text = "2"
+                chainedAnimationsWith(duration: 0.5,
+                    completion: {_ in
+                        self.countdownLabel.text = "1"
+                        chainedAnimationsWith(duration: 0.5,
+                            completion: {_ in
+                                self.countdownLabel.text = nil
+                                self.countdownLabel.hidden = true
+                                self.imageView.alpha = 1.0
+                                self.imageView.startAnimating()
+                            },
+                            animations: [
+                                {self.countdownLabel.transform = CGAffineTransformMakeScale(1.05, 1.05)},
+                                {self.countdownLabel.transform = CGAffineTransformMakeScale(0.95, 0.95)},
+                                {self.countdownLabel.transform = CGAffineTransformMakeScale(1, 1)}
+                            ]
+                        )
+                    },
+                    animations: [
+                        {self.countdownLabel.transform = CGAffineTransformMakeScale(1.05, 1.05)},
+                        {self.countdownLabel.transform = CGAffineTransformMakeScale(0.95, 0.95)},
+                        {self.countdownLabel.transform = CGAffineTransformMakeScale(1, 1)}
+                    ]
+                )
+            },
+            animations: [
+                {self.countdownLabel.transform = CGAffineTransformMakeScale(1.05, 1.05)},
+                {self.countdownLabel.transform = CGAffineTransformMakeScale(0.95, 0.95)},
+                {self.countdownLabel.transform = CGAffineTransformMakeScale(1, 1)}
+            ]
+        )
     }
 }
 

@@ -42,17 +42,25 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Caput_mortuum" translatesAutoresizingMaskIntoConstraints="NO" id="vjK-od-2la">
                                 <rect key="frame" x="200" y="200" width="200" height="200"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1S-uk-UPG">
+                                <rect key="frame" x="264" y="230" width="73" height="140"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="120"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rgw-ml-0gG" firstAttribute="top" secondItem="Kaa-5F-cDK" secondAttribute="bottom" constant="8" id="3pa-PQ-eOh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rgw-ml-0gG" secondAttribute="bottom" constant="20" id="3uF-Xa-5pw"/>
+                            <constraint firstAttribute="centerY" secondItem="q1S-uk-UPG" secondAttribute="centerY" id="6ts-iT-Pzd"/>
                             <constraint firstItem="TUW-pX-DHL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9Ua-Xx-drd"/>
                             <constraint firstItem="Kaa-5F-cDK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9hR-5E-UyM"/>
                             <constraint firstAttribute="centerY" secondItem="Kaa-5F-cDK" secondAttribute="centerY" id="Fi3-Ra-RiD"/>
                             <constraint firstAttribute="centerX" secondItem="vjK-od-2la" secondAttribute="centerX" id="Ie1-RC-sVU"/>
                             <constraint firstAttribute="centerX" secondItem="Kaa-5F-cDK" secondAttribute="centerX" id="gRL-AE-pmg"/>
                             <constraint firstItem="TUW-pX-DHL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="l93-ib-zUR"/>
+                            <constraint firstAttribute="centerX" secondItem="q1S-uk-UPG" secondAttribute="centerX" id="lTT-BX-i0n"/>
                             <constraint firstItem="TUW-pX-DHL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="n3Y-Hc-huc"/>
                             <constraint firstItem="Kaa-5F-cDK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nEb-Cn-my8"/>
                             <constraint firstAttribute="centerX" secondItem="rgw-ml-0gG" secondAttribute="centerX" id="tHe-WX-VLo"/>
@@ -61,6 +69,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="countdownLabel" destination="q1S-uk-UPG" id="e28-xs-fMK"/>
                         <outlet property="heartLabel" destination="rgw-ml-0gG" id="zHq-V1-x9j"/>
                         <outlet property="imageView" destination="vjK-od-2la" id="Cou-0w-2lL"/>
                         <outlet property="quoteLabel" destination="Kaa-5F-cDK" id="L29-12-FZH"/>

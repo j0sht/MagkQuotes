@@ -95,9 +95,10 @@ class MagkQuoteViewController: UIViewController {
     }
     
     func longPressScreenshot() {
-        let screenshot = generateScreenShot(before: nil, after: nil)
+        //let screenshot = generateScreenShot(before: nil, after: nil)
         chainedAnimationsWith(duration: 0.24,
             completion: { _ in
+                let screenshot = self.generateScreenShot(before: nil, after: nil)
                 self.presentAcitvityViewControllerWithScreenShot(screenshot)
             },
             animations: [
@@ -168,8 +169,17 @@ class MagkQuoteViewController: UIViewController {
                 self.dismissViewControllerAnimated(true, completion: nil)
             }
             
+            var popUp: UIPopoverController!
+            if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad {
+                popUp = UIPopoverController(contentViewController: activityVC)
+            }
+            
             dispatch_async(dispatch_get_main_queue()) {
-                self.presentViewController(activityVC, animated: true, completion: nil)
+                if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad {
+                    popUp.presentPopoverFromRect(CGRectMake(self.heartLabel.frame.origin.x + 15, self.heartLabel.frame.origin.y, 2, 2), inView: self.view, permittedArrowDirections: UIPopoverArrowDirection.Down, animated: true)
+                } else {
+                    self.presentViewController(activityVC, animated: true, completion: nil)
+                }
             }
         }
     }

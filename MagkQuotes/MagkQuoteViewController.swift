@@ -113,8 +113,10 @@ class MagkQuoteViewController: UIViewController {
                 repeats: false
             )
         } else if press.state == UIGestureRecognizerState.Ended {
-            longpressScreenshotTimer.invalidate()
-            animateFadeQuote()
+            if longpressScreenshotTimer.valid {
+                longpressScreenshotTimer.invalidate()
+                animateFadeQuote()
+            }
         }
     }
     
@@ -204,13 +206,15 @@ class MagkQuoteViewController: UIViewController {
         quoteLabel.text = nil
         imageView.alpha = 0.0
         
-        chainedAnimationsWith(duration: 0.5,
+        let duration: NSTimeInterval = 0.33
+        
+        chainedAnimationsWith(duration: duration,
             completion: {_ in
                 self.countdownLabel.text = "2"
-                chainedAnimationsWith(duration: 0.5,
+                chainedAnimationsWith(duration: duration,
                     completion: {_ in
                         self.countdownLabel.text = "1"
-                        chainedAnimationsWith(duration: 0.5,
+                        chainedAnimationsWith(duration: duration,
                             completion: {_ in
                                 self.countdownLabel.text = nil
                                 self.countdownLabel.hidden = true
@@ -218,22 +222,22 @@ class MagkQuoteViewController: UIViewController {
                                 self.imageView.startAnimating()
                             },
                             animations: [
-                                {self.countdownLabel.transform = CGAffineTransformMakeScale(1.05, 1.05)},
-                                {self.countdownLabel.transform = CGAffineTransformMakeScale(0.95, 0.95)},
+                                {self.countdownLabel.transform = CGAffineTransformMakeScale(1.2, 1.2)},
+                                {self.countdownLabel.transform = CGAffineTransformMakeScale(0.8, 0.8)},
                                 {self.countdownLabel.transform = CGAffineTransformMakeScale(1, 1)}
                             ]
                         )
                     },
                     animations: [
-                        {self.countdownLabel.transform = CGAffineTransformMakeScale(1.05, 1.05)},
-                        {self.countdownLabel.transform = CGAffineTransformMakeScale(0.95, 0.95)},
+                        {self.countdownLabel.transform = CGAffineTransformMakeScale(1.2, 1.2)},
+                        {self.countdownLabel.transform = CGAffineTransformMakeScale(0.8, 0.8)},
                         {self.countdownLabel.transform = CGAffineTransformMakeScale(1, 1)}
                     ]
                 )
             },
             animations: [
-                {self.countdownLabel.transform = CGAffineTransformMakeScale(1.05, 1.05)},
-                {self.countdownLabel.transform = CGAffineTransformMakeScale(0.95, 0.95)},
+                {self.countdownLabel.transform = CGAffineTransformMakeScale(1.2, 1.2)},
+                {self.countdownLabel.transform = CGAffineTransformMakeScale(0.8, 0.8)},
                 {self.countdownLabel.transform = CGAffineTransformMakeScale(1, 1)}
             ]
         )

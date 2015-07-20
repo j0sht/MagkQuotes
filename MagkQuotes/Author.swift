@@ -27,4 +27,16 @@ struct Author: Printable {
         return quotes[index]
     }
     
+    func hashtagName() -> String {
+        let punctuation = [".","-"]
+        var result = ""
+        for char in name {
+            if contains(punctuation, String(char)) {
+                continue
+            }
+            result += String(char)
+        }
+        result = join("", result.componentsSeparatedByString(" "))
+        return "#" + result
+    }
 }

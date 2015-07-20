@@ -177,16 +177,22 @@ class MagkQuoteViewController: UIViewController {
     }
     
     private func presentAcitvityViewControllerWithScreenShot(screenshot: UIImage) {
-        let authorName = join("", self.currentAuthorQuotePair.author.name.componentsSeparatedByString(" "))
-        let msg = "M▲GK from #\(authorName)"
-        let activityVC = UIActivityViewController(activityItems: [msg,screenshot], applicationActivities: nil)
-        activityVC.completionWithItemsHandler = {
-            (s: String!, ok: Bool, items: [AnyObject]!, err: NSError!) -> Void in
-            // Where you do something when the activity view is completed.
-            self.animateFadeQuote()
-            self.dismissViewControllerAnimated(true, completion: nil)
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)) {
+            // Put expensive code here
+            let authorName = self.currentAuthorQuotePair.author.hashtagName()
+            let msg = "M▲GK from \(authorName)"
+            let activityVC = UIActivityViewController(activityItems: [msg,screenshot], applicationActivities: nil)
+            activityVC.completionWithItemsHandler = {
+                (s: String!, ok: Bool, items: [AnyObject]!, err: NSError!) -> Void in
+                // Where you do something when the activity view is completed.
+                self.animateFadeQuote()
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+            
+            dispatch_async(dispatch_get_main_queue()) {
+                self.presentViewController(activityVC, animated: true, completion: nil)
+            }
         }
-        self.presentViewController(activityVC, animated: true, completion: nil)
     }
 }
 

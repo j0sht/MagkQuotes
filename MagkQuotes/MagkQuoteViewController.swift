@@ -33,39 +33,17 @@ class MagkQuoteViewController: UIViewController {
     private var longpressScreenshotTimer: NSTimer!
     
     // MARK:- UIViewController Methods
+    // MARK:-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         imageView.animationImages = ImageResource.images
         imageView.animationDuration = 0.6
         
-        let longPressToPauseAnimation = UILongPressGestureRecognizer(
-            target: self,
-            action: MagickSelectors.LongPress
-        )
-        longPressToPauseAnimation.minimumPressDuration = 0.168
-        view.addGestureRecognizer(longPressToPauseAnimation)
-        
         quoteCollection = QuoteCollection(fileName: "QuotePropertyList")
         authorQuotePairs = quoteCollection.generateAuthorQuotePairList()
         
         introAnimation()
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-//        
-//        view.backgroundColor = Grey1
-//        quoteLabel.alpha = 0.0
-//        quoteLabel.text = nil
-//        imageView.alpha = 1.0
-//        
-//        imageView.startAnimating()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK:- Custom Methods
@@ -220,6 +198,8 @@ class MagkQuoteViewController: UIViewController {
                                 self.countdownLabel.hidden = true
                                 self.imageView.alpha = 1.0
                                 self.imageView.startAnimating()
+                                
+                                self.initiateLongPress()
                             },
                             animations: [
                                 {self.countdownLabel.transform = CGAffineTransformMakeScale(1.2, 1.2)},
@@ -241,6 +221,15 @@ class MagkQuoteViewController: UIViewController {
                 {self.countdownLabel.transform = CGAffineTransformMakeScale(1, 1)}
             ]
         )
+    }
+    
+    private func initiateLongPress() {
+        let longPressToPauseAnimation = UILongPressGestureRecognizer(
+            target: self,
+            action: MagickSelectors.LongPress
+        )
+        longPressToPauseAnimation.minimumPressDuration = 0.168
+        self.view.addGestureRecognizer(longPressToPauseAnimation)
     }
 }
 

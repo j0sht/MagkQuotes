@@ -11,7 +11,6 @@ import UIKit
 enum ImageResource: String {
     
     case CaputMortuum = "Caput_mortuum"
-    case CrossedCircle = "Crossed_circle"
     case EightSpokedWheel = "Eight-spoked_wheel"
     case EyeOfProvidence = "Eye_of_Providence"
     case InvertedPentagram = "Inverted_Pentagram_circumscribed"
@@ -22,7 +21,6 @@ enum ImageResource: String {
     static var names: [String] {
         return [
             ImageResource.CaputMortuum.rawValue,
-            ImageResource.CrossedCircle.rawValue,
             ImageResource.EightSpokedWheel.rawValue,
             ImageResource.EyeOfProvidence.rawValue,
             ImageResource.InvertedPentagram.rawValue,

@@ -3,6 +3,679 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>Walt Whitman</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>The United States themselves are essentially the greatest poem.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The whole theory of the universe is directly unerringly to one single individual.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Nothing can happen more beautiful than death.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>To the real artist in humanity, what are called bad manners are often the most picturesque and significant of all.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Judging from the main portions of the history of the world, so far, justice is always in jeopardy.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>We convince by our presence.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Freedom - to walk free and own no superior.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I accept reality and dare not question it.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>And your very flesh shall be a great poem.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>If you done it, it ain&apos;t braggin.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Whatever satisfies the soul is truth.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I celebrate myself, and sing myself.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I exist as I am, that is enough.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I no doubt deserved my enemies, but I don&apos;t believe I deserved my friends.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I myself am good fortune.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>When I give, I give myself.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The future is no more uncertain than the present.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Do I contradict myself? Very well, then I contradict myself, I am large, I contain multitudes.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Be curious, not judgmental.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I have learned that to be with those I like is enough.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I am as bad as the worst, but, thank God, I am as good as the best.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Emily Dickinson</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>Fame is a fickle food upon a shifting plate.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Celebrity is the chastisement of merit and the punishment of talent.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I do not like the man who squanders life for fame; give me the man who living makes a name.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Whenever a thing is done for the first time, it releases a little demon.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Truth is so rare that it is delightful to tell it.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>They say that God is everywhere, and yet we always think of Him as somewhat of a recluse.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Tell the truth, but tell it slant.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Dying is a wild night and a new road.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I&apos;m nobody, who are you?</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Finite to fail, but infinite to venture.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Saying nothing...sometimes says the most.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Success is counted sweetest by those who never succeeded.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Luck is not chance, it&apos;s toil; fortune&apos;s expensive smile is earned.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>My friends are my estate.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Beauty is not caused. It is.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>A wounded deer leaps the highest.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>That it will never come again is what makes life sweet.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Morning without you is a dwindled dawn.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>People need hard times and oppression to develop psychic muscles.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Dogs are better than human beings because they know but do not tell.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Because I could not stop for death, He kindly stopped for me.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The soul should always stand ajar, ready to welcome the ecstatic experience.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Unable are the loved to die, for love is immortality.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>...a smile as small as mine might be precisely their necessity.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Forever is composed of nows.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>If I can stop one heart from breaking, I shall not live in vain.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I dwell in possibility.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>T. S. Eliot</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>Some editors are failed writers, but so are most writers.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The last thing one discovers in composing a work is what to put first.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Business today consists in persuading crowds.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>All significant truths are private truths.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>April is cruelest month.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>People to whom nothing ever happened cannot understand the unimportance of events.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>This love is silent.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Let&apos;s not be narrow, nasty, and negative.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The communication of the dead is tongued with fire beyond the language of the living.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The progress of an artist is a continual self-sacrifice, a continual extinction of personality.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>We know too much, and are convinced of too little.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Immature poets imitate; mature poets steal.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>...our lives are mostly a constant evasion of ourselves.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>If you aren&apos;t in over your head, how do you know how tall you are?</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I have measured out my life with coffee spoons.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>What we call the beginning is often the end. And to make an end is to make a beginning. The end is where we start from.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>No honest poet can ever feel quite sure of the permanent value of what he has written: He may have wasted his time and messed up his life for nothing.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Anxiety is the hand maiden of creativity.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Half of the harm that is done in this world is due to people who want to feel important. They don&apos;t mean to do harm. But the harm does not interest them.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>You are the music while the music lasts.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Where is the knowledge we have lost in information?</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>So the darkness shall be the light, and the stillness the dancing.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Ralph Waldo Emerson</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>What you are comes to you.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Science does not know its debt to imagination.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Win as if you were used to it, lose as if you enjoyed it for a change.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I hate quotations. Tell me what you know.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The world is all gates, all opportunities, strings of tension waiting to be struck.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>He who is not everyday conquering some fear has not learned the secret of life.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Every artist was first an amateur.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Nobody can bring you peace but yourself.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I have thought a sufficient measure of civilization is the influence of good women.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Passion rebuilds the world for the youth. It makes all things alive and significant.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>A man is what he thinks about all day long.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>With the past, I have nothing to do; nor with the future. I live now.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Who you are speaks so loudly I can&apos;t hear what you&apos;re saying.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Hitch your wagon to a star.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Character is higher than intellect.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Beauty without expression is boring.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>We aim above the mark to hit the mark.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>What is a weed? A plant whose virtues have never been discovered.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Trust your instinct to the end, though you can render no reason.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The age of a woman doesn&apos;t mean a thing. The best tunes are played on the oldest fiddles.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>People do not seem to realize that their opinion of the world is also a confession of character.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Always do what you are afraid to do.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Men are what their mothers made them.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>All life is an experiment. The more experiments you make the better.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Once you make a decision, the universe conspires to make it happen.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The earth laughs in flowers.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Love of beauty is taste. The creation of beauty is art.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>What lies behind you and what lies in front of you, pales in comparison to what lies inside of you.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>It is one of the blessings of old friends that you can afford to be stupid with them.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Maya Angelou</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>There is no greater agony than bearing an untold story inside you.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>You may trod my in the very dirt, but still, like dust, I&apos;ll rise.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>...in diversity there is beauty and there is strength.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>...it is only love which sets us free.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Without courage, we cannot practice any other virtue with consistency.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>One isn&apos;t necessarily born with courage, but one is born with potential.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>History, despite its wrenching pain, cannot be unlived, but if faced with courage, need not be lived again.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>A wise woman wishes to be no one&apos;s enemy; a wise woman refuses to be anyone&apos;s victim.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Music was my refuge. I could crawl into the space between the notes and curl my back to loneliness.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The ache for home lives in all of us, the safe place where we can go as we are and not be questioned.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>If you don&apos;t know what you&apos;re here to do, then just do some good.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>...take full responsibility for yourself - for the time you take up and the space you occupy.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>What is a fear of living? It&apos;s being preeminently afraid of dying.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>As long as you&apos;re breathing, it&apos;s never too late to do some good.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I&apos;m convinced of this: Good done anywhere is good done everywhere.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Nothing will work unless you do.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>You may not control all the events that happen to you, but you can decide not to be reduced by them.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>When someone shows you who they are, believe them the first time.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Love recognizes no barriers. It jumps hurdles, leaps fences, penetrates walls to arrive at its destination full of hope.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>If you don&apos;t like something, change it. If you can&apos;t change it, change your attitude.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I&apos;ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Pierre Trudeau</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>The essential ingredient of politics is timing.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The state has no business in the bedrooms of the nation.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>My life is one long curve, full of turning points.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>We wish nothing more, but we will accept nothing less.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Luck, that&apos;s when preperation and opportunity meet.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Beyonce Knowles</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>I love my job, but it&apos;s more than that: I need it.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>...I always want to be a powerful woman. That&apos;s my mission.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I love creativity, but I also love to help others.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I love a pair of sexy heels with jeans, a nice jacket, or a little dress.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I have to be really passionate in order to do something.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>My focus is my art, and that&apos;s what I love to do.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I don&apos;t even know how to chill out.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I wanted to sell a million records, and I sold a million records. I wanted to go platinum; I went platinum.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I&apos;m a human being and I fall in love and sometimes I don&apos;t have control of every situation.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>As soon as I accomplish one thing, I just set a higher goal. That&apos;s how I&apos;ve gotten to where I am.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I can never be safe; I always try and go against the grain.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>For me, it&apos;s about the way I carry myself and the way I treat other people.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I truly believe that women should be financially independent from their men...let&apos;s face it, money gives men the power to run the show.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I don&apos;t want to be a hot girl. I want to be iconic.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>We all have our imperfections. But I&apos;m human, and you know, it&apos;s important to concentrate on other qualities besides outer beauty.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>When you really don&apos;t like a guy, they&apos;re all over you, and as soon as you act like you like them, they&apos;re no longer interested.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Power means happiness; power means hard work and sacrifice.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I think it&apos;s healthy for a person to be nervous. It means you care...</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>If everything was perfect, you would never learn and you would never grow.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Pam Brown</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>If your sister is in a tearing hurry to go out and cannot catch your eye, she&apos;s wearing your best sweater.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The courage of very ordinary people is all that stands between us and the dark.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Odd how much it hurts when a friend moves away - and leaves behind only silence.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Mary Wollstonecraft</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>I do earnestly wish to see the distinction of sex confounded in society, unless where love animates the behavior.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Surely something resides in this heart that is not perishable - and life is more than a dream.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>No man chooses evil because it is evil; he only mistakes it for happiness, the good he seeks.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>It is justice, not charity, that is wanting in the world.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Men and women must be educated, in great degree, by the opinions and manners of the society they live in.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Virtue can only flourish among equals.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The beginning is always today.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Strengthen the female mind by enlarging it, and there will be an end to blind obedience.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
 		<key>Sylvia Plath</key>
 		<array>
 			<dict>
@@ -996,6 +1669,54 @@
 	<dict>
 		<key>Aleister Crowley</key>
 		<array>
+			<dict>
+				<key>quote</key>
+				<string>I have never grown out of the infantile belief that the universe was made for me to suck.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The pious pretense that evil does not exist only makes it vague, enormous and menacing.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Part of the public horror of sexual irregularity so-called is due to the fact that everyone knows himself essentially guilty.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Intolerance is evidence of impotence.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I was asked to memorize what I did not understand; and, my memory being so good, it refused to be insulted in that manner.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I was not content to believe in a personal devil and serve him, in the ordinary sense of the word. I wanted to get ahold of him personally and become his chief of staff.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Ordinary morality is only for ordinary people.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>In the absence of willpower the most complete collection of virtues and talents is wholly worthless.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Science is always discovering odd scraps of magical wisdom and making a tremendous fuss about its cleverness.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The eternal mistake of mankind is to set up an attainable ideal.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The joy of life consists in the exercise of one&apos;s energies, continual growth, constant change, the enjoyment of new experience. To stop means simply to die.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Do what thou wilt shall be the whole of the law.</string>
+			</dict>
 			<dict>
 				<key>year</key>
 				<string>1929</string>

@@ -161,20 +161,23 @@ class MagkQuoteViewController: UIViewController {
             // Put expensive code here
             let authorName = self.currentAuthorQuotePair.author.hashtagName()
             let msg = "M▲GK from \(authorName)"
-            let activityVC = UIActivityViewController(activityItems: [msg,screenshot], applicationActivities: nil)
-            activityVC.completionWithItemsHandler = {
-                (s: String!, ok: Bool, items: [AnyObject]!, err: NSError!) -> Void in
-                // Where you do something when the activity view is completed.
-                self.animateFadeQuote()
-                self.dismissViewControllerAnimated(true, completion: nil)
-            }
-            
-            var popUp: UIPopoverController!
-            if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad {
-                popUp = UIPopoverController(contentViewController: activityVC)
-            }
             
             dispatch_async(dispatch_get_main_queue()) {
+                // FIXME: Crash happened here! 😲
+                // Keep testing!!
+                let activityVC = UIActivityViewController(activityItems: [msg,screenshot], applicationActivities: nil)
+                activityVC.completionWithItemsHandler = {
+                    (s: String!, ok: Bool, items: [AnyObject]!, err: NSError!) -> Void in
+                    // Where you do something when the activity view is completed.
+                    self.animateFadeQuote()
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                }
+                
+                var popUp: UIPopoverController!
+                if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad {
+                    popUp = UIPopoverController(contentViewController: activityVC)
+                }
+                
                 if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad {
                     popUp.presentPopoverFromRect(CGRectMake(self.heartLabel.frame.origin.x + 15, self.heartLabel.frame.origin.y, 2, 2), inView: self.view, permittedArrowDirections: UIPopoverArrowDirection.Down, animated: true)
                 } else {

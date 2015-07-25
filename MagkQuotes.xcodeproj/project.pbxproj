@@ -20,6 +20,7 @@
 		1542FE591B5C3A8B00056E13 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE571B5C3A8B00056E13 /* ImageResource.swift */; };
 		1542FE5A1B5C3A8B00056E13 /* MagickColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE581B5C3A8B00056E13 /* MagickColors.swift */; };
 		1542FE5C1B5C3E0E00056E13 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1542FE5B1B5C3E0E00056E13 /* LaunchScreen.xib */; };
+		15C38FAB1B6362BA00F88458 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38FAA1B6362BA00F88458 /* UIKitExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		1542FE571B5C3A8B00056E13 /* ImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
 		1542FE581B5C3A8B00056E13 /* MagickColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagickColors.swift; sourceTree = "<group>"; };
 		1542FE5B1B5C3E0E00056E13 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		15C38FAA1B6362BA00F88458 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +93,10 @@
 		1542FE251B5C398C00056E13 /* MagkQuotes */ = {
 			isa = PBXGroup;
 			children = (
+				1542FE281B5C398C00056E13 /* AppDelegate.swift */,
 				1542FE4A1B5C39D400056E13 /* Models */,
 				1542FE491B5C39CE00056E13 /* Views */,
 				1542FE481B5C39C300056E13 /* Controllers */,
-				1542FE281B5C398C00056E13 /* AppDelegate.swift */,
 				1542FE2F1B5C398C00056E13 /* Images.xcassets */,
 				1542FE261B5C398C00056E13 /* Supporting Files */,
 			);
@@ -169,6 +171,7 @@
 			children = (
 				1542FE571B5C3A8B00056E13 /* ImageResource.swift */,
 				1542FE581B5C3A8B00056E13 /* MagickColors.swift */,
+				15C38FAA1B6362BA00F88458 /* UIKitExtensions.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			files = (
 				1542FE501B5C3A2000056E13 /* Quote.swift in Sources */,
 				1542FE4F1B5C3A2000056E13 /* Author.swift in Sources */,
+				15C38FAB1B6362BA00F88458 /* UIKitExtensions.swift in Sources */,
 				1542FE551B5C3A4800056E13 /* GlobalFunctions.swift in Sources */,
 				1542FE5A1B5C3A8B00056E13 /* MagickColors.swift in Sources */,
 				1542FE591B5C3A8B00056E13 /* ImageResource.swift in Sources */,

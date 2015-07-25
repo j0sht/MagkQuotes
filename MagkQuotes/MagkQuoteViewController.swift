@@ -39,6 +39,8 @@ class MagkQuoteViewController: UIViewController {
         imageView.animationImages = ImageResource.images
         imageView.animationDuration = 0.6
         
+        quoteLabel.fitToAvoidWordWrapping()
+        
         quoteCollection = QuoteCollection(fileName: "QuoteCollection1")
         
         introAnimation()
@@ -80,7 +82,8 @@ class MagkQuoteViewController: UIViewController {
                 }
             }
             
-            longpressScreenshotTimer = NSTimer.scheduledTimerWithTimeInterval(2,
+            // TODO: Find appropriate duration
+            longpressScreenshotTimer = NSTimer.scheduledTimerWithTimeInterval(3.4,
                 target: self,
                 selector: MagickSelectors.LongPressScreenShot,
                 userInfo: nil,

@@ -39,8 +39,6 @@ class MagkQuoteViewController: UIViewController {
         imageView.animationImages = ImageResource.images
         imageView.animationDuration = 0.6
         
-        quoteLabel.fitToAvoidWordWrapping()
-        
         quoteCollection = QuoteCollection(fileName: "QuoteCollection1")
         
         introAnimation()
@@ -59,6 +57,7 @@ class MagkQuoteViewController: UIViewController {
                 
                 dispatch_async(dispatch_get_main_queue()) {
                     self.quoteLabel.text = quoteText
+                    self.quoteLabel.fitToAvoidWordWrapping()
                     chainedAnimationsWith(
                         duration: 0.2,
                         completion: nil,

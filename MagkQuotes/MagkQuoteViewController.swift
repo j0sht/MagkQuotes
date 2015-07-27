@@ -46,6 +46,8 @@ class MagkQuoteViewController: UIViewController {
 
     // MARK:- Custom Methods
     // MARK:- Gesture Recognizers
+    
+    // TODO: Change UX flow: Press to get quote; press then hold to share
     func longPress(press: UILongPressGestureRecognizer) {
         
         if press.state == UIGestureRecognizerState.Began {
@@ -81,7 +83,6 @@ class MagkQuoteViewController: UIViewController {
                 }
             }
             
-            // TODO: Find appropriate duration
             longpressScreenshotTimer = NSTimer.scheduledTimerWithTimeInterval(3.4,
                 target: self,
                 selector: MagickSelectors.LongPressScreenShot,

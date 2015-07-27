@@ -31,6 +31,8 @@ class MagkQuoteViewController: UIViewController {
     
     private var longpressScreenshotTimer: NSTimer!
     
+    private var pressCount = 0
+    
     // MARK:- UIViewController Methods
     // MARK:-
     override func viewDidLoad() {
@@ -51,54 +53,60 @@ class MagkQuoteViewController: UIViewController {
     func longPress(press: UILongPressGestureRecognizer) {
         
         if press.state == UIGestureRecognizerState.Began {
-            dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)) {
-                
-                // Put expensive code here
-                self.currentAuthorQuotePair = self.quoteCollection.getAuthorQuotePair()
-                let quoteText = self.quoteCollection.authorQuoteString(self.currentAuthorQuotePair)
-                
-                dispatch_async(dispatch_get_main_queue()) {
-                    self.quoteLabel.text = quoteText
-                    self.quoteLabel.fitToAvoidWordWrapping()
-                    chainedAnimationsWith(
-                        duration: 0.2,
-                        completion: nil,
-                        animations: [
-                            {
-                                self.setRandomColor()
-                                self.imageView.alpha = 0.0
-                                self.quoteLabel.alpha = 1.0
-                                
-                                self.quoteLabel.transform = CGAffineTransformMakeScale(0.96, 0.96)
-                            },
-                            {
-                                
-                                self.quoteLabel.transform = CGAffineTransformMakeScale(1.02, 1.02)
-                            },
-                            {
-                                self.quoteLabel.transform = CGAffineTransformMakeScale(1, 1)
-                            }
-                        ]
-                    )
+            pressCount++
+            
+            if pressCount < 2 {
+                dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)) {
+                    
+                    // Put expensive code here
+                    self.currentAuthorQuotePair = self.quoteCollection.getAuthorQuotePair()
+                    let quoteText = self.quoteCollection.authorQuoteString(self.currentAuthorQuotePair)
+                    
+                    dispatch_async(dispatch_get_main_queue()) {
+                        self.quoteLabel.text = quoteText
+                        //self.quoteLabel.fitToAvoidWordWrapping()
+                        chainedAnimationsWith(
+                            duration: 0.2,
+                            completion: nil,
+                            animations: [
+                                {
+                                    self.setRandomColor()
+                                    self.imageView.alpha = 0.0
+                                    self.quoteLabel.alpha = 1.0
+                                    
+                                    self.quoteLabel.transform = CGAffineTransformMakeScale(0.96, 0.96)
+                                },
+                                {
+                                    
+                                    self.quoteLabel.transform = CGAffineTransformMakeScale(1.02, 1.02)
+                                },
+                                {
+                                    self.quoteLabel.transform = CGAffineTransformMakeScale(1, 1)
+                                }
+                            ]
+                        )
+                    }
                 }
             }
             
-            longpressScreenshotTimer = NSTimer.scheduledTimerWithTimeInterval(3.4,
-                target: self,
-                selector: MagickSelectors.LongPressScreenShot,
-                userInfo: nil,
-                repeats: false
-            )
-        } else if press.state == UIGestureRecognizerState.Ended {
+            if pressCount > 1 {
+                longpressScreenshotTimer = NSTimer.scheduledTimerWithTimeInterval(0.7,
+                    target: self,
+                    selector: MagickSelectors.LongPressScreenShot,
+                    userInfo: nil,
+                    repeats: false
+                )
+            }
+        } else if press.state == UIGestureRecognizerState.Ended && pressCount > 1 {
             if longpressScreenshotTimer.valid {
                 longpressScreenshotTimer.invalidate()
                 animateFadeQuote()
+                pressCount = 0
             }
         }
     }
     
     func longPressScreenshot() {
-        //let screenshot = generateScreenShot(before: nil, after: nil)
         chainedAnimationsWith(duration: 0.24,
             completion: { _ in
                 let screenshot = self.generateScreenShot(before: nil, after: nil)
@@ -160,6 +168,7 @@ class MagkQuoteViewController: UIViewController {
     }
     
     private func presentAcitvityViewControllerWithScreenShot(screenshot: UIImage) {
+        pressCount = 0
         dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)) {
             // Put expensive code here
             let authorName = self.currentAuthorQuotePair.author.hashtagName()
@@ -240,7 +249,7 @@ class MagkQuoteViewController: UIViewController {
             target: self,
             action: MagickSelectors.LongPress
         )
-        longPressToPauseAnimation.minimumPressDuration = 0.168
+        longPressToPauseAnimation.minimumPressDuration = 0.124
         self.view.addGestureRecognizer(longPressToPauseAnimation)
     }
 }

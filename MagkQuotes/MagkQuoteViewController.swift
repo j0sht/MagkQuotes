@@ -128,6 +128,28 @@ class MagkQuoteViewController: UIViewController {
         )
     }
     
+    func hideQuote() {
+        view.backgroundColor = Grey1
+        imageView.alpha = 1
+        quoteLabel.alpha = 0
+        quoteLabel.text = nil
+    }
+    
+    private func animateFadeQuote() {
+        chainedAnimationsWith(duration: 0.2,
+            completion: { _ in
+                self.quoteLabel.text = nil
+            },
+            animations: [
+                {
+                    self.view.backgroundColor = self.Grey1
+                    self.imageView.alpha = 1.0
+                    self.quoteLabel.alpha = 0.0
+                }
+            ]
+        )
+    }
+    
     // MARK: Private Methods
     private func generateScreenShot(#before: (() -> Void)?, after: (() -> Void)?) -> UIImage {
         
@@ -150,21 +172,6 @@ class MagkQuoteViewController: UIViewController {
     
     private func setRandomColor() {
         view.backgroundColor = getRandomColor()
-    }
-    
-    private func animateFadeQuote() {
-        chainedAnimationsWith(duration: 0.2,
-            completion: { _ in
-                self.quoteLabel.text = nil
-            },
-            animations: [
-                {
-                    self.view.backgroundColor = self.Grey1
-                    self.imageView.alpha = 1.0
-                    self.quoteLabel.alpha = 0.0
-                }
-            ]
-        )
     }
     
     private func presentAcitvityViewControllerWithScreenShot(screenshot: UIImage) {

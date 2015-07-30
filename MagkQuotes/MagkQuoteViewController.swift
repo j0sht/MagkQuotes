@@ -13,6 +13,7 @@ class MagkQuoteViewController: UIViewController {
     private struct MagickSelectors {
         static let LongPress = Selector("longPress:")
         static let LongPressScreenShot = Selector("longPressScreenshot")
+        static let animateFadeQuote = Selector("animateFadeQuote")
     }
 
     // MARK:- Properties
@@ -30,6 +31,7 @@ class MagkQuoteViewController: UIViewController {
     private var currentAuthorQuotePair: (author: Author, quote: Quote)!
     
     private var longpressScreenshotTimer: NSTimer!
+    private var screenshotTimer: NSTimer!
     
     private var pressCount = 0
     
@@ -38,12 +40,18 @@ class MagkQuoteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
         imageView.animationImages = ImageResource.images
         imageView.animationDuration = 0.6
         
         quoteCollection = QuoteCollection(fileName: "QuoteCollection1")
         
         introAnimation()
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 
     // MARK:- Custom Methods
@@ -56,6 +64,13 @@ class MagkQuoteViewController: UIViewController {
             pressCount++
             
             if pressCount < 2 {
+                screenshotTimer = NSTimer.scheduledTimerWithTimeInterval(7,
+                    target: self,
+                    selector: MagickSelectors.animateFadeQuote,
+                    userInfo: nil,
+                    repeats: false
+                )
+                
                 dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)) {
                     
                     // Put expensive code here
@@ -90,6 +105,7 @@ class MagkQuoteViewController: UIViewController {
             }
             
             if pressCount > 1 {
+                screenshotTimer.invalidate()
                 longpressScreenshotTimer = NSTimer.scheduledTimerWithTimeInterval(0.7,
                     target: self,
                     selector: MagickSelectors.LongPressScreenShot,
@@ -135,21 +151,6 @@ class MagkQuoteViewController: UIViewController {
         quoteLabel.text = nil
     }
     
-    private func animateFadeQuote() {
-        chainedAnimationsWith(duration: 0.2,
-            completion: { _ in
-                self.quoteLabel.text = nil
-            },
-            animations: [
-                {
-                    self.view.backgroundColor = self.Grey1
-                    self.imageView.alpha = 1.0
-                    self.quoteLabel.alpha = 0.0
-                }
-            ]
-        )
-    }
-    
     // MARK: Private Methods
     private func generateScreenShot(#before: (() -> Void)?, after: (() -> Void)?) -> UIImage {
         
@@ -172,6 +173,21 @@ class MagkQuoteViewController: UIViewController {
     
     private func setRandomColor() {
         view.backgroundColor = getRandomColor()
+    }
+    
+    func animateFadeQuote() {
+        chainedAnimationsWith(duration: 0.2,
+            completion: { _ in
+                self.quoteLabel.text = nil
+            },
+            animations: [
+                {
+                    self.view.backgroundColor = self.Grey1
+                    self.imageView.alpha = 1.0
+                    self.quoteLabel.alpha = 0.0
+                }
+            ]
+        )
     }
     
     private func presentAcitvityViewControllerWithScreenShot(screenshot: UIImage) {

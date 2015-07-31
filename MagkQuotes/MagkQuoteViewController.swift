@@ -214,7 +214,7 @@ class MagkQuoteViewController: UIViewController {
                 }
                 
                 if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad {
-                    popUp.presentPopoverFromRect(CGRectMake(self.heartLabel.frame.origin.x + 15, self.heartLabel.frame.origin.y, 2, 2), inView: self.view, permittedArrowDirections: UIPopoverArrowDirection.Down, animated: true)
+                    popUp.presentPopoverFromRect(CGRectMake(self.heartLabel.frame.origin.x + 13, self.heartLabel.frame.origin.y, 2, 2), inView: self.view, permittedArrowDirections: UIPopoverArrowDirection.Down, animated: false)
                 } else {
                     self.presentViewController(activityVC, animated: true, completion: nil)
                 }

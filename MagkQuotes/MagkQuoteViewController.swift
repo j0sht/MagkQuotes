@@ -43,7 +43,7 @@ class MagkQuoteViewController: UIViewController {
         
         
         imageView.animationImages = ImageResource.images
-        imageView.animationDuration = 0.6
+        imageView.animationDuration = 0.66
         
         quoteCollection = QuoteCollection(fileName: "QuoteCollection1")
         

@@ -17,6 +17,8 @@ enum ImageResource: String {
     case SquaredCircle = "Squaredcircle"
     case SunSymbol = "Sun_symbol"
     case ErisSymbol = "Eris_symbol_2"
+    case PeaceSymbol = "Peace_symbol"
+    case HeartSymbol = "Heart_empty_font_awesome"
     
     static var names: [String] {
         return [
@@ -26,7 +28,8 @@ enum ImageResource: String {
             ImageResource.InvertedPentagram.rawValue,
             ImageResource.SquaredCircle.rawValue,
             ImageResource.SunSymbol.rawValue,
-            ImageResource.ErisSymbol.rawValue
+            ImageResource.ErisSymbol.rawValue,
+            ImageResource.PeaceSymbol.rawValue
         ]
     }
     

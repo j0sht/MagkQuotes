@@ -36,6 +36,7 @@ class MagkQuoteViewController: UIViewController {
     private var pressCount = 0
     
     private var takingScreenShot = false
+    private var finishedIntro = false
     
     // MARK:- UIViewController Methods
     // MARK:-
@@ -62,9 +63,10 @@ class MagkQuoteViewController: UIViewController {
     // TODO: Change UX flow: Press to get quote; press then hold to share
     func longPress(press: UILongPressGestureRecognizer) {
         
-        let tapToDismiss = (press.state == UIGestureRecognizerState.Ended && pressCount > 1)
+        let tapToDismiss = (press.state == .Ended && pressCount > 1)
+        let summonedScreenshot = (press.state == .Began && !takingScreenShot)
         
-        if press.state == UIGestureRecognizerState.Began && !takingScreenShot {
+        if summonedScreenshot {
             pressCount++
             
             if pressCount < 2 {
@@ -86,26 +88,28 @@ class MagkQuoteViewController: UIViewController {
                     dispatch_async(dispatch_get_main_queue()) {
                         self.quoteLabel.text = quoteText
                         //self.quoteLabel.fitToAvoidWordWrapping()
-                        chainedAnimationsWith(
-                            duration: 0.2,
-                            completion: nil,
-                            animations: [
-                                {
-                                    self.setRandomColor()
-                                    self.imageView.alpha = 0.0
-                                    self.quoteLabel.alpha = 1.0
-                                    
-                                    self.quoteLabel.transform = CGAffineTransformMakeScale(0.96, 0.96)
-                                },
-                                {
-                                    
-                                    self.quoteLabel.transform = CGAffineTransformMakeScale(1.02, 1.02)
-                                },
-                                {
-                                    self.quoteLabel.transform = CGAffineTransformMakeScale(1, 1)
-                                }
-                            ]
-                        )
+                        UIView.animateWithDuration(0.12,
+                            animations: {self.imageView.alpha = 0.0}) { _ in
+                            chainedAnimationsWith(
+                                duration: 0.22,
+                                completion: nil,
+                                animations: [
+                                    {
+                                        self.setRandomColor()
+                                        self.quoteLabel.alpha = 1.0
+                                        
+                                        self.quoteLabel.transform = CGAffineTransformMakeScale(0.96, 0.96)
+                                    },
+                                    {
+                                        
+                                        self.quoteLabel.transform = CGAffineTransformMakeScale(1.02, 1.02)
+                                    },
+                                    {
+                                        self.quoteLabel.transform = CGAffineTransformMakeScale(1, 1)
+                                    }
+                                ]
+                            )
+                        }
                     }
                 }
             }
@@ -154,11 +158,14 @@ class MagkQuoteViewController: UIViewController {
     }
     
     func hideQuote() {
-        view.backgroundColor = Grey1
-        imageView.alpha = 1
-        quoteLabel.alpha = 0
-        quoteLabel.text = nil
-        pressCount = 0
+        if finishedIntro {
+            view.backgroundColor = Grey1
+            imageView.alpha = 1
+            quoteLabel.alpha = 0
+            quoteLabel.text = nil
+            pressCount = 0
+            if screenshotTimer.valid { screenshotTimer.invalidate() }
+        }
     }
     
     // MARK: Private Methods
@@ -187,7 +194,7 @@ class MagkQuoteViewController: UIViewController {
     
     func animateFadeQuote() {
         pressCount = 0
-        chainedAnimationsWith(duration: 0.2,
+        chainedAnimationsWith(duration: 0.3,
             completion: { _ in
                 self.quoteLabel.text = nil
             },
@@ -256,6 +263,7 @@ class MagkQuoteViewController: UIViewController {
                                 self.imageView.startAnimating()
                                 
                                 self.initiateLongPress()
+                                self.finishedIntro = true
                             },
                             animations: [
                                 {self.countdownLabel.transform = CGAffineTransformMakeScale(1.2, 1.2)},

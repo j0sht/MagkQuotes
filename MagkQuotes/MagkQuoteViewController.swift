@@ -158,6 +158,7 @@ class MagkQuoteViewController: UIViewController {
         imageView.alpha = 1
         quoteLabel.alpha = 0
         quoteLabel.text = nil
+        pressCount = 0
     }
     
     // MARK: Private Methods

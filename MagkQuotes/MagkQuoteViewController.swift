@@ -35,6 +35,8 @@ class MagkQuoteViewController: UIViewController {
     
     private var pressCount = 0
     
+    private var takingScreenShot = false
+    
     // MARK:- UIViewController Methods
     // MARK:-
     override func viewDidLoad() {
@@ -50,8 +52,8 @@ class MagkQuoteViewController: UIViewController {
         introAnimation()
     }
     
-    override func prefersStatusBarHidden() -> Bool {
-        return true
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
 
     // MARK:- Custom Methods
@@ -60,11 +62,15 @@ class MagkQuoteViewController: UIViewController {
     // TODO: Change UX flow: Press to get quote; press then hold to share
     func longPress(press: UILongPressGestureRecognizer) {
         
-        if press.state == UIGestureRecognizerState.Began {
+        let tapToDismiss = (press.state == UIGestureRecognizerState.Ended && pressCount > 1)
+        
+        if press.state == UIGestureRecognizerState.Began && !takingScreenShot {
             pressCount++
             
             if pressCount < 2 {
-                screenshotTimer = NSTimer.scheduledTimerWithTimeInterval(7,
+                
+                // Amount of time user has to take screen shot
+                screenshotTimer = NSTimer.scheduledTimerWithTimeInterval(9,
                     target: self,
                     selector: MagickSelectors.animateFadeQuote,
                     userInfo: nil,
@@ -113,9 +119,11 @@ class MagkQuoteViewController: UIViewController {
                     repeats: false
                 )
             }
-        } else if press.state == UIGestureRecognizerState.Ended && pressCount > 1 {
+            
+        } else if tapToDismiss {
             if longpressScreenshotTimer.valid {
                 longpressScreenshotTimer.invalidate()
+                screenshotTimer.invalidate()
                 animateFadeQuote()
                 pressCount = 0
             }
@@ -123,6 +131,7 @@ class MagkQuoteViewController: UIViewController {
     }
     
     func longPressScreenshot() {
+        takingScreenShot = true
         chainedAnimationsWith(duration: 0.24,
             completion: { _ in
                 let screenshot = self.generateScreenShot(before: nil, after: nil)
@@ -176,6 +185,7 @@ class MagkQuoteViewController: UIViewController {
     }
     
     func animateFadeQuote() {
+        pressCount = 0
         chainedAnimationsWith(duration: 0.2,
             completion: { _ in
                 self.quoteLabel.text = nil
@@ -204,6 +214,7 @@ class MagkQuoteViewController: UIViewController {
                 activityVC.completionWithItemsHandler = {
                     (s: String!, ok: Bool, items: [AnyObject]!, err: NSError!) -> Void in
                     // Where you do something when the activity view is completed.
+                    self.takingScreenShot = false
                     self.animateFadeQuote()
                     self.dismissViewControllerAnimated(true, completion: nil)
                 }

@@ -23,7 +23,7 @@ struct QuoteCollection: Printable {
                             let quoteCollectionArrayForAuthor = collection[author]!
                             var quotes: [Quote] = []
                             for quoteProperties in quoteCollectionArrayForAuthor {
-                                let theQuote = quoteProperties["quote"]!
+                                let theQuote = quoteProperties["quote"]!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
                                 var quote = Quote(quote: theQuote)
                                 if let source = quoteProperties["source"] {
                                     quote.source = source

@@ -31,7 +31,7 @@ class MagkQuoteViewController: UIViewController {
     private var currentAuthorQuotePair: (author: Author, quote: Quote)!
     
     private var longpressScreenshotTimer: NSTimer!
-    private var screenshotTimer: NSTimer!
+    private var screenshotTimer: NSTimer?
     
     private var pressCount = 0
     
@@ -115,7 +115,7 @@ class MagkQuoteViewController: UIViewController {
             }
             
             if pressCount > 1 {
-                screenshotTimer.invalidate()
+                screenshotTimer?.invalidate()
                 longpressScreenshotTimer = NSTimer.scheduledTimerWithTimeInterval(0.7,
                     target: self,
                     selector: MagickSelectors.LongPressScreenShot,
@@ -127,7 +127,7 @@ class MagkQuoteViewController: UIViewController {
         } else if tapToDismiss {
             if longpressScreenshotTimer.valid {
                 longpressScreenshotTimer.invalidate()
-                screenshotTimer.invalidate()
+                screenshotTimer?.invalidate()
                 animateFadeQuote()
                 pressCount = 0
             }
@@ -164,7 +164,11 @@ class MagkQuoteViewController: UIViewController {
             quoteLabel.alpha = 0
             quoteLabel.text = nil
             pressCount = 0
-            if screenshotTimer.valid { screenshotTimer.invalidate() }
+            if let yes = screenshotTimer?.valid {
+                if yes {
+                    screenshotTimer?.invalidate()
+                }
+            }
         }
     }
     

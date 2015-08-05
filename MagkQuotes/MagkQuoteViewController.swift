@@ -30,6 +30,8 @@ class MagkQuoteViewController: UIViewController {
     private var quoteCollection: QuoteCollection!
     private var currentAuthorQuotePair: (author: Author, quote: Quote)!
     
+    private var longPressToPauseAnimation: UILongPressGestureRecognizer!
+    
     private var longpressScreenshotTimer: NSTimer!
     private var screenshotTimer: NSTimer?
     
@@ -198,9 +200,11 @@ class MagkQuoteViewController: UIViewController {
     
     func animateFadeQuote() {
         pressCount = 0
+        longPressToPauseAnimation.enabled = false
         chainedAnimationsWith(duration: 0.3,
             completion: { _ in
                 self.quoteLabel.text = nil
+                self.longPressToPauseAnimation.enabled = true
             },
             animations: [
                 {
@@ -292,7 +296,7 @@ class MagkQuoteViewController: UIViewController {
     }
     
     private func initiateLongPress() {
-        let longPressToPauseAnimation = UILongPressGestureRecognizer(
+        longPressToPauseAnimation = UILongPressGestureRecognizer(
             target: self,
             action: MagickSelectors.LongPress
         )

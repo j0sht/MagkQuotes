@@ -73,8 +73,8 @@ class MagkQuoteViewController: UIViewController {
             
             if pressCount < 2 {
                 
-                // Amount of time user has to take screen shot
-                screenshotTimer = NSTimer.scheduledTimerWithTimeInterval(9,
+                let availableLengthOfTimeToTakeScreenshot: NSTimeInterval = 11
+                screenshotTimer = NSTimer.scheduledTimerWithTimeInterval(availableLengthOfTimeToTakeScreenshot,
                     target: self,
                     selector: MagickSelectors.animateFadeQuote,
                     userInfo: nil,
@@ -89,7 +89,7 @@ class MagkQuoteViewController: UIViewController {
                     
                     dispatch_async(dispatch_get_main_queue()) {
                         self.quoteLabel.text = quoteText
-                        //self.quoteLabel.fitToAvoidWordWrapping()
+                        self.quoteLabel.fitToAvoidWordWrapping()
                         UIView.animateWithDuration(0.12,
                             animations: {self.imageView.alpha = 0.0}) { _ in
                             chainedAnimationsWith(
@@ -198,12 +198,14 @@ class MagkQuoteViewController: UIViewController {
         view.backgroundColor = getRandomColor()
     }
     
+    // MARK: Called when quote is dismissed
     func animateFadeQuote() {
         pressCount = 0
         longPressToPauseAnimation.enabled = false
         chainedAnimationsWith(duration: 0.3,
             completion: { _ in
                 self.quoteLabel.text = nil
+                self.quoteLabel.sizeToFit()
                 self.longPressToPauseAnimation.enabled = true
             },
             animations: [

@@ -43,15 +43,22 @@ class MagkQuoteViewController: UIViewController {
     // MARK: DEBUG FUNCTION
     private var fontSize: CGFloat!
     private var fontName: String!
+    private var functionCallNumber = 0
     
     private func printSizeOfFont() {
+        functionCallNumber++
+        
         let fontSize = quoteLabel.font.pointSize
         let fontName = quoteLabel.font.fontName
         let fontFamilyName = quoteLabel.font.familyName
         let minimum = quoteLabel.minimumScaleFactor
         
-        println("fontSize = \(fontSize) | minimumScale = \(minimum)")
-        println("fontName = \(fontName) | fontFamilyName = \(fontFamilyName)")
+        println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+        println("Function Call # \(functionCallNumber)")
+        println("----------------------------------------")
+        println("fontSize = \(fontSize)\nminimumScale = \(minimum)")
+        println("fontName = \(fontName)\nfontFamilyName = \(fontFamilyName)")
+        println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
     }
     
     // MARK:- UIViewController Methods

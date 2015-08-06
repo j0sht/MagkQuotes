@@ -40,17 +40,25 @@ class MagkQuoteViewController: UIViewController {
     private var takingScreenShot = false
     private var finishedIntro = false
     
+    // MARK: DEBUG FUNCTION
+    private func printSizeOfFont() {
+        let fontSize = quoteLabel.font.pointSize
+        let minimum = quoteLabel.minimumScaleFactor
+        
+        println("fontSize = \(fontSize) | minimumScale = \(minimum)")
+    }
+    
     // MARK:- UIViewController Methods
     // MARK:-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
         imageView.animationImages = ImageResource.images
         imageView.animationDuration = 0.66
         
         quoteCollection = QuoteCollection(fileName: "QuoteCollection1")
+        
+        printSizeOfFont()
         
         introAnimation()
     }
@@ -90,6 +98,7 @@ class MagkQuoteViewController: UIViewController {
                     dispatch_async(dispatch_get_main_queue()) {
                         self.quoteLabel.text = quoteText
                         self.quoteLabel.fitToAvoidWordWrapping()
+                        self.printSizeOfFont()
                         UIView.animateWithDuration(0.12,
                             animations: {self.imageView.alpha = 0.0}) { _ in
                             chainedAnimationsWith(
@@ -206,6 +215,7 @@ class MagkQuoteViewController: UIViewController {
             completion: { _ in
                 self.quoteLabel.text = nil
                 self.quoteLabel.sizeToFit()
+                self.printSizeOfFont()
                 self.longPressToPauseAnimation.enabled = true
             },
             animations: [

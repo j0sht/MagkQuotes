@@ -41,11 +41,17 @@ class MagkQuoteViewController: UIViewController {
     private var finishedIntro = false
     
     // MARK: DEBUG FUNCTION
+    private var fontSize: CGFloat!
+    private var fontName: String!
+    
     private func printSizeOfFont() {
         let fontSize = quoteLabel.font.pointSize
+        let fontName = quoteLabel.font.fontName
+        let fontFamilyName = quoteLabel.font.familyName
         let minimum = quoteLabel.minimumScaleFactor
         
         println("fontSize = \(fontSize) | minimumScale = \(minimum)")
+        println("fontName = \(fontName) | fontFamilyName = \(fontFamilyName)")
     }
     
     // MARK:- UIViewController Methods
@@ -58,6 +64,8 @@ class MagkQuoteViewController: UIViewController {
         
         quoteCollection = QuoteCollection(fileName: "QuoteCollection1")
         
+        fontSize = quoteLabel.font.pointSize
+        fontName = quoteLabel.font.fontName
         printSizeOfFont()
         
         introAnimation()
@@ -214,7 +222,7 @@ class MagkQuoteViewController: UIViewController {
         chainedAnimationsWith(duration: 0.3,
             completion: { _ in
                 self.quoteLabel.text = nil
-                self.quoteLabel.sizeToFit()
+                self.quoteLabel.font = UIFont(name: self.fontName, size: self.fontSize)
                 self.printSizeOfFont()
                 self.longPressToPauseAnimation.enabled = true
             },

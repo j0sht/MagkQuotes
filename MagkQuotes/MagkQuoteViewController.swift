@@ -71,6 +71,8 @@ class MagkQuoteViewController: UIViewController {
         
         quoteCollection = QuoteCollection(fileName: "QuoteCollection1")
         
+//        println("Number of author-quote pairs: \(quoteCollection.generateAuthorQuotePairList().count)")
+        
         fontSize = quoteLabel.font.pointSize
         fontName = quoteLabel.font.fontName
         printSizeOfFont()

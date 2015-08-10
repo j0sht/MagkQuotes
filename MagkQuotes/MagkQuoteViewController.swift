@@ -75,7 +75,7 @@ class MagkQuoteViewController: UIViewController {
         
         fontSize = quoteLabel.font.pointSize
         fontName = quoteLabel.font.fontName
-        printSizeOfFont()
+        //printSizeOfFont()
         
         introAnimation()
     }
@@ -115,7 +115,7 @@ class MagkQuoteViewController: UIViewController {
                     dispatch_async(dispatch_get_main_queue()) {
                         self.quoteLabel.text = quoteText
                         self.quoteLabel.fitToAvoidWordWrapping()
-                        self.printSizeOfFont()
+                        //self.printSizeOfFont()
                         UIView.animateWithDuration(0.12,
                             animations: {self.imageView.alpha = 0.0}) { _ in
                             chainedAnimationsWith(
@@ -232,7 +232,7 @@ class MagkQuoteViewController: UIViewController {
             completion: { _ in
                 self.quoteLabel.text = nil
                 self.quoteLabel.font = UIFont(name: self.fontName, size: self.fontSize)
-                self.printSizeOfFont()
+//                self.printSizeOfFont()
                 self.longPressToPauseAnimation.enabled = true
             },
             animations: [

@@ -87,7 +87,6 @@ class MagkQuoteViewController: UIViewController {
     // MARK:- Custom Methods
     // MARK:- Gesture Recognizers
     
-    // TODO: Change UX flow: Press to get quote; press then hold to share
     func longPress(press: UILongPressGestureRecognizer) {
         
         let tapToDismiss = (press.state == .Ended && pressCount > 1)
@@ -111,6 +110,7 @@ class MagkQuoteViewController: UIViewController {
                     // Put expensive code here
                     self.currentAuthorQuotePair = self.quoteCollection.getAuthorQuotePair()
                     let quoteText = self.quoteCollection.authorQuoteString(self.currentAuthorQuotePair)
+                    // TODO: Italicize the author name.
                     
                     dispatch_async(dispatch_get_main_queue()) {
                         self.quoteLabel.text = quoteText

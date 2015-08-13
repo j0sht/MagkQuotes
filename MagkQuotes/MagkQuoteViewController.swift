@@ -67,7 +67,7 @@ class MagkQuoteViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         imageView.animationImages = ImageResource.images
-        imageView.animationDuration = 0.66
+        imageView.animationDuration = 0.6
         
         quoteCollection = QuoteCollection(fileName: "QuoteCollection1")
         
@@ -95,7 +95,7 @@ class MagkQuoteViewController: UIViewController {
             
             if pressCount < 2 {
                 
-                let availableLengthOfTimeToTakeScreenshot: NSTimeInterval = 11
+                let availableLengthOfTimeToTakeScreenshot: NSTimeInterval = 15
                 screenshotTimer = NSTimer.scheduledTimerWithTimeInterval(availableLengthOfTimeToTakeScreenshot,
                     target: self,
                     selector: MagickSelectors.animateFadeQuote,

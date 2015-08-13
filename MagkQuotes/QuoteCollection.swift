@@ -41,7 +41,7 @@ struct QuoteCollection: Printable {
             }
         }
         authorQuotePairs = generateAuthorQuotePairList()
-        println("Number of author-quote pairs: \(authorQuotePairs.count)")
+        printStats()
     }
     
     var description: String {
@@ -82,5 +82,12 @@ struct QuoteCollection: Printable {
         let quote = authorQuotePair.quote.quote
         let authorName = authorQuotePair.author.name
         return "\"\(quote)\"" + "\n\n-" + authorName
+    }
+    
+    private func printStats() {
+        let quoteCount = authorQuotePairs.count
+        let authorCount = authors.count
+        println("Number of author-quote pairs: \(quoteCount)")
+        println("Number of quotes per author: \(Double(quoteCount) / Double(authorCount))")
     }
 }

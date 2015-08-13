@@ -41,6 +41,7 @@ struct QuoteCollection: Printable {
             }
         }
         authorQuotePairs = generateAuthorQuotePairList()
+        println("Number of author-quote pairs: \(authorQuotePairs.count)")
     }
     
     var description: String {

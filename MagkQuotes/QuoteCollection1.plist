@@ -3,6 +3,403 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>Christian Dior</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>My dream is to save women from nature.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The detail is as important as the essential is. When it is inadequate, it destroys the whole outfit.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>A country, a style or an epoch are interesting only for the idea behind them.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>You can wear black at any time. You can wear it at any age.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>You can never really go wrong if you take nature as an example.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Without foundations, there can be no fashion.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Zest is the secret of all beauty. There is no beauty that is attractive without zest.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The tones of gray, pale turquoise and pink will prevail.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>On vacation, you can wear all the colorful and casual clothing that you like, but you must always be elegant.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>There is certainly a red for everyone.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Deep in every heart slumbers a dream, and the couturier knows it: every woman is a princess.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>After women, flowers are the most lovely thing God has given the world.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>R. L. Stine</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>People always ask, &apos;How do you write so many books?&apos; And I say, I work a lot.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I&apos;ve never dreamed of a story idea. I have such boring dreams.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>At least I can write.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>If you want to be a writer, don&apos;t worry so much about writing.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Well, when I was 13, for my bar mitzvah I received my first typewriter. And that was special.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>After spending 22 years in Ohio, I love everything about New York.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>A real New Yorker likes the sound of a garbage truck in the morning.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I feel happy to terrify kids.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Read. Read. Read. Just don&apos;t read one type of book.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Nikola Tesla</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>To me the universe is simply a great machine which never came into being and never will end.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Power is our mainstay, the primary source of our many-sided energies.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The history of science shows that theories are perishable.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The spread of civilization may be likened to a fire; first, a feeble spark, next a flickering flame, then a mighty blaze, ever increasing in speed and power.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Merciless is the law of nature, and rapidly and irresistibly we are drawn to our doom.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>From an incandescent mass we have originated, and into a frozen mass we shall turn.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>...wherever there is life, there is a mass moved by a force. All mass possesses inertia; all force tends to persist.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>One must be sane to think clearly, but one can think deeply and be quite insane.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Electrical science has revealed to us the true nature of light...</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Andrew Carnegie</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>There is no class so pitiably wretched as that which possesses money and nothing else.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Every act you have ever performed since the day you were born was performed because you wanted something.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Aim for the highest.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The first man gets the oyster, the second man gets the shell.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>He that cannot reason is a fool. He that will not is a bigot. He that dare not is a slave.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Surplus wealth is a sacred trust which its possessor is bound to administer in his lifetime for the good of the community.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Whatever I engage in, I must push inordinately.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>You cannot push any one up a ladder unless he be willing to climb a little himself.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>All honor&apos;s wounds are self-inflicted.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>There is little success where there is little laughter.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>A whole, clear, glorious life lies before you. Achieve! Achieve!</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Concentration is my motto - first honesty, then industry, then concentration.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The way to become rich is to put all your eggs in one basket and then watch that basket.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>People who are unable to motivate themselves must be content with mediocrity, no matter how impressive their other talents.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Do your duty and a little more and the future will take care of itself.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>No man will make a great leader who wants to do it all himself or get all the credit for doing it.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>As I grow older, I pay less attention to what men say. I just watch what they do.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Abraham Lincoln</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>Public opinion in this country is everything.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>...if I did not laugh, I should die.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The way for a young man to rise is to improve himself in every way he can, never suspecting that anybody wishes to hinder him.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Republicans are for both the man and the dollar, but in the case of conflict, the man before the dollar.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Towering genius disdains a beaten path. It seeks regions hitherto unexplored.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>What kills a skunk is the publicity it gives itself.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Books serve to show a man that those original thoughts of his aren&apos;t very new at all.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Knavery and flattery are blood relations.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I care not much for a man&apos;s religion whose dog and cat are not the better for it.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>If I were two-faced, would I be wearing this one?</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Tact is the ability to describe others as they see themselves.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>It has been my experience that folks who have no vices have very few virtues.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>He has a right to criticize, who has a heart to help.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>A woman is the only thing I am afraid of that I know will not hurt me.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>No matter how much cats fight, there always seem to be plenty of kittens.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Avoid popularity if you would have peace.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I do not think much of a man who is not wiser today than he was yesterday.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Important principles may, and must, be inflexible.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I destroy my enemies when I make them my friends.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>We should be too big to take offense and too noble to give it.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>All my life I have tried to pluck a thistle and plant a flower wherever the flower would grow in thought and mind.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I will prepare and some day my chance will come.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Discourage litigation.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Everybody likes a compliment.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I have always found that mercy bears richer fruits than strict justice.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>No man has a good enough memory to be a successful liar.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>America will never be destroyed from the outside. If we falter and lose our freedoms, it will be because we destroyed ourselves.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>That some achieve great success, is proof to all that others can achieve it as well.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I&apos;m a slow walker, but I never walk back.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Whatever you are, be a good one.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>When I do good, I feel good. When I do bad, I feel bad. That&apos;s my religion.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>I remember my mother&apos;s prayers and they have always followed me. They have clung to me all my life.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Don&apos;t worry when you are not recognized, but strive to be worthy of recognition.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Always bear in mind that your own resolution to succeed is more important than any other.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The philosophy of the school room in one generation will be the philosophy of government in the next.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>My dream is of a place and a time where America will once again be seen as the last best hope of earth.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>You cannot escape the responsibility of tomorrow by evading it today.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The best way to destroy an enemy is to make him a friend.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Better to remain silent and be thought a fool than to speak out and remove all doubt.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Nearly all men can stand adversity, but if you want to test a man&apos;s character, give him power.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>All that I am, or hope to be, I owe to my angel mother.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Character is like a tree and reputation like a shadow. The shadow is what we think of it; the tree is the real thing.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Most folks are as happy as they make up their minds to be.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Be sure you put your feet in the right place, then stand firm.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>In the end, it&apos;s not the years in your life that count. It&apos;s the life in your years.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
 		<key>George Washington</key>
 		<array>
 			<dict>

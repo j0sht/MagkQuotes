@@ -67,7 +67,7 @@ class MagkQuoteViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         imageView.animationImages = ImageResource.images
-        imageView.animationDuration = 0.6
+        imageView.animationDuration = 0.65
         
         quoteCollection = QuoteCollection(fileName: "QuoteCollection1")
         

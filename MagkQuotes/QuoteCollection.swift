@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct QuoteCollection: Printable {
+class QuoteCollection: Printable {
     
     private(set)var authors: [Author] = []
     private var authorQuotePairs: [(author: Author, quote: Quote)]!
@@ -71,7 +71,7 @@ struct QuoteCollection: Printable {
         return result
     }
     
-    mutating func getAuthorQuotePair() -> (author: Author, quote: Quote) {
+    func getAuthorQuotePair() -> (author: Author, quote: Quote) {
         if authorQuotePairs.isEmpty {
             authorQuotePairs = generateAuthorQuotePairList()
         }
@@ -82,6 +82,10 @@ struct QuoteCollection: Printable {
         let quote = authorQuotePair.quote.quote
         let authorName = authorQuotePair.author.name
         return "\"\(quote)\"" + "\n\n-" + authorName
+    }
+    
+    func shufflePairs() {
+        authorQuotePairs.shuffle()
     }
     
     private func printStats() {

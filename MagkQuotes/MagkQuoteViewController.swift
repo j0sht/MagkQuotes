@@ -106,6 +106,7 @@ class MagkQuoteViewController: UIViewController {
                 dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)) {
                     
                     // Put expensive code here
+                    self.quoteCollection.shufflePairs()
                     self.currentAuthorQuotePair = self.quoteCollection.getAuthorQuotePair()
                     let quoteText = self.quoteCollection.authorQuoteString(self.currentAuthorQuotePair)
                     // TODO: Italicize the author name.

@@ -27,7 +27,7 @@ class MagkQuoteViewController: UIViewController {
     // MARK: Private Properties
     private let Grey1 = UIColor(red: 242, green: 242, blue: 242)
     
-    private var quoteCollection: QuoteCollection!
+    private let quoteCollection = QuoteCollection(fileName: "QuoteCollection1")
     private var currentAuthorQuotePair: (author: Author, quote: Quote)!
     
     private var longPressToPauseAnimation: UILongPressGestureRecognizer!
@@ -45,35 +45,16 @@ class MagkQuoteViewController: UIViewController {
     private var fontName: String!
     private var functionCallNumber = 0
     
-    private func printSizeOfFont() {
-        functionCallNumber++
-        
-        let fontSize = quoteLabel.font.pointSize
-        let fontName = quoteLabel.font.fontName
-        let fontFamilyName = quoteLabel.font.familyName
-        let minimum = quoteLabel.minimumScaleFactor
-        
-        println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-        println("Function Call # \(functionCallNumber)")
-        println("----------------------------------------")
-        println("fontSize = \(fontSize)\nminimumScale = \(minimum)")
-        println("fontName = \(fontName)\nfontFamilyName = \(fontFamilyName)")
-        println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-    }
-    
     // MARK:- UIViewController Methods
     // MARK:-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         imageView.animationImages = ImageResource.images
-        imageView.animationDuration = 0.65
-        
-        quoteCollection = QuoteCollection(fileName: "QuoteCollection1")
+        imageView.animationDuration = 0.59
         
         fontSize = quoteLabel.font.pointSize
         fontName = quoteLabel.font.fontName
-        //printSizeOfFont()
         
         introAnimation()
     }
@@ -114,7 +95,6 @@ class MagkQuoteViewController: UIViewController {
                     dispatch_async(dispatch_get_main_queue()) {
                         self.quoteLabel.text = quoteText
                         self.quoteLabel.fitToAvoidWordWrapping()
-                        //self.printSizeOfFont()
                         UIView.animateWithDuration(0.12,
                             animations: {self.imageView.alpha = 0.0}) { _ in
                             chainedAnimationsWith(
@@ -231,7 +211,6 @@ class MagkQuoteViewController: UIViewController {
             completion: { _ in
                 self.quoteLabel.text = nil
                 self.quoteLabel.font = UIFont(name: self.fontName, size: self.fontSize)
-//                self.printSizeOfFont()
                 self.longPressToPauseAnimation.enabled = true
             },
             animations: [

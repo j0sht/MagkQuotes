@@ -40,10 +40,8 @@ class MagkQuoteViewController: UIViewController {
     private var takingScreenShot = false
     private var finishedIntro = false
     
-    // MARK: DEBUG FUNCTION
     private var fontSize: CGFloat!
     private var fontName: String!
-    private var functionCallNumber = 0
     
     // MARK:- UIViewController Methods
     // MARK:-

@@ -27,7 +27,7 @@ class MagkQuoteViewController: UIViewController {
     // MARK: Private Properties
     private let Grey1 = UIColor(red: 242, green: 242, blue: 242)
     
-    private let quoteCollection = QuoteCollection(fileName: "QuoteCollection1")
+    private let quoteCollection = QuoteCollection(fileName: "QuoteCollection")
     private var currentAuthorQuotePair: (author: Author, quote: Quote)!
     
     private var longPressToPauseAnimation: UILongPressGestureRecognizer!

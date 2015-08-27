@@ -3,6 +3,84 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>Jean-Jacques Rousseau</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>Fashion is a great thing, it&apos;s a way to express who you are.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>David Hume</key>
+		<array>
+			<dict>
+				<key>quote</key>
+				<string>When I shall be dead, the principles of which I am composed will still perform their part in the universe...</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>...it is possible for the same thing both to be and not to be.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>A purpose, an intention, a design, strikes every where the most careless, the most stupid thinker.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>To philosopher and historian the madness and imbecile wickedness of mankind ought to appear ordinary events.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The sweetest and most inoffensive path of life leads through the avenues of science and learning...</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Heaven and Hell suppose two distinct species of men, the Good and the Bad. But the greatest part of mankind float betwixt vice and virtue.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Liberty of any kind is never lost all at once.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>From what causes do I derive my existence, and to what condition shall I return?</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The life of man is of no greater importance to the universe than that of an oyster.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>He is happy whose circumstances suit his temper, but he is more excellent who can suit his temper to his circumstances.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>The truth springs from arguments amongst friends.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Reading and sauntering and lounging and dosing, which I call thinking, is my supreme happiness.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Reason is, and ought only to be the slave of passions.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>No man ever threw away life while it was worth keeping.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Generally speaking, the errors in religion are dangerous; those in philosophy only ridiculous.</string>
+			</dict>
+			<dict>
+				<key>quote</key>
+				<string>Beauty is no quality in things themselves: It exists merely in the mind which contemplates them; and each mind perceives a different beauty.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
 		<key>Goethe</key>
 		<array>
 			<dict>

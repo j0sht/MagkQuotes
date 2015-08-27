@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153D0FEA1B8ECBB0005831ED /* QuoteCollection.plist in Resources */ = {isa = PBXBuildFile; fileRef = 153D0FE91B8ECBB0005831ED /* QuoteCollection.plist */; };
 		1542FE291B5C398C00056E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE281B5C398C00056E13 /* AppDelegate.swift */; };
 		1542FE2B1B5C398C00056E13 /* MagkQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE2A1B5C398C00056E13 /* MagkQuoteViewController.swift */; };
 		1542FE2E1B5C398C00056E13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1542FE2C1B5C398C00056E13 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		153D0FE91B8ECBB0005831ED /* QuoteCollection.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QuoteCollection.plist; sourceTree = "<group>"; };
 		1542FE231B5C398C00056E13 /* MagkQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagkQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1542FE271B5C398C00056E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1542FE281B5C398C00056E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		1542FE531B5C3A2900056E13 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				153D0FE91B8ECBB0005831ED /* QuoteCollection.plist */,
 				1542FE4E1B5C3A2000056E13 /* QuoteCollection1.plist */,
 			);
 			name = Data;
@@ -258,6 +261,7 @@
 			files = (
 				1542FE5C1B5C3E0E00056E13 /* LaunchScreen.xib in Resources */,
 				1542FE521B5C3A2000056E13 /* QuoteCollection1.plist in Resources */,
+				153D0FEA1B8ECBB0005831ED /* QuoteCollection.plist in Resources */,
 				1542FE2E1B5C398C00056E13 /* Main.storyboard in Resources */,
 				1542FE301B5C398C00056E13 /* Images.xcassets in Resources */,
 			);

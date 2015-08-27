@@ -17,26 +17,13 @@ class QuoteCollection: Printable {
         if let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "plist") {
             if let array = NSArray(contentsOfFile: path) {
                 for item in array {
-                    if let collection = item as? [String:[[String:String]]] {
-                        let authorsArray = collection.keys.array
-                        for author in authorsArray {
-                            let quoteCollectionArrayForAuthor = collection[author]!
-                            var quotes: [Quote] = []
-                            for quoteProperties in quoteCollectionArrayForAuthor {
-                                let theQuote = quoteProperties["quote"]!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-                                var quote = Quote(quote: theQuote)
-                                if let source = quoteProperties["source"] {
-                                    quote.source = source
-                                }
-                                if let date = quoteProperties["year"] {
-                                    quote.date = date
-                                }
-                                quotes.append(quote)
-                            }
-                            let authorAndQuotes = Author(name: author, quotes: quotes)
-                            authors.append(authorAndQuotes)
-                        }
-                    }
+                    let authorProperties = item as! [String:AnyObject]
+                    let name = authorProperties["name"] as! String
+                    let wiki = authorProperties["wiki"] as! String
+                    let rawQuotes = authorProperties["quotes"] as! [String]
+                    let quotes = rawQuotes.map { return Quote(quote: $0) }
+                    let author = Author(name: name, wiki: wiki, quotes: quotes)
+                    authors.append(author)
                 }
             }
         }
@@ -46,6 +33,10 @@ class QuoteCollection: Printable {
     
     var description: String {
         return "\(authors)"
+    }
+    
+    var quoteCount: Int {
+        return authorQuotePairs.count
     }
     
     func getRandomAuthor() -> Author? {
@@ -60,11 +51,7 @@ class QuoteCollection: Printable {
         var result:[(author: Author, quote: Quote)] = []
         
         for author in authors {
-            var authorsQuotes: [(author: Author, quote: Quote)] = []
-            for quote in author.quotes {
-                authorsQuotes.append((author: author,quote: quote))
-            }
-            result += authorsQuotes
+            result += author.authorQuotePairs()
         }
         
         result.shuffle()

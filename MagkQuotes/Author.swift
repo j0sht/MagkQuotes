@@ -11,11 +11,16 @@ import Foundation
 struct Author: Printable {
     
     let name: String
+    var wiki: NSURL?
     let quotes: [Quote]
     
-    init(name: String, quotes: [Quote]) {
+    init(name: String, wiki: String, quotes: [Quote]) {
         self.name = name
         self.quotes = quotes
+        
+        if let wikiURL = NSURL(fileURLWithPath: wiki) {
+            self.wiki = wikiURL
+        }
     }
     
     var description: String {
@@ -38,5 +43,9 @@ struct Author: Printable {
         }
         result = join("", result.componentsSeparatedByString(" "))
         return "#" + result
+    }
+    
+    func authorQuotePairs() -> [(author: Author, quote: Quote)] {
+        return quotes.map { return (self, $0) }
     }
 }

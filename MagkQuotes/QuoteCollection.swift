@@ -14,18 +14,16 @@ class QuoteCollection: Printable {
     private var authorQuotePairs: [(author: Author, quote: Quote)]!
     
     init(fileName: String) {
-        if let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "plist") {
-            if let array = NSArray(contentsOfFile: path) {
-                for item in array {
-                    let authorProperties = item as! [String:AnyObject]
-                    let name = authorProperties["name"] as! String
-                    let wiki = authorProperties["wiki"] as! String
-                    let rawQuotes = authorProperties["quotes"] as! [String]
-                    let quotes = rawQuotes.map { return Quote(quote: $0) }
-                    let author = Author(name: name, wiki: wiki, quotes: quotes)
-                    authors.append(author)
-                }
-            }
+        let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "plist")!
+        let array = NSArray(contentsOfFile: path)!
+        for item in array {
+            let authorProperties = item as! [String:AnyObject]
+            let name = authorProperties["name"] as! String
+            let wiki = authorProperties["wiki"] as! String
+            let rawQuotes = authorProperties["quotes"] as! [String]
+            let quotes = rawQuotes.map { return Quote(quote: $0) }
+            let author = Author(name: name, wiki: wiki, quotes: quotes)
+            authors.append(author)
         }
         authorQuotePairs = generateAuthorQuotePairList()
         printStats()

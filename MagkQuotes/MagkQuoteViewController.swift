@@ -68,13 +68,11 @@ class MagkQuoteViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        println("viewWillAppear called.")
         super.viewWillAppear(animated)
         if quoteSummoned { updateScreenShotTimer() }
     }
     
     override func viewWillDisappear(animated: Bool) {
-        println("viewWillDisappear called.")
         super.viewWillDisappear(animated)
         screenshotTimer?.invalidate()
     }

@@ -62,7 +62,6 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
         webView.allowsBackForwardNavigationGestures = true
         
         if let url = wikiURL {
-            println("Got url: \(url)")
             let request = NSURLRequest(URL: url)
             webView.loadRequest(request)
         } else {

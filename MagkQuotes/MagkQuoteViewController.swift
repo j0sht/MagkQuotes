@@ -47,6 +47,8 @@ class MagkQuoteViewController: UIViewController {
     private var swipeUpToPresentWiki: UISwipeGestureRecognizer!
     var quoteSummoned = false
     
+    private var timeRemainingToTakeScreenshot: NSTimeInterval = 15
+    
     // MARK:- UIViewController Methods
     // MARK:-
     override func viewDidLoad() {
@@ -63,6 +65,18 @@ class MagkQuoteViewController: UIViewController {
         view.addGestureRecognizer(swipeUpToPresentWiki)
         
         introAnimation()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        println("viewWillAppear called.")
+        super.viewWillAppear(animated)
+        if quoteSummoned { updateScreenShotTimer() }
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        println("viewWillDisappear called.")
+        super.viewWillDisappear(animated)
+        screenshotTimer?.invalidate()
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -82,8 +96,7 @@ class MagkQuoteViewController: UIViewController {
             if pressCount < 2 {
                 // MARK: Quote summoned here
                 quoteSummoned = true
-                let availableLengthOfTimeToTakeScreenshot: NSTimeInterval = 15
-                screenshotTimer = NSTimer.scheduledTimerWithTimeInterval(availableLengthOfTimeToTakeScreenshot,
+                screenshotTimer = NSTimer.scheduledTimerWithTimeInterval(timeRemainingToTakeScreenshot,
                     target: self,
                     selector: MagickSelectors.AnimateFadeQuote,
                     userInfo: nil,
@@ -329,6 +342,15 @@ class MagkQuoteViewController: UIViewController {
         )
         longPressToPauseAnimation.minimumPressDuration = 0.124
         self.view.addGestureRecognizer(longPressToPauseAnimation)
+    }
+    
+    private func updateScreenShotTimer() {
+        screenshotTimer = NSTimer.scheduledTimerWithTimeInterval(timeRemainingToTakeScreenshot,
+            target: self,
+            selector: MagickSelectors.AnimateFadeQuote,
+            userInfo: nil,
+            repeats: false
+        )
     }
 }
 

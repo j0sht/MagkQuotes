@@ -96,6 +96,7 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         webView.removeObserver(self, forKeyPath: KeyPaths.EstimatedProgress)
+        stoppedLoading()
     }
     
     // MARK:- IBActions

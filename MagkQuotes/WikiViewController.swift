@@ -25,6 +25,7 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
     // MARK:- Public Properties
     // MARK:-
     var wikiURL: NSURL?
+    var isPresented = true
     // MARK:- IBOutlets
     @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var forwardButton: UIBarButtonItem!
@@ -101,6 +102,7 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
     
     // MARK:- IBActions
     @IBAction func closeButtonPressed(sender: UIBarButtonItem) {
+        isPresented = false
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 

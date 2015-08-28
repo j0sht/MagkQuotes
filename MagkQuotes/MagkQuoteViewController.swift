@@ -82,7 +82,7 @@ class MagkQuoteViewController: UIViewController {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
-
+    
     // MARK:- Custom Methods
     // MARK:- Gesture Recognizers
     func longPress(press: UILongPressGestureRecognizer) {

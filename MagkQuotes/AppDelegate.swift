@@ -42,8 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> Int {
-        if self.window?.rootViewController?.presentedViewController is UINavigationController {
-            let navVC = self.window!.rootViewController!.presentedViewController as! UINavigationController
+        if let navVC = self.window?.rootViewController?.presentedViewController as? UINavigationController {
             let wikiVC = navVC.viewControllers[0] as! WikiViewController
             if wikiVC.isPresented {
                 return Int(UIInterfaceOrientationMask.All.rawValue)

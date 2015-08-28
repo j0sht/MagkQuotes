@@ -22,6 +22,7 @@
 		1542FE5A1B5C3A8B00056E13 /* MagickColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE581B5C3A8B00056E13 /* MagickColors.swift */; };
 		1542FE5C1B5C3E0E00056E13 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1542FE5B1B5C3E0E00056E13 /* LaunchScreen.xib */; };
 		15C38FAB1B6362BA00F88458 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C38FAA1B6362BA00F88458 /* UIKitExtensions.swift */; };
+		15CCBD2B1B910D39001495A3 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CCBD2A1B910D39001495A3 /* WikiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		1542FE581B5C3A8B00056E13 /* MagickColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagickColors.swift; sourceTree = "<group>"; };
 		1542FE5B1B5C3E0E00056E13 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		15C38FAA1B6362BA00F88458 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		15CCBD2A1B910D39001495A3 /* WikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +135,9 @@
 		1542FE481B5C39C300056E13 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1542FE561B5C3A6100056E13 /* Helpers */,
+				15CCBD2A1B910D39001495A3 /* WikiViewController.swift */,
 				1542FE2A1B5C398C00056E13 /* MagkQuoteViewController.swift */,
+				1542FE561B5C3A6100056E13 /* Helpers */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				1542FE591B5C3A8B00056E13 /* ImageResource.swift in Sources */,
 				1542FE511B5C3A2000056E13 /* QuoteCollection.swift in Sources */,
 				1542FE2B1B5C398C00056E13 /* MagkQuoteViewController.swift in Sources */,
+				15CCBD2B1B910D39001495A3 /* WikiViewController.swift in Sources */,
 				1542FE291B5C398C00056E13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

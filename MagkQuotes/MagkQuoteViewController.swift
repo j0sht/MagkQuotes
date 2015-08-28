@@ -13,7 +13,8 @@ class MagkQuoteViewController: UIViewController {
     private struct MagickSelectors {
         static let LongPress = Selector("longPress:")
         static let LongPressScreenShot = Selector("longPressScreenshot")
-        static let animateFadeQuote = Selector("animateFadeQuote")
+        static let AnimateFadeQuote = Selector("animateFadeQuote")
+        static let SwipeUp = Selector("swipeUp")
     }
 
     // MARK:- Properties
@@ -24,7 +25,7 @@ class MagkQuoteViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var countdownLabel: UILabel!
     
-    // MARK: Private Properties
+    // MARK:- Private Properties
     private let Grey1 = UIColor(red: 242, green: 242, blue: 242)
     
     private let quoteCollection = QuoteCollection(fileName: "QuoteCollection")
@@ -43,6 +44,9 @@ class MagkQuoteViewController: UIViewController {
     private var fontSize: CGFloat!
     private var fontName: String!
     
+    private var swipeUpToPresentWiki: UISwipeGestureRecognizer!
+    var quoteSummoned = false
+    
     // MARK:- UIViewController Methods
     // MARK:-
     override func viewDidLoad() {
@@ -54,6 +58,10 @@ class MagkQuoteViewController: UIViewController {
         fontSize = quoteLabel.font.pointSize
         fontName = quoteLabel.font.fontName
         
+        swipeUpToPresentWiki = UISwipeGestureRecognizer(target: self, action: MagickSelectors.SwipeUp)
+        swipeUpToPresentWiki.direction = UISwipeGestureRecognizerDirection.Up
+        view.addGestureRecognizer(swipeUpToPresentWiki)
+        
         introAnimation()
     }
     
@@ -63,7 +71,6 @@ class MagkQuoteViewController: UIViewController {
 
     // MARK:- Custom Methods
     // MARK:- Gesture Recognizers
-    
     func longPress(press: UILongPressGestureRecognizer) {
         
         let tapToDismiss = (press.state == .Ended && pressCount > 1)
@@ -73,11 +80,12 @@ class MagkQuoteViewController: UIViewController {
             pressCount++
             
             if pressCount < 2 {
-                
+                // MARK: Quote summoned here
+                quoteSummoned = true
                 let availableLengthOfTimeToTakeScreenshot: NSTimeInterval = 15
                 screenshotTimer = NSTimer.scheduledTimerWithTimeInterval(availableLengthOfTimeToTakeScreenshot,
                     target: self,
-                    selector: MagickSelectors.animateFadeQuote,
+                    selector: MagickSelectors.AnimateFadeQuote,
                     userInfo: nil,
                     repeats: false
                 )
@@ -120,6 +128,7 @@ class MagkQuoteViewController: UIViewController {
             }
             
             if pressCount > 1 {
+                // MARK: Take screenshot here
                 screenshotTimer?.invalidate()
                 longpressScreenshotTimer = NSTimer.scheduledTimerWithTimeInterval(0.7,
                     target: self,
@@ -130,6 +139,7 @@ class MagkQuoteViewController: UIViewController {
             }
             
         } else if tapToDismiss {
+            // MARK: Quote dismissed here
             if longpressScreenshotTimer.valid {
                 longpressScreenshotTimer.invalidate()
                 screenshotTimer?.invalidate()
@@ -139,6 +149,17 @@ class MagkQuoteViewController: UIViewController {
         }
     }
     
+    func swipeUp() {
+        if quoteSummoned {
+            let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+            let navVC = storyboard.instantiateViewControllerWithIdentifier("WikiNavController") as! UINavigationController
+            let wikiVC = navVC.viewControllers[0] as! WikiViewController
+            wikiVC.wikiURL = currentAuthorQuotePair.author.wiki
+            presentViewController(navVC, animated: true, completion: nil)
+        }
+    }
+    
+    // MARK:- Screenshot and Animation
     func longPressScreenshot() {
         takingScreenShot = true
         chainedAnimationsWith(duration: 0.24,
@@ -204,6 +225,7 @@ class MagkQuoteViewController: UIViewController {
     // MARK: Called when quote is dismissed
     func animateFadeQuote() {
         pressCount = 0
+        quoteSummoned = false
         longPressToPauseAnimation.enabled = false
         chainedAnimationsWith(duration: 0.3,
             completion: { _ in

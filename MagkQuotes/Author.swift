@@ -18,7 +18,7 @@ struct Author: Printable {
         self.name = name
         self.quotes = quotes
         
-        if let wikiURL = NSURL(fileURLWithPath: wiki) {
+        if let wikiURL = NSURL(string: wiki) {
             self.wiki = wikiURL
         }
     }

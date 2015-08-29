@@ -185,9 +185,13 @@ class MagkQuoteViewController: UIViewController {
     func longPressScreenshot() {
         takingScreenShot = true
         chainedAnimationsWith(duration: 0.24,
-            completion: { _ in
-                let screenshot = self.generateScreenShot(before: nil, after: nil)
-                self.presentAcitvityViewControllerWithScreenShot(screenshot)
+            completion: { flag in
+                if flag {
+                    dispatch_async(dispatch_get_main_queue()) {
+                        let screenshot = self.generateScreenShot(before: nil, after: nil)
+                        self.presentAcitvityViewControllerWithScreenShot(screenshot)
+                    }
+                }
             },
             animations: [
                 {
@@ -226,11 +230,12 @@ class MagkQuoteViewController: UIViewController {
         if let before = before { before() }
         
         if UIScreen.mainScreen().respondsToSelector(Selector("scale")) {
-            UIGraphicsBeginImageContextWithOptions(self.view.frame.size, false, UIScreen.mainScreen().scale)
+            UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, UIScreen.mainScreen().scale)
         } else {
-            UIGraphicsBeginImageContext(self.view.frame.size)
+            UIGraphicsBeginImageContext(self.view.bounds.size)
         }
-        self.view.drawViewHierarchyInRect(self.view.frame, afterScreenUpdates: true)
+        
+        self.view.drawViewHierarchyInRect(self.view.bounds, afterScreenUpdates: true)
         
         let screenshot = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
@@ -272,6 +277,7 @@ class MagkQuoteViewController: UIViewController {
             // Put expensive code here
             let authorName = self.currentAuthorQuotePair.author.hashtagName()
             let msg = "M▲GK from \(authorName)"
+            let rectToPopFrom = CGRectMake(5,20,0,0)
             
             dispatch_async(dispatch_get_main_queue()) {
                 // FIXME: Crash happened here! 😲
@@ -282,16 +288,17 @@ class MagkQuoteViewController: UIViewController {
                     // Where you do something when the activity view is completed.
                     self.animateFadeQuote()
                     self.takingScreenShot = false
+//                    self.updateScreenShotTimer()
                     //self.dismissViewControllerAnimated(true, completion: nil)
                 }
                 
-                var popUp: UIPopoverController!
                 if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad {
-                    popUp = UIPopoverController(contentViewController: activityVC)
-                }
-                
-                if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad {
-                    popUp.presentPopoverFromRect(CGRectMake(self.heartLabel.frame.origin.x + 13, self.heartLabel.frame.origin.y, 2, 2), inView: self.view, permittedArrowDirections: UIPopoverArrowDirection.Down, animated: false)
+                    let popUp = UIPopoverController(contentViewController: activityVC)
+                    popUp.presentPopoverFromRect(rectToPopFrom,
+                        inView: self.view,
+                        permittedArrowDirections: UIPopoverArrowDirection.Up,
+                        animated: true
+                    )
                 } else {
                     self.presentViewController(activityVC, animated: true, completion: nil)
                 }

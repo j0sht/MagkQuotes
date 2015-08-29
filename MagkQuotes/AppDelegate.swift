@@ -42,14 +42,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> Int {
-        if let navVC = self.window?.rootViewController?.presentedViewController as? UINavigationController {
-            if navVC.isBeingDismissed() {
-                return Int(UIInterfaceOrientationMask.Portrait.rawValue)
+        
+        let notIpad = !(UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad)
+        let portrait = Int(UIInterfaceOrientationMask.Portrait.rawValue)
+        let all = Int(UIInterfaceOrientationMask.All.rawValue)
+        
+        if notIpad {
+            if let navVC = self.window?.rootViewController?.presentedViewController as? UINavigationController {
+                if navVC.isBeingDismissed() {
+                    return portrait
+                } else {
+                    return all
+                }
             } else {
-                return Int(UIInterfaceOrientationMask.All.rawValue)
+                return portrait
             }
         } else {
-            return Int(UIInterfaceOrientationMask.Portrait.rawValue)
+            return all
         }
     }
 }

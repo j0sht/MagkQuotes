@@ -4,6 +4,193 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Malcolm Gladwell</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Malcolm_Gladwell</string>
+		<key>quotes</key>
+		<array>
+			<string>Arousal leaves us mind-blind.</string>
+			<string>Working really hard is what successful people do...</string>
+			<string>There are exceptional people out there who are capable of starting epidemics. All you have to do is find them.</string>
+			<string>We need to look at the subtle, the hidden, and the unspoken.</string>
+			<string>Courage is what you earn when you&apos;ve been through the tough times and you discover they aren&apos;t so tough after all.</string>
+			<string>There can be as much value in the blink of an eye as in months of rational analysis.</string>
+			<string>When we become expert in something, our tastes grow more esoteric and complex.</string>
+			<string>Cultural legacies are powerful forces. They have deep roots and long lives.</string>
+			<string>Hard work is a prison sentence only if it does not have meaning.</string>
+			<string>In the act of tearing something apart, you lose its meaning.</string>
+			<string>Emotion is contagious.</string>
+			<string>Caring about someone deeply is exhausting.</string>
+			<string>To be someone&apos;s best friend requires a minimum investment of time. More than that, though, its takes emotional energy.</string>
+			<string>No one who can rise before dawn three hundred and sixty days a year fails to make his family rich.</string>
+			<string>Achievement is talent plus preparation.</string>
+			<string>Who we are cannot be separated from where we&apos;re from.</string>
+			<string>Practice isn&apos;t the thing you do once you&apos;re good. It&apos;s the thing you do that makes you good.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Maurice Merleau-Ponty</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Maurice_Merleau-Ponty</string>
+		<key>quotes</key>
+		<array>
+			<string>Production: not a tree, but bushes of several roots mixed together.</string>
+			<string>We struggle with dream figures and our blows fall on living faces.</string>
+			<string>Everything is science and everything is philosophy.</string>
+			<string>We are caught in a secret history, in a forest of symbols.</string>
+			<string>The world and I are within one another.</string>
+			<string>Expression is like a step taken in the fog - no one can say where, if anywhere, it will lead.</string>
+			<string>History flows neither from the past nor to the future alone: it reverses its course and, when you get right down to it, flows from all the presents.</string>
+			<string>If this world is a poem, it is not because we see the meaning of it at first but on the strength of its chance occurences and paradoxes.</string>
+			<string>I will never know how you see red and you will never know how I see it.</string>
+			<string>To ask for an explanation is to explain the obscure by the more obscure.</string>
+			<string>The flesh is at the heart of the world.</string>
+			<string>Science manipulates things and gives up living in them.</string>
+			<string>Philosophy is not the reflection of a pre-existing truth, but, like art, the act of bringing truth into being.</string>
+			<string>Language transcends us and yet we speak.</string>
+			<string>It is the essence of certainty to be established only with reservations.</string>
+			<string>We know not through our intellect but through our experience.</string>
+			<string>The body is our general medium for having a world.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Albert Camus</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Albert_Camus</string>
+		<key>quotes</key>
+		<array>
+			<string>The purpose of a writer is to keep civilization from destroying itself.</string>
+			<string>I may not have been sure about what really did interest me, but I was absolutely sure about what didn&apos;t.</string>
+			<string>I opened myself to the gentle indifference of the world.</string>
+			<string>At the heart of all beauty lies something inhuman.</string>
+			<string>Always go too far, because that&apos;s where you&apos;ll find the truth.</string>
+			<string>In order to understand the world, one has to turn away from it on occasion.</string>
+			<string>Do not wait for the last judgement. It comes every day.</string>
+			<string>People hasten to judge in order not to be judged themselves.</string>
+			<string>Man is always prey to his truths. Once he has admitted them, he cannot free himself from them.</string>
+			<string>In the midst of chaos, I found there was, within me, an invincible calm.</string>
+			<string>There is not love of life without despair about life.</string>
+			<string>Seeking what is true is not seeking what is desirable.</string>
+			<string>Some people talk in their sleep. Lecturers talk while other people sleep.</string>
+			<string>Without beauty, love, or danger it would almost be easy to live.</string>
+			<string>What is a rebel? A man who says no.</string>
+			<string>Freedom is nothing but a chance to be better.</string>
+			<string>Since we&apos;re all going to die, it&apos;s obvious that when and how don&apos;t matter.</string>
+			<string>If something is going to happen to me, I want to be there.</string>
+			<string>You can&apos;t create experience, you undergo it.</string>
+			<string>There is scarcely any passion without struggle.</string>
+			<string>What is called a reason for living is also an excellent reason for dying.</string>
+			<string>We are all special cases.</string>
+			<string>Where there is no hope, it is incumbent on us to invent it.</string>
+			<string>I rebel; therefore I exist.</string>
+			<string>Beauty is unbearable, drives us to despair, offering us for a minute the glimpse of an eternity that we should like to stretch out over the whole of time.</string>
+			<string>Fiction is the lie through which we tell the truth.</string>
+			<string>Autumn is a second spring when every leaf is a flower.</string>
+			<string>To be happy, we must not be too concerned with others.</string>
+			<string>An intellectual is someone whose mind watches itself.</string>
+			<string>Blessed are the hearts that can bend; they shall never be broken.</string>
+			<string>Real generosity towards the future lies in giving all to the present.</string>
+			<string>When I look at my life and its secret colors, I feel like bursting into tears.</string>
+			<string>The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion.</string>
+			<string>You know what charm is: a way of getting the answer yes without having asked any clear questions.</string>
+			<string>Live to the point of tears.</string>
+			<string>Should I kill myself, or have a cup of coffee?</string>
+			<string>Nobody realizes that some people expend tremendous energy merely to be normal.</string>
+			<string>Man is the only creature who refuses to be what he is.</string>
+			<string>In the depths of winter, I finally learned that within me there lay an invincible summer.</string>
+			<string>You will never live if you are looking for the meaning of life.</string>
+			<string>You will never be happy if you continue to search for what happiness consists of.</string>
+			<string>Don&apos;t walk behind me; I may not lead. Don&apos;t walk in front of me; I may not follow. Just walk beside me and be my friend.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Goethe</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe</string>
+		<key>quotes</key>
+		<array>
+			<string>Boldness has genius, power and magic in it!</string>
+			<string>One ought, every day at least, to hear a little song, read a good poem, see a fine picture, and... speak a few reasonable words.</string>
+			<string>As soon as you trust yourself, you will know how to live.</string>
+			<string>...our planet is the mental institution of the universe.</string>
+			<string>I bid the chords sweet music make, And all must follow in my wake.</string>
+			<string>A man sees in the world what he carries in his heart.</string>
+			<string>Know thyself? If I knew myself, I&apos;d run away.</string>
+			<string>None are more hopelessly enslaved as those who falsely believe they are free.</string>
+			<string>To think is easy. To act is hard. But the hardest thing in the world is to act in accordance with your thinking.</string>
+			<string>Nothing shows a man&apos;s character more than what he laughs at.</string>
+			<string>By seeking and blundering we learn.</string>
+			<string>A person hears only what they understand.</string>
+			<string>Life belongs to the living, and he who lives must be prepared for changes.</string>
+			<string>Magic is believing in yourself, if you can do that, you can make anything happen.</string>
+			<string>Things which matter most must never be at the mercy of things which matter least.</string>
+			<string>I love those who yearn for the impossible.</string>
+			<string>Nothing is worth more than this day.</string>
+			<string>Knowing is not enough; we must apply. Willing is not enough; we must do.</string>
+			<string>Instruction does much, but encouragement everything.</string>
+			<string>Enjoy when you can, and endure when you must.</string>
+			<string>All the knowledge I possess everyone else can acquire, but my heart is all my own.</string>
+			<string>Age does not make us childish, as some say; it finds us true children.</string>
+			<string>We are shaped and fashioned by what we love.</string>
+			<string>Be bold and mighty forces will come to your aid.</string>
+			<string>The greatest thing in this world is not so much where we stand as in what direction we are moving.</string>
+			<string>We must always change, renew, rejuvenate ourselves; otherwise, we harden.</string>
+			<string>Everything is hard before it is easy.</string>
+			<string>We are our own devils; we drive ourselves out of our Edens.</string>
+			<string>Divide and rule, a sound motto. Unite and lead, a better one.</string>
+			<string>People who think honestly and deeply have a hostile attitude towards the public.</string>
+			<string>If you don&apos;t feel it, you&apos;ll never get it.</string>
+			<string>At the moment of commitment, the entire universe conspires to assist you.</string>
+			<string>Talent develops itself in solitude; character in the stream of life.</string>
+			<string>There is strong shadow where there is much light.</string>
+			<string>Music is liquid architecture; Architecture is frozen music.</string>
+			<string>If you would create something, you must be something.</string>
+			<string>Dream no small dreams for they have no power to move the hearts of men.</string>
+			<string>Difficulties increase the nearer we get to the goal.</string>
+			<string>The soul that sees beauty may sometimes walk alone.</string>
+			<string>We are never deceived; we deceive ourselves.</string>
+			<string>Choose well, your choice is brief, and yet endless.</string>
+			<string>God help us - for art is long, and life so short.</string>
+			<string>We know accurately only when we know little, with knowledge doubt increases.</string>
+			<string>Love does not dominate; it cultivates.</string>
+			<string>There is nothing more dreadful than imagination without taste.</string>
+			<string>Night is the other half of life, and the better half.</string>
+			<string>The intelligent man finds almost everything ridiculous, the sensible man hardly anything.</string>
+			<string>Doubt can only be removed by action.</string>
+			<string>Too many parents make life hard for their children by trying, too zealously, to make it easy for them.</string>
+			<string>The greatest evil that can befall man is that he should come to think ill of himself.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>David Hume</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/David_Hume</string>
+		<key>quotes</key>
+		<array>
+			<string>Beauty is no quality in things themselves: It exists merely in the mind which contemplates them; and each mind perceives a different beauty.</string>
+			<string>Generally speaking, the errors in religion are dangerous; those in philosophy only ridiculous.</string>
+			<string>No man ever threw away life while it was worth keeping.</string>
+			<string>Reason is, and ought only to be the slave of passions.</string>
+			<string>Reading and sauntering and lounging and dosing, which I call thinking, is my supreme happiness.</string>
+			<string>The truth springs from arguments amongst friends.</string>
+			<string>He is happy whose circumstances suit his temper, but he is more excellent who can suit his temper to his circumstances.</string>
+			<string>The life of man is of no greater importance to the universe than that of an oyster.</string>
+			<string>From what causes do I derive my existence, and to what condition shall I return?</string>
+			<string>Liberty of any kind is never lost all at once.</string>
+			<string>Heaven and Hell suppose two distinct species of men, the Good and the Bad. But the greatest part of mankind float betwixt vice and virtue.</string>
+			<string>The sweetest and most inoffensive path of life leads through the avenues of science and learning...</string>
+			<string>To philosopher and historian the madness and imbecile wickedness of mankind ought to appear ordinary events.</string>
+			<string>A purpose, an intention, a design, strikes every where the most careless, the most stupid thinker.</string>
+			<string>...it is possible for the same thing both to be and not to be.</string>
+			<string>When I shall be dead, the principles of which I am composed will still perform their part in the universe...</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Kanye West</string>
 		<key>wiki</key>
 		<string>https://en.wikipedia.org/wiki/Kanye_West</string>

@@ -192,7 +192,6 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
         activityVC.completionWithItemsHandler = {
             (s: String!, ok: Bool, items: [AnyObject]!, err: NSError!) -> Void in
             // Where you do something when the activity view is completed.
-            // self.dismissViewControllerAnimated(true, completion: nil)
         }
         presentViewController(activityVC, animated: true, completion: nil)
     }
@@ -212,8 +211,7 @@ private extension String {
 
     func getWikiTitle() -> String {
         let endIndex = self.rangeOfString(" -")!.startIndex
-        let returnString = self.substringToIndex(endIndex)
-        return returnString
+        return self.substringToIndex(endIndex)
     }
 }
 

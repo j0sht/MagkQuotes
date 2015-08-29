@@ -94,7 +94,7 @@
         <!--Wiki View Controller-->
         <scene sceneID="Me5-Ke-Dsn">
             <objects>
-                <viewController id="Aiw-B0-Qnx" customClass="WikiViewController" customModule="PlistReader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Aiw-B0-Qnx" customClass="WikiViewController" customModule="MagkQuotes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M6U-xD-0Eg"/>
                         <viewControllerLayoutGuide type="bottom" id="rlJ-oD-PRt"/>
@@ -105,6 +105,9 @@
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Zv-AV-nkv">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="jmO-6r-Xfb"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem title="❮" id="Dep-3q-7ec">
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>

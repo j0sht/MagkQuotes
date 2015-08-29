@@ -81,6 +81,15 @@ class MagkQuoteViewController: UIViewController {
         return UIStatusBarStyle.LightContent
     }
     
+    // MARK:- Weird WKWebView bug - Fixed?
+    override func presentViewController(viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)?) {
+        if let presented = self.presentedViewController {
+            presented.presentViewController(viewControllerToPresent, animated: flag, completion: completion)
+        } else {
+            super.presentViewController(viewControllerToPresent, animated: flag, completion: completion)
+        }
+    }
+    
     // MARK:- Custom Methods
     // MARK:- Gesture Recognizers
     // MARK: Called to summon/dismiss quotes, or take screenshot.
@@ -344,6 +353,7 @@ class MagkQuoteViewController: UIViewController {
     }
     
     private func updateScreenShotTimer() {
+        
         screenshotTimer = NSTimer.scheduledTimerWithTimeInterval(timeRemainingToTakeScreenshot,
             target: self,
             selector: MagickSelectors.AnimateFadeQuote,

@@ -8,6 +8,7 @@
 
 import UIKit
 
+// TODO: Fix bug related to timers, and view appearing/disappearing.
 class MagkQuoteViewController: UIViewController {
     
     private struct MagickSelectors {

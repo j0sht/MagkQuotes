@@ -43,17 +43,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> Int {
         if let navVC = self.window?.rootViewController?.presentedViewController as? UINavigationController {
-            if let wikiVC = navVC.viewControllers[0] as? WikiViewController {
-                if wikiVC.isPresented {
-                    return Int(UIInterfaceOrientationMask.All.rawValue)
-                } else {
-                    return Int(UIInterfaceOrientationMask.Portrait.rawValue)
-                }
-            } else {
-                // TODO: Allow for different activities to be All
-                // Bug - When changed to All, MagkVC will remain in
-                // orientation other than landscape when modal view dismissed.
+            if navVC.isBeingDismissed() {
                 return Int(UIInterfaceOrientationMask.Portrait.rawValue)
+            } else {
+                return Int(UIInterfaceOrientationMask.All.rawValue)
             }
         } else {
             return Int(UIInterfaceOrientationMask.Portrait.rawValue)

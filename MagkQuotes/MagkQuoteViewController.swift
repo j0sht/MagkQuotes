@@ -8,7 +8,7 @@
 
 import UIKit
 
-// TODO: Fix bug related to timers, and view appearing/disappearing.
+// TODO: Refactor - it's a mess
 class MagkQuoteViewController: UIViewController {
     
     private struct MagickSelectors {
@@ -267,6 +267,7 @@ class MagkQuoteViewController: UIViewController {
     
     private func presentAcitvityViewControllerWithScreenShot(screenshot: UIImage) {
         pressCount = 0
+        quoteSummoned = false
         dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)) {
             // Put expensive code here
             let authorName = self.currentAuthorQuotePair.author.hashtagName()
@@ -279,9 +280,9 @@ class MagkQuoteViewController: UIViewController {
                 activityVC.completionWithItemsHandler = {
                     (s: String!, ok: Bool, items: [AnyObject]!, err: NSError!) -> Void in
                     // Where you do something when the activity view is completed.
-                    self.takingScreenShot = false
                     self.animateFadeQuote()
-                    self.dismissViewControllerAnimated(true, completion: nil)
+                    self.takingScreenShot = false
+                    //self.dismissViewControllerAnimated(true, completion: nil)
                 }
                 
                 var popUp: UIPopoverController!
@@ -354,7 +355,6 @@ class MagkQuoteViewController: UIViewController {
     }
     
     private func updateScreenShotTimer() {
-        
         screenshotTimer = NSTimer.scheduledTimerWithTimeInterval(timeRemainingToTakeScreenshot,
             target: self,
             selector: MagickSelectors.AnimateFadeQuote,

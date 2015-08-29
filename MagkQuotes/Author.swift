@@ -17,10 +17,7 @@ struct Author: Printable {
     init(name: String, wiki: String, quotes: [Quote]) {
         self.name = name
         self.quotes = quotes
-        
-        if let wikiURL = NSURL(string: wiki) {
-            self.wiki = wikiURL
-        }
+        self.wiki = NSURL(string: wiki)
     }
     
     var description: String {

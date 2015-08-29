@@ -82,7 +82,6 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
         backButton.enabled = false
         forwardButton.enabled = false
         actionButton.enabled = false
-        progressView.progressTintColor = UIColor.getProgressViewColor()
     }
     
     override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
@@ -101,8 +100,7 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
     
     // MARK:- IBActions
     @IBAction func closeButtonPressed(sender: UIBarButtonItem) {
-        isPresented = false
-        self.dismissViewControllerAnimated(true, completion: nil)
+        dismissWikiVC()
     }
 
     @IBAction func actionButtonPressed(sender: UIBarButtonItem) {
@@ -156,7 +154,7 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
     private func displayError() {
         let alertVC = UIAlertController(title: "Error", message: "Error loading page.", preferredStyle: UIAlertControllerStyle.Alert)
         let dismissAction = UIAlertAction(title: "Exit", style: UIAlertActionStyle.Default, handler: { (alertAction) -> Void in
-            self.dismissViewControllerAnimated(true, completion: nil)
+            self.dismissWikiVC()
         })
         alertVC.addAction(dismissAction)
         presentViewController(alertVC, animated: true, completion: nil)
@@ -197,6 +195,11 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
             // self.dismissViewControllerAnimated(true, completion: nil)
         }
         presentViewController(activityVC, animated: true, completion: nil)
+    }
+    
+    private func dismissWikiVC() {
+        isPresented = false
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }
 

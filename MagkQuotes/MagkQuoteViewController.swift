@@ -83,6 +83,7 @@ class MagkQuoteViewController: UIViewController {
     
     // MARK:- Custom Methods
     // MARK:- Gesture Recognizers
+    // MARK: Called to summon/dismiss quotes, or take screenshot.
     func longPress(press: UILongPressGestureRecognizer) {
         
         let tapToDismiss = (press.state == .Ended && pressCount > 1)
@@ -159,7 +160,7 @@ class MagkQuoteViewController: UIViewController {
             }
         }
     }
-    
+    // MARK: Called to present WikiVC
     func swipeUp() {
         if quoteSummoned {
             let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())

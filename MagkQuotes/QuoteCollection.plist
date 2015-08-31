@@ -4,11 +4,202 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Jane Austen</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Jane_Austen</string>
+		<key>quotes</key>
+		<array>
+			<string>For what do we live, but to make sport for our neighbors and laugh at them in our turn?</string>
+			<string>I hate tiny parties, they force one into constant exertion.</string>
+			<string>The more I see of the world, the more am I dissatisfied with it...</string>
+			<string>Vanity working on a weak head, produces every sort of mischief.</string>
+			<string>I do not want people to be very agreeable, as it saves me the trouble of liking them a great deal.</string>
+			<string>It is very difficult for the prosperous to be humble.</string>
+			<string>They are much to be pitied who have not been given a taste for nature early in life.</string>
+			<string>Indulge your imagination in every possible flight.</string>
+			<string>One cannot have too large a party.</string>
+			<string>To sit in the shade on a fine day, and look upon verdure is the most perfect refreshment.</string>
+			<string>One man&apos;s style must not be the rule of another&apos;s.</string>
+			<string>Dress is at all times a frivolous distinction, and excessive solicitude about it often destroys its own aim.</string>
+			<string>To look almost pretty is an acquisition of higher delight to a girl who has been looking plain the first fifteen years of her life than a beauty from her cradle ever receive.</string>
+			<string>To be fond of dancing was a certain step towards falling in love.</string>
+			<string>Without music, life would be a blank to me.</string>
+			<string>The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.</string>
+			<string>Every savage can dance.</string>
+			<string>Life seems but a quick succession of busy nothings.</string>
+			<string>I have no notion of loving people by halves, it is not my nature.</string>
+			<string>There is nothing I would not do for those who are really my friends.</string>
+			<string>Want for nothing but patience - or give it a more fascinating name: Call it hope.</string>
+			<string>Know your own happiness.</string>
+			<string>Suprises are foolish things. The pleasure is not enhanced, and the inconvenience is often considerable.</string>
+			<string>One cannot be always laughing at a man without now and then stumbling on something witty.</string>
+			<string>I hate to hear you talk about all women as if they were fine ladies instead of rational creatures. None of us want to be in calm waters all our lives.</string>
+			<string>Happiness in marriage is entirely a matter of chance.</string>
+			<string>Next to being married, a girl likes to be crossed in love a little now and then.</string>
+			<string>Marriage is indeed a manoeuvring business.</string>
+			<string>If I loved you less, I might be able to talk about it more.</string>
+			<string>One half of the world cannot understand the pleasures of the other.</string>
+			<string>No man is offended by another man&apos;s admiration of the woman he loves; it is the woman only who can make it a torment.</string>
+			<string>There are as many forms of love as there are moments in time.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>J. K. Rowling</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/J._K._Rowling</string>
+		<key>quotes</key>
+		<array>
+			<string>Rock bottom became the solid foundation on which I rebuilt my life.</string>
+			<string>As is a tale, so is life: not how long it is, but how good it is, is what matters.</string>
+			<string>...without ever committing an act of outright evil ourselves, we collude with it, through our own apathy.</string>
+			<string>Those who choose not to empathize enable real monsters.</string>
+			<string>Many prefer not to exercise their imaginations at all. They choose to remain comfortably within the bounds of their own experience...</string>
+			<string>Had I really succeeded at anything else, I might never have found the determination to succeed in the one arena I believed I truly belonged.</string>
+			<string>Talent and intelligence never yet inoculated anyone against the caprice of the Fates.</string>
+			<string>...the moment you are old enough to take the wheel, responsibility lies with you.</string>
+			<string>There is an expiry date on blaming your parents for steering you in the wrong direction...</string>
+			<string>The stories we love best do live in us forever.</string>
+			<string>We do not need magic to change the world, we carry all the power we need inside ourselves already: we have the power to imagine better.</string>
+			<string>Unlike any other creature on this planet, humans can learn and understand, without having experienced. They can think themselves into other people&apos;s places.</string>
+			<string>Climbing out of poverty by your own efforts, that is indeed something on which to pride yourself, but poverty itself is romanticized only by fools.</string>
+			<string>Poverty entails fear, and stress, and sometimes depression; it means a thousand petty humiliations and hardships.</string>
+			<string>...the true dilemmas of childhood are the dilemmas of the whole of life...</string>
+			<string>Children are not &apos;they.&apos; They are us. </string>
+			<string>I don&apos;t think there&apos;s any harm at all in allowing a kid to fantasize. In fact, I think to stop people from fantasizing is a very destructive thing indeed.</string>
+			<string>Read anything you can get your hands on.</string>
+			<string>I&apos;ve no idea where ideas come from and I hope I never find out...</string>
+			<string>You control your own life. Your own will is extremely powerful.</string>
+			<string>Whatever money you might have, self-worth really lies in finding out what you do best.</string>
+			<string>Is &apos;fat&apos; really the worst thing a human being can be? Is &apos;fat&apos; worse than &apos;vindictive&apos;, &apos;jealous&apos;, &apos;shallow&apos;, &apos;vain&apos;, &apos;boring&apos; or &apos;cruel&apos;? Not to me.</string>
+			<string>It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default. </string>
+			<string>Some failure in life is inevitable.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Jean-Paul Sartre</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Jean-Paul_Sartre</string>
+		<key>quotes</key>
+		<array>
+			<string>One lives one&apos;s death, one dies one&apos;s life.</string>
+			<string>Modesty is the virtue of the lukewarm.</string>
+			<string>When the rich make war, it&apos;s the poor that die.</string>
+			<string>If a victory is told in detail, one can no longer distinguish it from defeat.</string>
+			<string>The best work is not what is most difficult for you; it is what you do best.</string>
+			<string>The more one is absorbed in fighting evil, the less one is tempted to place the good in question.</string>
+			<string>A man is what he wills himself to be.</string>
+			<string>I refuse to let death hamper life. Death must enter life only to define it.</string>
+			<string>We are in hell and I will have my turn!</string>
+			<string>You are nothing other than your life.</string>
+			<string>One always dies too soon - or too late. And yet, life is there, finished: the line is drawn, and it must all be added up.</string>
+			<string>When I cannot see myself, even though I touch myself, I wonder if I really exist.</string>
+			<string>Hell is other people.</string>
+			<string>With despair, true optimism begins...</string>
+			<string>...man must create his own essence: It is in throwing himself into the world, suffering there, struggling there, that he gradually defines himself.</string>
+			<string>...each man must invent his own path.</string>
+			<string>I have no need for good souls: an accomplice is what I wanted.</string>
+			<string>Justice is a human issue, and I do not need a god to teach it to me.</string>
+			<string>You must be afraid... That is how one becomes an honest citizen.</string>
+			<string>Yes, I am so free. And what a superb absence is my soul.</string>
+			<string>Do not judge the gods... they have painful secrets.</string>
+			<string>Some men are born committed to action: they do not have a choice, they have been thrown on a path, at the end of that path, an act awaits them, their act.</string>
+			<string>Fear? If I have gained anything by damning myself, it is that I no longer have anything to fear.</string>
+			<string>It is certain that we cannot escape anguish, for we are anguish.</string>
+			<string>Life has no meaning... It is up to you to give it a meaning, and value is nothing but the meaning that you choose.</string>
+			<string>Man is condemned to be free; because once thrown into the world, he is responsible for everything he does.</string>
+			<string>All human activities are equivalent... and... all are on principle doomed to failure.</string>
+			<string>I am condemned to be free.</string>
+			<string>Nothingness haunts being.</string>
+			<string>You know, it&apos;s quite a job starting to love somebody.</string>
+			<string>I construct my memories with my present.</string>
+			<string>I hate victims who respect their executioners.</string>
+			<string>Fascism is not defined by the number of its victims, but by the way it kills them.</string>
+			<string>Every age has its own poetry...</string>
+			<string>I cannot make liberty my aim unless I make that of others equally my aim.</string>
+			<string>Imagination is not an empirical or superadded power of consciousness, it is the whole of consciousness as it realizes its freedom.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Steve Jobs</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Steve_Jobs</string>
+		<key>quotes</key>
+		<array>
+			<string>I want to put a ding in the universe.</string>
+			<string>I&apos;m convinced that about half of what separates successful entrepreneurs from the non-successful ones is pure perseverance.</string>
+			<string>I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long.</string>
+			<string>Innovation is saying no to a thousand things.</string>
+			<string>Being the richest man in the cemetery doesn&apos;t matter to me...</string>
+			<string>You are already naked. There is no reason not to follow your heart. </string>
+			<string>Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose.</string>
+			<string>A lot of times, people don&apos;t know what they want until you show it to them.</string>
+			<string>...expose yourself to the best things that humans have done and then try to bring those things into what you&apos;re doing.</string>
+			<string>Ultimately, it comes down to taste.</string>
+			<string>If you want to live your life in a creative way, as an artist, you have to not look back too much.</string>
+			<string>Be a yardstick of quality. Some people aren&apos;t used to an environment where excellence is expected.</string>
+			<string>As with all matters of the heart, you&apos;ll know when you find it.</string>
+			<string>If you haven&apos;t found it yet, keep looking. Don&apos;t settle.</string>
+			<string>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.</string>
+			<string>You have to trust in something - your gut, destiny, life, karma, whatever.</string>
+			<string>You can&apos;t connect the dots looking forward; you can only connect them looking backward. So you have to trust that the dots will somehow connect in your future.</string>
+			<string>Stay hungry. Stay foolish.</string>
+			<string>It is better to be a pirate than to join the navy.</string>
+			<string>...the ones who are crazy enough to think that they can change the world, are the ones who do.</string>
+			<string>Design is not just what it looks like and feels like. Design is how it works.</string>
+			<string>When you ask creative people how they did something, they feel a little guilty because they didn&apos;t really do it, they just saw something.</string>
+			<string>Creativity is just connecting things.</string>
+			<string>Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations.</string>
+			<string>Innovation distinguishes between a leader and a follower.</string>
+			<string>Quality is much better than quantity. One home run is much better than two doubles.</string>
+			<string>Just figure out what&apos;s next.</string>
+			<string>...have the courage to follow your heart and intuition, they somehow already know what you truly want to become. Everything else is secondary.</string>
+			<string>Don&apos;t let the noise of other opinions drown out your own inner voice.</string>
+			<string>Don&apos;t be trapped by dogma, which is living the result of other people&apos;s thinking.</string>
+			<string>Your time is limited, don&apos;t waste it living someone else&apos;s life.</string>
+			<string>Simple can be harder than complex; you have to work hard to get your thinking clean to make it simple.</string>
+			<string>Life is brief, and then you die, you know?</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Anna Wintour</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Anna_Wintour</string>
+		<key>quotes</key>
+		<array>
+			<string>If you can’t be better than your competition, just dress better.</string>
+			<string>People respond well to people who are sure of what they want.</string>
+			<string>It’s very important to take risks.</string>
+			<string>It’s always about timing. If it’s too soon, no one understands. If it’s too late, everyone’s forgotten.</string>
+			<string>People work much better when they have a real sense of responsibility.</string>
+			<string>I recommend that you all get fired; it’s a great learning experience.</string>
+			<string>There is a new kind of woman out there. She’s interested in business and money.</string>
+			<string>I surround myself with a talented group of people that are opinionated and interesting.</string>
+			<string>In the end, I respond to my own instincts.</string>
+			<string>Fashion’s not about looking back. It’s always about looking forward.</string>
+			<string>Fashion goes in only one direction – forward – and I am a firm believer in thinking that way too.</string>
+			<string>Create your own style… let it be unique for yourself and yet identifiable for others.</string>
+			<string>You either know fashion or you don&apos;t.</string>
+			<string>If you look at any great fashion photograph out of context, it will tell you just as much about what&apos;s going on in the world as a headline in the New York Times.</string>
+			<string>When I hear a company is being run by a team, my heart sinks. You need to have a leader with a vision and heart that can move things forward.</string>
+			<string>The notion that a contemporary woman must look mannish in order to be taken seriously as a seeker of power is frankly dismaying. This is America, not Saudi Arabia.</string>
+			<string>What people hate most is indecision. Even if I&apos;m completely unsure, I&apos;ll pretend I know exactly what I&apos;m talking about and make a decision.</string>
+			<string>I wasn&apos;t academically successful. Maybe I&apos;ve spent a lot of my career trying to make up for that.</string>
+			<string>If one comes across sometimes as being cold or brusque, it&apos;s simply because I&apos;m striving for the best.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Margot Fonteyn</string>
 		<key>wiki</key>
 		<string>https://en.wikipedia.org/wiki/Margot_Fonteyn</string>
 		<key>quotes</key>
 		<array>
+			<string>Any sort of pretension induces mediocrity in art and life alike.</string>
+			<string>Great artists are people who find the way to be themselves in their art.</string>
 			<string>Genius is another word for magic, and the whole point of magic is that it is inexplicable.</string>
 		</array>
 	</dict>
@@ -64,16 +255,6 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Atiśa</string>
-		<key>wiki</key>
-		<string>https://en.wikipedia.org/wiki/Atiśa</string>
-		<key>quotes</key>
-		<array>
-			<string>The greatest magic is transmuting the passions.</string>
-		</array>
-	</dict>
-	<dict>
-		<key>name</key>
 		<string>Theodor Adorno</string>
 		<key>wiki</key>
 		<string>https://en.wikipedia.org/wiki/Theodor_W._Adorno</string>
@@ -106,47 +287,6 @@
 	<dict>
 		<key>name</key>
 		<string>Robert Anton Wilson</string>
-		<key>wiki</key>
-		<string>https://en.wikipedia.org/wiki/Robert_Anton_Wilson</string>
-		<key>quotes</key>
-		<array>
-			<string>Animals outline their territories with their excretions, humans outline their territories by ink excretions on paper.</string>
-			<string>Whatever the Thinker thinks, the Prover will prove.</string>
-			<string>Pardon my levity, I don&apos;t see how to take death seriously. It seems absurd.</string>
-			<string>I look forward without dogmatic optimism but without dread.</string>
-			<string>I remain cheerful and unimpressed.</string>
-			<string>I love you all and I deeply implore you to keep the lasagna flying.</string>
-			<string>Each man spills the drink he loves.</string>
-			<string>I don&apos;t know what anything &apos;is&apos;; I only know how it seems to me at this moment.</string>
-			<string>&apos;Is,&apos; &apos;is.&apos; &apos;is&apos; - the idiocy of the word haunts me. If it were abolished, human thought might begin to make sense.</string>
-			<string>The fallacy is that one can judge the part in isolation from the whole is &apos;the Lie that all men believe.&apos;</string>
-			<string>Out of a meaningless and pointless existence, we have made meaning and purpose...</string>
-			<string>There is absolutely nothing that can be taken for granted in this world.</string>
-			<string>We are all absolutely free.</string>
-			<string>There is no restraint that cannot be escaped.</string>
-			<string>We live in an age of artificial scarcity, maintained by ignorance and fear.</string>
-			<string>There are periods of history when the visions of madmen and dope fiends are a better guide to reality than the common-sense interpretation of...the so-called normal mind.</string>
-			<string>The longer one is alone, the easier it is to hear the song of the earth.</string>
-			<string>The devil is only a convenient myth invented by the real malefactors of our world.</string>
-			<string>The Bible tells us to be like God, and then on page after page it describes God as a mass murderer.</string>
-			<string>ONLY THE MADMAN IS ABSOLUTELY SURE.</string>
-			<string>Once something becomes discernable, or understandable, we no longer need to repeat it. We can destroy it.</string>
-			<string>Of course I&apos;m crazy, but that doesn&apos;t mean I&apos;m wrong.</string>
-			<string>Most of our ancestors were not perfect ladies and gentlemen. The majority of them weren&apos;t even mammals.</string>
-			<string>Mind is a tool invented by the universe to see itself; but it can never see all of itself...</string>
-			<string>It only takes 20 years for a liberal to become a conservative without changing a single idea.</string>
-			<string>I don&apos;t believe anything, but I have many suspicions.</string>
-			<string>Horror is the natural reaction to the last 5,000 years of history.</string>
-			<string>Everyone has a belief system, B.S., the trick is to learn not to take anyone&apos;s B.S. too seriously, especially your own.</string>
-			<string>Beyond a certain point, the whole universe becomes a continuous process of initiation.</string>
-			<string>Belief is the death of intelligence.</string>
-			<string>A true initiation never ends.</string>
-			<string>I really dread serious people. Especially serious, dogmatic people.</string>
-		</array>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>Robert Anton WIlson</string>
 		<key>wiki</key>
 		<string>https://en.wikipedia.org/wiki/Robert_Anton_Wilson</string>
 		<key>quotes</key>

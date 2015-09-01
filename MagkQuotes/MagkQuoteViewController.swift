@@ -178,7 +178,7 @@ class MagkQuoteViewController: UIViewController {
             animations: [
                 {
                     self.heartLabel.alpha = 0.0
-                    self.heartLabel.transform = CGAffineTransformMakeScale(1.4, 1.4)
+                    self.heartLabel.transform = CGAffineTransformMakeScale(1.6, 1.6)
                 },
                 {
                     self.heartLabel.alpha = 1.0
@@ -357,18 +357,18 @@ class MagkQuoteViewController: UIViewController {
         let horizontalImageAndNumber = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
         let verticalImageAndNumber = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
         
-        horizontalImageAndNumber.minimumRelativeValue = -10
-        horizontalImageAndNumber.maximumRelativeValue = 10
-        verticalImageAndNumber.minimumRelativeValue = -10
-        verticalImageAndNumber.maximumRelativeValue = 10
+        horizontalImageAndNumber.minimumRelativeValue = -20
+        horizontalImageAndNumber.maximumRelativeValue = 20
+        verticalImageAndNumber.minimumRelativeValue = -20
+        verticalImageAndNumber.maximumRelativeValue = 20
         
         let horizontalQuote = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
         let verticalQuote = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
         
-        horizontalQuote.minimumRelativeValue = -5
-        horizontalQuote.maximumRelativeValue = 5
-        verticalQuote.minimumRelativeValue = -5
-        verticalQuote.maximumRelativeValue = 5
+        horizontalQuote.minimumRelativeValue = -10
+        horizontalQuote.maximumRelativeValue = 10
+        verticalQuote.minimumRelativeValue = -10
+        verticalQuote.maximumRelativeValue = 10
         
         // Shadow
         let shadowEffect = UIInterpolatingMotionEffect(keyPath: "layer.shadowOffSet", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
@@ -398,7 +398,7 @@ class MagkQuoteViewController: UIViewController {
                         //self.setRandomColor()
                         self.quoteLabel.alpha = 1.0
                         
-                        self.quoteLabel.transform = CGAffineTransformMakeScale(1.04, 1.04)
+                        self.quoteLabel.transform = CGAffineTransformMakeScale(1.07, 1.07)
                     },
                     {
                         self.quoteLabel.transform = CGAffineTransformMakeScale(0.98, 0.98)
@@ -412,10 +412,10 @@ class MagkQuoteViewController: UIViewController {
             },
             animations: [
                 {
-                    self.imageView.transform = CGAffineTransformMakeScale(0.666, 0.666)
+                    self.imageView.transform = CGAffineTransformMakeScale(0.7, 0.7)
                 },
                 {
-                    self.imageView.transform = CGAffineTransformMakeScale(1.02, 1.02)
+                    self.imageView.transform = CGAffineTransformMakeScale(1.7, 1.7)
                     self.imageView.alpha = 0.0
                     self.setRandomColor()
                 }

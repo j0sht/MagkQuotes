@@ -65,6 +65,8 @@ class MagkQuoteViewController: UIViewController {
         swipeUpToPresentWiki.direction = UISwipeGestureRecognizerDirection.Up
         view.addGestureRecognizer(swipeUpToPresentWiki)
         
+        addMotionEffectToImageAndQuote()
+        
         introAnimation()
     }
     
@@ -123,28 +125,8 @@ class MagkQuoteViewController: UIViewController {
                     dispatch_async(dispatch_get_main_queue()) {
                         self.quoteLabel.text = quoteText
                         self.quoteLabel.fitToAvoidWordWrapping()
-                        UIView.animateWithDuration(0.12,
-                            animations: {self.imageView.alpha = 0.0}) { _ in
-                            chainedAnimationsWith(
-                                duration: 0.22,
-                                completion: nil,
-                                animations: [
-                                    {
-                                        self.setRandomColor()
-                                        self.quoteLabel.alpha = 1.0
-                                        
-                                        self.quoteLabel.transform = CGAffineTransformMakeScale(0.96, 0.96)
-                                    },
-                                    {
-                                        
-                                        self.quoteLabel.transform = CGAffineTransformMakeScale(1.02, 1.02)
-                                    },
-                                    {
-                                        self.quoteLabel.transform = CGAffineTransformMakeScale(1, 1)
-                                    }
-                                ]
-                            )
-                        }
+
+                        self.displayQuote()
                     }
                 }
             }
@@ -367,6 +349,77 @@ class MagkQuoteViewController: UIViewController {
             selector: MagickSelectors.AnimateFadeQuote,
             userInfo: nil,
             repeats: false
+        )
+    }
+    
+    private func addMotionEffectToImageAndQuote() {
+        
+        let horizontalImageAndNumber = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
+        let verticalImageAndNumber = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
+        
+        horizontalImageAndNumber.minimumRelativeValue = -10
+        horizontalImageAndNumber.maximumRelativeValue = 10
+        verticalImageAndNumber.minimumRelativeValue = -10
+        verticalImageAndNumber.maximumRelativeValue = 10
+        
+        let horizontalQuote = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
+        let verticalQuote = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
+        
+        horizontalQuote.minimumRelativeValue = -5
+        horizontalQuote.maximumRelativeValue = 5
+        verticalQuote.minimumRelativeValue = -5
+        verticalQuote.maximumRelativeValue = 5
+        
+        // Shadow
+        let shadowEffect = UIInterpolatingMotionEffect(keyPath: "layer.shadowOffSet", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
+        shadowEffect.minimumRelativeValue =  NSValue(CGSize: CGSize(width: -40, height: 20))
+        shadowEffect.maximumRelativeValue = NSValue(CGSize: CGSize(width: 40, height: 20))
+        
+        let imageAndNumberGroup = UIMotionEffectGroup()
+        imageAndNumberGroup.motionEffects = [horizontalImageAndNumber,verticalImageAndNumber,shadowEffect]
+        
+        let quoteGroup = UIMotionEffectGroup()
+        quoteGroup.motionEffects = [horizontalQuote,verticalQuote,shadowEffect]
+        
+        imageView.addMotionEffect(imageAndNumberGroup)
+        countdownLabel.addMotionEffect(imageAndNumberGroup)
+        quoteLabel.addMotionEffect(quoteGroup)
+    }
+    
+    private func displayQuote() {
+        chainedAnimationsWith(
+            duration: 0.22,
+            completion: { flag in
+                
+                self.imageView.transform = CGAffineTransformMakeScale(1, 1)
+                
+                chainedAnimationsWith(duration: 0.2, completion: nil, animations: [
+                    {
+                        //self.setRandomColor()
+                        self.quoteLabel.alpha = 1.0
+                        
+                        self.quoteLabel.transform = CGAffineTransformMakeScale(1.04, 1.04)
+                    },
+                    {
+                        self.quoteLabel.transform = CGAffineTransformMakeScale(0.98, 0.98)
+                    },
+                    {
+                        self.quoteLabel.transform = CGAffineTransformMakeScale(1, 1)
+                    }
+                    
+                    ])
+                
+            },
+            animations: [
+                {
+                    self.imageView.transform = CGAffineTransformMakeScale(0.666, 0.666)
+                },
+                {
+                    self.imageView.transform = CGAffineTransformMakeScale(1.02, 1.02)
+                    self.imageView.alpha = 0.0
+                    self.setRandomColor()
+                }
+            ]
         )
     }
 }

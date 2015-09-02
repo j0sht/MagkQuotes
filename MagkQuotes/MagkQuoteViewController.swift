@@ -106,6 +106,7 @@ class MagkQuoteViewController: UIViewController {
             
             if pressCount < 2 {
                 // MARK: Quote summoned here
+                longPressToPauseAnimation.enabled = false
                 quoteSummoned = true
                 screenshotTimer = NSTimer.scheduledTimerWithTimeInterval(timeRemainingToTakeScreenshot,
                     target: self,
@@ -393,20 +394,23 @@ class MagkQuoteViewController: UIViewController {
                 
                 self.imageView.transform = CGAffineTransformMakeScale(1, 1)
                 
-                chainedAnimationsWith(duration: 0.2, completion: nil, animations: [
-                    {
-                        //self.setRandomColor()
-                        self.quoteLabel.alpha = 1.0
-                        
-                        self.quoteLabel.transform = CGAffineTransformMakeScale(1.07, 1.07)
+                chainedAnimationsWith(duration: 0.2,
+                    completion: { flag in
+                        self.longPressToPauseAnimation.enabled = true
                     },
-                    {
-                        self.quoteLabel.transform = CGAffineTransformMakeScale(0.98, 0.98)
-                    },
-                    {
-                        self.quoteLabel.transform = CGAffineTransformMakeScale(1, 1)
-                    }
-                    
+                    animations: [
+                        {
+                            //self.setRandomColor()
+                            self.quoteLabel.alpha = 1.0
+                            
+                            self.quoteLabel.transform = CGAffineTransformMakeScale(1.07, 1.07)
+                        },
+                        {
+                            self.quoteLabel.transform = CGAffineTransformMakeScale(0.98, 0.98)
+                        },
+                        {
+                            self.quoteLabel.transform = CGAffineTransformMakeScale(1, 1)
+                        }
                     ])
                 
             },

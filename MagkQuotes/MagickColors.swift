@@ -25,9 +25,9 @@ extension UIColor {
 func getRandomColor() -> UIColor {
     let min = 70
     let max = 255
-    let red = randomIntBetween(min: min, max: max, inclusive: true)
-    let blue = randomIntBetween(min: min, max: max, inclusive: true)
-    let green = randomIntBetween(min: min, max: max, inclusive: true)
+    let red = Int.randomIntBetween(min, and: max, inclusive: true)
+    let blue = Int.randomIntBetween(min, and: max, inclusive: true)
+    let green = Int.randomIntBetween(min, and: max, inclusive: true)
     //println("red = \(red) | green = \(green) | blue = \(blue)")
     return UIColor(red: red, green: green, blue: blue)
 }

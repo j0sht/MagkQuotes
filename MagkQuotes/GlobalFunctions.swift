@@ -29,6 +29,12 @@ extension Int {
     static func randomInt(i: Int) -> Int {
         return Int(arc4random_uniform(UInt32(i)))
     }
+    
+    static func randomIntBetween(min: Int, and max: Int, inclusive: Bool) -> Int {
+        let theMin = UInt32(min)
+        let theMax = (inclusive) ? UInt32(max + 1) : UInt32(max)
+        return Int(theMin + arc4random_uniform(theMax - theMin))
+    }
 }
 
 // MARK:- Global Functions
@@ -49,10 +55,4 @@ func chainedAnimationsWith(#duration: NSTimeInterval, #completion: (Bool -> Void
                 })
     default: return
     }
-}
-
-func randomIntBetween(#min: Int, #max: Int, #inclusive: Bool) -> Int {
-    let theMin = UInt32(min)
-    let theMax = (inclusive) ? UInt32(max + 1) : UInt32(max)
-    return Int(theMin + arc4random_uniform(theMax - theMin))
 }

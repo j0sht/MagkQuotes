@@ -25,7 +25,7 @@ struct Author: Printable {
     }
     
     func getRandomQuote() -> Quote {
-        let index = Int(arc4random_uniform(UInt32(quotes.count)))
+        let index = Int.randomInt(quotes.count)
         return quotes[index]
     }
     

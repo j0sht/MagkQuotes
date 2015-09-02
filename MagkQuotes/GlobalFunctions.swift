@@ -25,6 +25,12 @@ extension Array {
     }
 }
 
+extension Int {
+    static func randomInt(i: Int) -> Int {
+        return Int(arc4random_uniform(UInt32(i)))
+    }
+}
+
 // MARK:- Global Functions
 func chainedAnimationsWith(#duration: NSTimeInterval, #completion: (Bool -> Void)?, #animations: [(() -> Void)]) {
     let headAndTail = animations.headAndTail

@@ -262,7 +262,7 @@ private extension UIColor {
             UIColor(red: 242, green: 153, blue: 121),
             UIColor(red: 239, green: 70, blue: 63)
         ]
-        let index = Int(arc4random_uniform(UInt32(colors.count)))
+        let index = Int.randomInt(colors.count)
         return colors[index]
     }
 }

@@ -39,7 +39,7 @@ class QuoteCollection: Printable {
     
     func getRandomAuthor() -> Author? {
         if !authors.isEmpty {
-            let index = Int(arc4random_uniform(UInt32(authors.count)))
+            let index = Int.randomInt(authors.count)
             return authors[index]
         }
         return nil

@@ -4,6 +4,81 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Mary Wollstonecraft</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Mary_Wollstonecraft</string>
+		<key>quotes</key>
+		<array>
+			<string>Make women rational creatures, and free citizens, and they will quickly become good wives; that is, if men do not neglect the duties of husbands and fathers.</string>
+			<string>...what a weak barrier is truth when it stands in the way of an hypothesis!</string>
+			<string>...wealth and female softness equally tend to debase mankind!</string>
+			<string>...obeying a parent only on account of his being a parent, shackles the mind, and prepares it for a slavish submission to any power but reason.</string>
+			<string>The two sexes mutually corrupt and improve each other.</string>
+			<string>Men and women must be educated, in a great degree, by the opinions and manners of the society they live in.</string>
+			<string>Situation seems to be the mould in which men&apos;s characters are formed.</string>
+			<string>We reason deeply, when we forcibly feel.</string>
+			<string>The same energy of character which renders a man a daring villain would have rendered him useful to society, had that society been well organized.</string>
+			<string>Friendship and domestic happiness are continually praised; yet how little is there of either in the world...</string>
+			<string>Without the aid of imagination all the pleasures of the senses must sink into grossness...</string>
+			<string>Surely something resides in this heart that is not perishable, and life is more than a dream.</string>
+			<string>A modest man is steady, a humble man timid, and a vain one presumptuous.</string>
+			<string>It is justice, not charity, that is wanting in the world.</string>
+			<string>Taught from their infancy that beauty is a woman&apos;s sceptre, the mind shapes itself to the body, and roaming round its gilt cage, only seeks to adorn its prison.</string>
+			<string>Till women are more rationally educated, the progress of human virtue and improvement in knowledge must receive continual checks.</string>
+			<string>Every political good carried to the extreme must be productive of evil.</string>
+			<string>...my wayward heart creates its own misery - Why I am made thus I cannot tell...</string>
+			<string>I am a strange compound of weakness and resolution!</string>
+			<string>...true politeness is a polish, not a varnish...</string>
+			<string>Virtue can only flourish amongst equals.</string>
+			<string>No man chooses evil because it is evil; he only mistakes it for happiness, the good he seeks.</string>
+			<string>You know I am not born to tread in the beaten track - the peculiar bent of my nature pushes me on.</string>
+			<string>Nothing, I am sure, calls forth the faculties so much as the being obliged to struggle with the world...</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Sylvia Plath</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Sylvia_Plath</string>
+		<key>quotes</key>
+		<array>
+			<string>The abstract kills, the concrete saves.</string>
+			<string>I desire the things which will destroy me in the end.</string>
+			<string>I am made, crudely, for success.</string>
+			<string>Perhaps when we find ourselves wanting everything, it is because we are dangerously near to wanting nothing.</string>
+			<string>If I didn&apos;t think, I&apos;d be much happier...</string>
+			<string>I want to express my being as fully as I can because I somewhere picked up the idea that I could justify my being alive that way.</string>
+			<string>I am what I feel and think and do.</string>
+			<string>Frustrated? Yes. Why? Because it is impossible for me to be God - or the universal woman-and-man - or anything much.</string>
+			<string>The blood of love welled up in my heart with a slow pain.</string>
+			<string>This second is life. And when it is gone it is dead.</string>
+			<string>With me, the present is forever, and forever is always shifting, flowing, melting.</string>
+			<string>After a heavy rainfall, poems titled RAIN pour in from across the nation.</string>
+			<string>...you cannot regard your own life with objective curiosity all the time.</string>
+			<string>I have to live my life, and it is the only one I&apos;ll ever have.</string>
+			<string>My love&apos;s not impersonal yet not wholly subjective either.</string>
+			<string>The blood jet is poetry, there is no stopping it.</string>
+			<string>Perfection is terrible, it cannot have children.</string>
+			<string>Out of the ash I rise with my red hair And I eat men like air.</string>
+			<string>Dying is an art, like everything else.</string>
+			<string>I took a deep breath and listened to the old brag of my heart: I am, I am, I am.</string>
+			<string>To the person in the bell jar, blank and stopped as a dead baby, the world itself is the bad dream.</string>
+			<string>If neurotic is wanting two mutually exclusive things at one and the same time, then I&apos;m neurotic as hell.</string>
+			<string>The one thing I was good at was winning scholarships and prizes, and that era was coming to an end.</string>
+			<string>I thought how strange it had never occurred to me before that I was only purely happy until I was nine years old.</string>
+			<string>What a man is is an arrow into the future and what a woman is is the place the arrow shoots from.</string>
+			<string>If you expect nothing from somebody you are never disappointed.</string>
+			<string>There must be quite a few things a hot bath won&apos;t cure, but I don&apos;t know many of them.</string>
+			<string>We shall by morning inherit the earth. Our foot&apos;s in the door.</string>
+			<string>What did my fingers do before they held him? What did my heart do, with its love?</string>
+			<string>I shut my eyes and all the world drops dead; I lift my lids and all is born again.</string>
+			<string>How frail the human heart must be - a mirrored pool of thought.</string>
+			<string>I talk to God but the sky is empty.</string>
+			<string>I want to live and feel all the shades, tones and variations of mental and physical experience possible in my life. And I am horribly limited.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Jane Austen</string>
 		<key>wiki</key>
 		<string>https://en.wikipedia.org/wiki/Jane_Austen</string>
@@ -726,7 +801,6 @@
 			<string>It sounds really corny but I think if you&apos;re beautiful inside it shows on the outside, for sure.</string>
 			<string>You can&apos;t do a dog in a heel.</string>
 			<string>I got tired of feeling like Dracula. I wanted to see some daylight, and not just at six o&apos;clock in the morning.</string>
-			<string>Yeah, I like clothes, but I hardly ever go shopping.</string>
 			<string>I haven&apos;t partied since... last Friday!</string>
 			<string>It&apos;s a sin to be tired.</string>
 			<string>Going to the gym wouldn&apos;t be on my list of favorite things to do.</string>

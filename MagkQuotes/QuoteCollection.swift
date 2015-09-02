@@ -64,7 +64,7 @@ class QuoteCollection: Printable {
     }
     
     func authorQuoteString(authorQuotePair: (author: Author, quote: Quote)) -> String {
-        let quote = authorQuotePair.quote.quote
+        let quote = authorQuotePair.quote.quote.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         let authorName = authorQuotePair.author.name
         return "\"\(quote)\"" + "\n\n-" + authorName
     }

@@ -25,8 +25,7 @@ struct Author: Printable {
     }
     
     func getRandomQuote() -> Quote {
-        let index = Int.randomInt(quotes.count)
-        return quotes[index]
+        return quotes.randomElement()
     }
     
     func hashtagName() -> String {

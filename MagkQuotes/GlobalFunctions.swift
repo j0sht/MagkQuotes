@@ -16,6 +16,13 @@ extension Array {
 }
 
 extension Array {
+    func randomElement() -> T {
+        let index = Int.randomInt(self.count)
+        return self[index]
+    }
+}
+
+extension Array {
     mutating func shuffle() {
         if count < 2 { return }
         for i in 0..<(count - 1) {

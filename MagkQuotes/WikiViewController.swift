@@ -181,7 +181,7 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
         forwardButton.enabled = webView.canGoForward
         updateRefreshButtonIdentifier()
         actionButton.enabled = true
-        progressView.progressTintColor = UIColor.getProgressViewColor()
+        //progressView.progressTintColor = UIColor.getProgressViewColor()
         progressView.hidden = true
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }
@@ -215,54 +215,55 @@ private extension String {
 
 private extension UIColor {
     static func getProgressViewColor() -> UIColor {
-        let colors = [
-            UIColor(red: 242, green: 155, blue: 212),
-            UIColor(red: 79, green: 111, blue: 140),
-            UIColor(red: 122, green: 159, blue: 191),
-            UIColor(red: 217, green: 35, blue: 83),
-            UIColor(red: 168, green: 115, blue: 191),
-            UIColor(red: 15, green: 166, blue: 138),
-            UIColor(red: 166, green: 108, blue: 36),
-            UIColor(red: 166, green: 36, blue: 60),
-            UIColor(red: 242, green: 182, blue: 198),
-            UIColor(red: 140, green: 74, blue: 50),
-            UIColor(red: 140, green: 48, blue: 39),
-            UIColor(red: 23, green: 26, blue: 38),
-            UIColor(red: 145, green: 191, blue: 99),
-            UIColor(red: 190, green: 217, blue: 150),
-            UIColor(red: 205, green: 119, blue: 242),
-            UIColor(red: 83, green: 45, blue: 166),
-            UIColor(red: 59, green: 130, blue: 191),
-            UIColor(red: 234, green: 242, blue: 5),
-            UIColor(red: 242, green: 143, blue: 22),
-            UIColor(red: 242, green: 94, blue: 122),
-            UIColor(red: 242, green: 56, blue: 71),
-            UIColor(red: 3, green: 44, blue: 166),
-            UIColor(red: 242, green: 152, blue: 99),
-            UIColor(red: 64, green: 1, blue: 1),
-            UIColor(red: 242, green: 22, blue: 22),
-            UIColor(red: 7, green: 140, blue: 40),
-            UIColor(red: 242, green: 203, blue: 5),
-            UIColor(red: 242, green: 183, blue: 5),
-            UIColor(red: 242, green: 98, blue: 65),
-            UIColor(red: 166, green: 33, blue: 3),
-            UIColor(red: 166, green: 3, blue: 79),
-            UIColor(red: 217, green: 4, blue: 121),
-            UIColor(red: 242, green: 82, blue: 186),
-            UIColor(red: 242, green: 140, blue: 215),
-            UIColor(red: 5, green: 2, blue: 89),
-            UIColor(red: 1, green: 4, blue: 64),
-            UIColor(red: 38, green: 70, blue: 166),
-            UIColor(red: 38, green: 81, blue: 166),
-            UIColor(red: 38, green: 93, blue: 166),
-            UIColor(red: 99, green: 135, blue: 166),
-            UIColor(red: 166, green: 3, blue: 17),
-            UIColor(red: 242, green: 46, blue: 62),
-            UIColor(red: 242, green: 92, blue: 105),
-            UIColor(red: 242, green: 153, blue: 121),
-            UIColor(red: 239, green: 70, blue: 63)
+        let colors: [(red: Int, green: Int, blue: Int)] = [
+            (red: 242, green: 155, blue: 212),
+            (red: 79, green: 111, blue: 140),
+            (red: 122, green: 159, blue: 191),
+            (red: 217, green: 35, blue: 83),
+            (red: 168, green: 115, blue: 191),
+            (red: 15, green: 166, blue: 138),
+            (red: 166, green: 108, blue: 36),
+            (red: 166, green: 36, blue: 60),
+            (red: 242, green: 182, blue: 198),
+            (red: 140, green: 74, blue: 50),
+            (red: 140, green: 48, blue: 39),
+            (red: 23, green: 26, blue: 38),
+            (red: 145, green: 191, blue: 99),
+            (red: 190, green: 217, blue: 150),
+            (red: 205, green: 119, blue: 242),
+            (red: 83, green: 45, blue: 166),
+            (red: 59, green: 130, blue: 191),
+            (red: 234, green: 242, blue: 5),
+            (red: 242, green: 143, blue: 22),
+            (red: 242, green: 94, blue: 122),
+            (red: 242, green: 56, blue: 71),
+            (red: 3, green: 44, blue: 166),
+            (red: 242, green: 152, blue: 99),
+            (red: 64, green: 1, blue: 1),
+            (red: 242, green: 22, blue: 22),
+            (red: 7, green: 140, blue: 40),
+            (red: 242, green: 203, blue: 5),
+            (red: 242, green: 183, blue: 5),
+            (red: 242, green: 98, blue: 65),
+            (red: 166, green: 33, blue: 3),
+            (red: 166, green: 3, blue: 79),
+            (red: 217, green: 4, blue: 121),
+            (red: 242, green: 82, blue: 186),
+            (red: 242, green: 140, blue: 215),
+            (red: 5, green: 2, blue: 89),
+            (red: 1, green: 4, blue: 64),
+            (red: 38, green: 70, blue: 166),
+            (red: 38, green: 81, blue: 166),
+            (red: 38, green: 93, blue: 166),
+            (red: 99, green: 135, blue: 166),
+            (red: 166, green: 3, blue: 17),
+            (red: 242, green: 46, blue: 62),
+            (red: 242, green: 92, blue: 105),
+            (red: 242, green: 153, blue: 121),
+            (red: 239, green: 70, blue: 63)
         ]
-        let index = Int.randomInt(colors.count)
-        return colors[index]
+        let codes = colors.randomElement()
+        println("code.red: \(codes.red) | codes.blue \(codes.blue) | codes.green \(codes.green)")
+        return UIColor(red: codes.red, green: codes.green, blue: codes.blue)
     }
 }

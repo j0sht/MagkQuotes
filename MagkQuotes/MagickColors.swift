@@ -20,14 +20,14 @@ extension UIColor {
     convenience init(netHex:Int) {
         self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
     }
-}
-
-func getRandomColor() -> UIColor {
-    let min = 80
-    let max = 255
-    let red = Int.randomIntBetween(min, and: max, inclusive: true)
-    let blue = Int.randomIntBetween(min, and: max, inclusive: true)
-    let green = Int.randomIntBetween(min, and: max, inclusive: true)
-    println("red = \(red) | green = \(green) | blue = \(blue)")
-    return UIColor(red: red, green: green, blue: blue)
+    
+    static func getRandomColor() -> UIColor {
+        let min = 80
+        let max = 255
+        let red = Int.randomIntBetween(min, and: max, inclusive: true)
+        let blue = Int.randomIntBetween(min, and: max, inclusive: true)
+        let green = Int.randomIntBetween(min, and: max, inclusive: true)
+        println("r = \(red) | g = \(green) | b = \(blue)")
+        return UIColor(red: red, green: green, blue: blue)
+    }
 }

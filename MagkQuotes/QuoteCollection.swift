@@ -39,8 +39,7 @@ class QuoteCollection: Printable {
     
     func getRandomAuthor() -> Author? {
         if !authors.isEmpty {
-            let index = Int.randomInt(authors.count)
-            return authors[index]
+            return authors.randomElement()
         }
         return nil
     }

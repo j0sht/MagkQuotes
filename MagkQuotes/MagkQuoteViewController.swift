@@ -229,7 +229,7 @@ class MagkQuoteViewController: UIViewController {
     }
     
     private func setRandomColor() {
-        view.backgroundColor = getRandomColor()
+        view.backgroundColor = UIColor.getRandomColor()
     }
     
     // MARK: Called when quote is dismissed

@@ -354,32 +354,9 @@ class MagkQuoteViewController: UIViewController {
     }
     
     private func addMotionEffectToImageAndQuote() {
-        // Shadow
-        let verticalShadowEffect = UIInterpolatingMotionEffect(keyPath: "layer.shadowOffSet", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
-        verticalShadowEffect.minimumRelativeValue =  NSValue(CGSize: CGSize(width: -200, height: 100))
-        verticalShadowEffect.maximumRelativeValue = NSValue(CGSize: CGSize(width: 200, height: 100))
+        let strength1: CGFloat = 1.0
+        let strength2: CGFloat = 0.8
         
-        let horizontalShadowEffect = UIInterpolatingMotionEffect(keyPath: "layer.shadowOffSet", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
-        horizontalShadowEffect.minimumRelativeValue =  NSValue(CGSize: CGSize(width: 20, height: -10))
-        horizontalShadowEffect.maximumRelativeValue = NSValue(CGSize: CGSize(width: 20, height: 10))
-
-        let shadowEffect = UIMotionEffectGroup()
-        shadowEffect.motionEffects = [
-            verticalShadowEffect,
-            horizontalShadowEffect
-        ]
-        
-        let strength1: CGFloat = 0.6
-        let strength2: CGFloat = 0.6
-        
-//        imageView.addMotionEffect(UIMotionEffect.twoAxesShift(strength1))
-//        imageView.addMotionEffect(shadowEffect)
-//        
-//        countdownLabel.addMotionEffect(UIMotionEffect.twoAxesShift(strength1))
-//        countdownLabel.addMotionEffect(shadowEffect)
-//        
-//        quoteLabel.addMotionEffect(UIMotionEffect.twoAxesShift(strength2))
-//        quoteLabel.addMotionEffect(shadowEffect)
         imageView.addParallaxAndShadowEffects(strength1, addShadow: true)
         countdownLabel.addParallaxAndShadowEffects(strength1, addShadow: false)
         quoteLabel.addParallaxAndShadowEffects(strength2, addShadow: false)

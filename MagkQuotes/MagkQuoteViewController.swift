@@ -354,37 +354,35 @@ class MagkQuoteViewController: UIViewController {
     }
     
     private func addMotionEffectToImageAndQuote() {
-        
-        let horizontalImageAndNumber = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
-        let verticalImageAndNumber = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
-        
-        horizontalImageAndNumber.minimumRelativeValue = -20
-        horizontalImageAndNumber.maximumRelativeValue = 20
-        verticalImageAndNumber.minimumRelativeValue = -20
-        verticalImageAndNumber.maximumRelativeValue = 20
-        
-        let horizontalQuote = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
-        let verticalQuote = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
-        
-        horizontalQuote.minimumRelativeValue = -10
-        horizontalQuote.maximumRelativeValue = 10
-        verticalQuote.minimumRelativeValue = -10
-        verticalQuote.maximumRelativeValue = 10
-        
         // Shadow
-        let shadowEffect = UIInterpolatingMotionEffect(keyPath: "layer.shadowOffSet", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
-        shadowEffect.minimumRelativeValue =  NSValue(CGSize: CGSize(width: -40, height: 20))
-        shadowEffect.maximumRelativeValue = NSValue(CGSize: CGSize(width: 40, height: 20))
+        let verticalShadowEffect = UIInterpolatingMotionEffect(keyPath: "layer.shadowOffSet", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
+        verticalShadowEffect.minimumRelativeValue =  NSValue(CGSize: CGSize(width: -200, height: 100))
+        verticalShadowEffect.maximumRelativeValue = NSValue(CGSize: CGSize(width: 200, height: 100))
         
-        let imageAndNumberGroup = UIMotionEffectGroup()
-        imageAndNumberGroup.motionEffects = [horizontalImageAndNumber,verticalImageAndNumber,shadowEffect]
+        let horizontalShadowEffect = UIInterpolatingMotionEffect(keyPath: "layer.shadowOffSet", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
+        horizontalShadowEffect.minimumRelativeValue =  NSValue(CGSize: CGSize(width: 20, height: -10))
+        horizontalShadowEffect.maximumRelativeValue = NSValue(CGSize: CGSize(width: 20, height: 10))
+
+        let shadowEffect = UIMotionEffectGroup()
+        shadowEffect.motionEffects = [
+            verticalShadowEffect,
+            horizontalShadowEffect
+        ]
         
-        let quoteGroup = UIMotionEffectGroup()
-        quoteGroup.motionEffects = [horizontalQuote,verticalQuote,shadowEffect]
+        let strength1: CGFloat = 0.6
+        let strength2: CGFloat = 0.6
         
-        imageView.addMotionEffect(imageAndNumberGroup)
-        countdownLabel.addMotionEffect(imageAndNumberGroup)
-        quoteLabel.addMotionEffect(quoteGroup)
+//        imageView.addMotionEffect(UIMotionEffect.twoAxesShift(strength1))
+//        imageView.addMotionEffect(shadowEffect)
+//        
+//        countdownLabel.addMotionEffect(UIMotionEffect.twoAxesShift(strength1))
+//        countdownLabel.addMotionEffect(shadowEffect)
+//        
+//        quoteLabel.addMotionEffect(UIMotionEffect.twoAxesShift(strength2))
+//        quoteLabel.addMotionEffect(shadowEffect)
+        imageView.addParallaxAndShadowEffects(strength1, addShadow: true)
+        countdownLabel.addParallaxAndShadowEffects(strength1, addShadow: false)
+        quoteLabel.addParallaxAndShadowEffects(strength2, addShadow: false)
     }
     
     private func displayQuote() {

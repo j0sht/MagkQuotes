@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1522167E1B99398E00B200EE /* ParallaxShaderViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522167D1B99398E00B200EE /* ParallaxShaderViewExtension.swift */; };
 		153D0FEA1B8ECBB0005831ED /* QuoteCollection.plist in Resources */ = {isa = PBXBuildFile; fileRef = 153D0FE91B8ECBB0005831ED /* QuoteCollection.plist */; };
 		1542FE291B5C398C00056E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE281B5C398C00056E13 /* AppDelegate.swift */; };
 		1542FE2B1B5C398C00056E13 /* MagkQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542FE2A1B5C398C00056E13 /* MagkQuoteViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1522167D1B99398E00B200EE /* ParallaxShaderViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxShaderViewExtension.swift; sourceTree = "<group>"; };
 		153D0FE91B8ECBB0005831ED /* QuoteCollection.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QuoteCollection.plist; sourceTree = "<group>"; };
 		1542FE231B5C398C00056E13 /* MagkQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagkQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1542FE271B5C398C00056E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				1542FE571B5C3A8B00056E13 /* ImageResource.swift */,
 				1542FE581B5C3A8B00056E13 /* MagickColors.swift */,
 				15C38FAA1B6362BA00F88458 /* UIKitExtensions.swift */,
+				1522167D1B99398E00B200EE /* ParallaxShaderViewExtension.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			files = (
 				1542FE501B5C3A2000056E13 /* Quote.swift in Sources */,
 				1542FE4F1B5C3A2000056E13 /* Author.swift in Sources */,
+				1522167E1B99398E00B200EE /* ParallaxShaderViewExtension.swift in Sources */,
 				15C38FAB1B6362BA00F88458 /* UIKitExtensions.swift in Sources */,
 				1542FE551B5C3A4800056E13 /* GlobalFunctions.swift in Sources */,
 				1542FE5A1B5C3A8B00056E13 /* MagickColors.swift in Sources */,

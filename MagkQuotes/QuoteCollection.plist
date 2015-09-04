@@ -4,6 +4,348 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Yves Saint Laurent</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Yves_Saint_Laurent_(designer)</string>
+		<key>quotes</key>
+		<array>
+			<string>I am no longer concerned with sensation and innovation, but with the perfection of my style.</string>
+			<string>I have always believed that fashion was not only to make women more beautiful, but also to reassure them, give them confidence.</string>
+			<string>The most beautiful makeup of a woman is passion. But cosmetics are easier to buy.</string>
+			<string>I created for my era and I tried to foresee what tomorrow would be.</string>
+			<string>The most beautiful clothes that can dress a woman are the arms of the man she loves.</string>
+			<string>They are rare, those who imposed their style while fashion makers are so numerous.</string>
+			<string>I participated in the transformation of my era. I did it with clothes, which is surely less important than music, architecture, painting... but whatever it&apos;s worth I did it.</string>
+			<string>We must never confuse elegance with snobbery.</string>
+			<string>Over the years I have learned that what is important in a dress is the woman who is wearing it.</string>
+			<string>It pains me physically to see a woman victimized, rendered pathetic, by fashion.</string>
+			<string>Isn&apos;t elegance forgetting what one is wearing?</string>
+			<string>Fashion fades, style is eternal.</string>
+			<string>Dressing is a way of life.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Coco Chanel</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Coco_Chanel</string>
+		<key>quotes</key>
+		<array>
+			<string>I was a rebellious child, a rebellious lover, a rebellious couturière — a real devil.</string>
+			<string>Don&apos;t spend time beating on a wall, hoping to transform it into a door.</string>
+			<string>Success is often achieved by those who don&apos;t know that failure is inevitable.</string>
+			<string>Fashion is in the sky, in the street, fashion has to do with ideas, the way we live, what is happening.</string>
+			<string>Nothing is ugly as long as it is alive.</string>
+			<string>Fashion is architecture. It is a matter of proportions.</string>
+			<string>Fashion is made to become unfashionable.</string>
+			<string>Fashion is at once a caterpillar and a butterfly, caterpillar by day, butterfly by night.</string>
+			<string>I have said that black has it all. White too. Their beauty is absolute. It is the perfect harmony.</string>
+			<string>The best things in life are free. The second best are very expensive.</string>
+			<string>Elegance is refusal.</string>
+			<string>The best color in the whole world is the one that looks good on you.</string>
+			<string>It is always better to be slightly underdressed.</string>
+			<string>Gentleness doesn&apos;t get work done unless you happen to be a hen laying eggs.</string>
+			<string>How many cares one loses when one decides not to be something but to be someone.</string>
+			<string>Nature gives you the face you have at twenty. Life shapes the face you have at thirty. But at fifty you get the face you deserve.</string>
+			<string>Since everything is in our heads, we had better not lose them.</string>
+			<string>Men always remember a woman who caused them concern and uneasiness.</string>
+			<string>A woman can be over dressed by never over elegant.</string>
+			<string>You can be gorgeous at thirty, charming at forty, and irresistible for the rest of your life.</string>
+			<string>A girl should be two things: who and what she wants.</string>
+			<string>There is time for work. And time for love. That leaves no other time.</string>
+			<string>Fashion changes, but style endures.</string>
+			<string>I don&apos;t care what you think about me. I don&apos;t think about you at all.</string>
+			<string>As long as you know men are like children, you know everything!</string>
+			<string>I imposed black; it is still going strong today, for black wipes out everything else around.</string>
+			<string>My life didn&apos;t please me, so I created my life.</string>
+			<string>Dress shabbily and they remember the dress; dress impeccably and they remember the woman.</string>
+			<string>Only those with no memory insist on their originality.</string>
+			<string>I don&apos;t do fashion, I am fashion.</string>
+			<string>You live but once; you might as well be amusing.</string>
+			<string>In order to be irreplaceable, one must always be different.</string>
+			<string>The most courageous act is still to think for yourself. Aloud.</string>
+			<string>Some people think luxury is the opposite of poverty. It is not. It is the opposite of vulgarity.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Walt Whitman</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Walt_Whitman</string>
+		<key>quotes</key>
+		<array>
+			<string>A shock electric - the night sustain&apos;d it...</string>
+			<string>I celebrate myself, and sing myself, And what I assume you shall assume...</string>
+			<string>The habit of giving only enhances the desire to give.</string>
+			<string>The real artist is in humanity. What are called bad manners are often the most picturesque and significant of them all.</string>
+			<string>If anything is sacred, the human body is sacred.</string>
+			<string>I no doubt deserved my enemies, but I don&apos;t believe I deserved my friends.</string>
+			<string>Behold, I do not give lectures or a little charity, When I give I give myself.</string>
+			<string>Henceforth I ask not good fortune. I myself am good fortune.</string>
+			<string>The greatest city is that which has the greatest men and women.</string>
+			<string>Society waits unformed and is between things ended and things begun.</string>
+			<string>I swear I think there is nothing but immortality!</string>
+			<string>I see that I am to wait for what will be exhibited by death.</string>
+			<string>What do you suppose will satisfy the soul except to walk free and own no superior?</string>
+			<string>Peace is always beautiful.</string>
+			<string>Liberty is to be subserved, whatever occurs.</string>
+			<string>Give me the splendid silent sun, with all his beams full-dazzling!</string>
+			<string>Thunder on! Stride on! Democracy. Strike with vengeful stroke!</string>
+			<string>...Youth, full of grace, force, fascination! Do you know that Old Age may come after you, with equal grace, force, fascination?</string>
+			<string>...Love like the light silently wrapping all.</string>
+			<string>In the faces of men and women I see God.</string>
+			<string>I have no mockings or arguments; I witness and wait.</string>
+			<string>Nothing can happen more beautiful than death.</string>
+			<string>None has begun to think how devine he himself is and how certain the future is.</string>
+			<string>To have great poets, there must be great audiences too.</string>
+			<string>Some people are so much sunlight to the square inch.</string>
+			<string>We Americans have yet to really learn our own antecedents, and sort them, to unify them.</string>
+			<string>What an awful thing war is! Mother, it hardly seems not men but a lot of devils and butchers butchering each other.</string>
+			<string>...dismiss whatever insults your own soul...</string>
+			<string>The poet shall not spend his time in unneeded work.</string>
+			<string>...re-examine all you have been told at school or church or in any book...</string>
+			<string>...go freely with powerful uneducated persons and with the young and with the mothers of families...</string>
+			<string>...stand up for the stupid and crazy...</string>
+			<string>He who does great deeds, does them from his innate sensitiveness to moral beauty.</string>
+			<string>I think of few heroic actions, which cannot be traced to the artistical impulse.</string>
+			<string>It is a beautiful truth that all men contain something of the artist in them.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Emily Dickinson</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Emily_Dickinson</string>
+		<key>quotes</key>
+		<array>
+			<string>Anger as soon as fed is dead - &apos;Tis starving that makes it fat.</string>
+			<string>My friends are my estate.</string>
+			<string>A mother is one to whom you hurry when you are troubled.</string>
+			<string>Dying is a wild night and a new road.</string>
+			<string>Parting is all we know of heaven, and all we need of hell.</string>
+			<string>Dwell in possibility.</string>
+			<string>Morning without you is a dwindled dawn.</string>
+			<string>Truth is so rare that it is delightful to tell it.</string>
+			<string>Unable are the loved to die, for love is immortality.</string>
+			<string>The possible&apos;s slow fuse is lit by the imagination.</string>
+			<string>Luck is not chance, it&apos;s toil; fortune&apos;s expensive smile is earned.</string>
+			<string>A wounded deer leaps the highest.</string>
+			<string>We turn not older with years, but newer every day.</string>
+			<string>Beauty is not caused. It is.</string>
+			<string>Saying nothing... sometimes says the most.</string>
+			<string>That it will never come again is what makes life sweet.</string>
+			<string>Where thou art, that is home.</string>
+			<string>Not knowing when the dawn will come, I open every door.</string>
+			<string>Finite to fail, but infinite to venture.</string>
+			<string>Forever is composed of nows.</string>
+			<string>Because I could not stop for Death, He kindly stopped for me...</string>
+			<string>Afraid? Of whom am I afraid? Not death; for who is he?</string>
+			<string>Look back on time with kindly eyes, He doubtless did his best...</string>
+			<string>Hope is the thing with feathers that perches in the soul, and sings the tune without the words, and never stops at all...</string>
+			<string>Success is counted sweetest by those who ne&apos;er succeeded.</string>
+			<string>We never know how high we are till we are called to rise...</string>
+			<string>I&apos;m Nobody! Who are you? Are you a nobody, too?</string>
+			<string>The Soul selects her own society.</string>
+			<string>To live is so startling it leaves little time for anything else.</string>
+			<string>The soul should always stand ajar. Ready to welcome the ecstatic experience.</string>
+			<string>We meet no stranger, but Ourself.</string>
+			<string>I took my power in my hand and went against the world...</string>
+			<string>If I can stop one heart from breaking, I shall not live in vain...</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>T. S. Eliot</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/T._S._Eliot</string>
+		<key>quotes</key>
+		<array>
+			<string>When I see a play and understand it the first time, then I know it can&apos;t be much good.</string>
+			<string>People to whom nothing has ever happened cannot understand the unimportance of events.</string>
+			<string>There is no method but to be very intelligent.</string>
+			<string>The most important thing for poets to do is to write as little as possible.</string>
+			<string>Let&apos;s not be narrow, nasty, and negative.</string>
+			<string>Keep true, never be ashamed of doing right; decide on what you think is right and stick to it.</string>
+			<string>...the end of all our exploring will be to arrive where we started and know the place for the first time.</string>
+			<string>We shall not cease from exploration.</string>
+			<string>You are the music while the music lasts.</string>
+			<string>I think that what happens early on in life is that at a certain age one stands still and stagnates.</string>
+			<string>...our lives are mostly a constant evasion of ourselves.</string>
+			<string>...last year&apos;s words belong to last year&apos;s language; And next year&apos;s words await another voice.</string>
+			<string>Anxiety is the hand maiden of creativity.</string>
+			<string>Success is relative. It is what we make of the mess we have made of things.</string>
+			<string>Where is the knowledge we have lost in information?</string>
+			<string>Where is the Life we have lost in living?</string>
+			<string>Genuine poetry can communicate before it is understood.</string>
+			<string>If you aren&apos;t in over your head, how do you know how tall you are?</string>
+			<string>What we call the beginning is often the end. And to make an end is to make a beginning. The end is where we start from.</string>
+			<string>Sometimes things become possible if we want them bad enough.</string>
+			<string>Only those who will risk going too far can possibly find out how far one can go.</string>
+			<string>To do the useful thing, to say the courageous thing, to contemplate the beautiful thing: that is enough for one man&apos;s life.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ralph Waldo Emerson</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Ralph_Waldo_Emerson</string>
+		<key>quotes</key>
+		<array>
+			<string>Trust thyself: every heart vibrates to that iron string.</string>
+			<string>In every work of genius we recognize our own rejected thoughts: they come back to us with a certain alienated majesty.</string>
+			<string>A man is a god in ruins.</string>
+			<string>Every natural fact is a symbol of some spiritual fact.</string>
+			<string>Beauty is the mark God sets upon virtue.</string>
+			<string>Blessed are those who have no talent!</string>
+			<string>I hate quotation. Tell me what you know.</string>
+			<string>Poetry must be new as foam, and as old as the rock.</string>
+			<string>It is easy to live for others; everybody does. I call on you to live for yourselves.</string>
+			<string>The best effect of fine persons is felt after we have left their presence.</string>
+			<string>Let me never fall into the vulgar mistake of dreaming that I am persecuted whenever I am contradicted.</string>
+			<string>Children are all foreigners.</string>
+			<string>Sometimes a scream is better than a thesis.</string>
+			<string>We are always getting ready to live, but never living.</string>
+			<string>The Religion that is afraid of science dishonours God and commits suicide.</string>
+			<string>When a whole nation is roaring Patriotism at the top of its voice, I am fain to explore the cleanness of its hands and purity of its heart.</string>
+			<string>To different minds, the same world is a hell, and a heaven.</string>
+			<string>Respect the child. Be not too much his parent. Trespass not on his solitude.</string>
+			<string>I wish not to concede anything to them, but to tame, drill, divide, and break them up, and draw individuals out of them.</string>
+			<string>Masses are rude, lame, pernicious in their demands and influence, and need not be flattered, but to be schooled.</string>
+			<string>People seem not to see that their opinion of the world is also confession of character.</string>
+			<string>Money often costs too much.</string>
+			<string>...when you strike at a king, you must kill him.</string>
+			<string>Every man I meet is in some way my superior; and in that I can learn of him.</string>
+			<string>Every man is a new method.</string>
+			<string>The novelist should not make any character act absurdly, but only absurdly as seen by others. For it is so in life.</string>
+			<string>Sunshine cannot bleach the snow, Nor time unmake what poets know.</string>
+			<string>Time and tide their faults will find.</string>
+			<string>What is a weed? A plant whose virtues have yet to be discovered.</string>
+			<string>Poetry teaches the enormous force of a few words, and, in proportion to the inspiration, check loquacity.</string>
+			<string>Only the great generalizations survive.</string>
+			<string>Nothing can be preserved that is not good.</string>
+			<string>An original sentence, a step forward, is worth more than all the censures.</string>
+			<string>Slowly, slowly the Avenger comes, but comes surely.</string>
+			<string>...Innovation is the salient energy; Conservatism the pause on the last movement.</string>
+			<string>Literature is the effort of man to indemnify himself for the wrongs of his condition.</string>
+			<string>He who is in love is wise and is becoming wiser...</string>
+			<string>The imitator dooms himself to hopeless mediocrity.</string>
+			<string>The man who renounces himself, comes to himself.</string>
+			<string>The sublime is excited in me by the great stoical doctrine, Obey thyself.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Maya Angelou</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Maya_Angelou</string>
+		<key>quotes</key>
+		<array>
+			<string>It is one of the greatest gifts you can give yourself, to forgive. Forgive everybody.</string>
+			<string>Nothing will work unless you do.</string>
+			<string>I love to see a young girl go out and grab the world by the lapels.</string>
+			<string>Life&apos;s a bitch. You&apos;ve got to go out and kick some ass.</string>
+			<string>Try to be a rainbow in someone&apos;s cloud.</string>
+			<string>My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.</string>
+			<string>We delight in the beauty of the butterfly, but rarely admit the changes it has gone through to achieve that beauty.</string>
+			<string>There is an African saying which is: Be careful when a naked person offers you a shirt.</string>
+			<string>I do not trust people who don&apos;t love themselves and yet tell me, &apos;I love you.&apos;</string>
+			<string>I&apos;ve learned that I still have a lot to learn.</string>
+			<string>Hate, it has caused a lot of problems in the world, but has not solved one yet.</string>
+			<string>I don&apos;t trust anyone who doesn&apos;t laugh.</string>
+			<string>We need much less than we think we need.</string>
+			<string>Love recognizes no barriers.</string>
+			<string>Most people don&apos;t grow up. Most people age.</string>
+			<string>No matter what happens, or how bad it seems today, life does go on, and it will be better tomorrow.</string>
+			<string>You may not control all the events that happen to you, but you can decide not to be reduced by them.</string>
+			<string>If I am not good to myself, how can I expect anyone else to be good to me?</string>
+			<string>Never make someone a priority when all you are to them is an option.</string>
+			<string>You can&apos;t use up creativity. The more you use, the more you have.</string>
+			<string>I&apos;ve learned that making a &apos;living&apos; is not the same thing as &apos;making a life.&apos;</string>
+			<string>...pursue the things you love doing and then do them so well that people can&apos;t take their eyes off you.</string>
+			<string>You can only become truly accomplished at something you love. Don&apos;t make money your goal.</string>
+			<string>If you don&apos;t like something, change it. If you can&apos;t change it, change your attitude. Don&apos;t complain.</string>
+			<string>If I were a young person today, trying to gain a sense of myself in the world, I would do that again by reading...</string>
+			<string>There is no greater agony than bearing an untold story inside you.</string>
+			<string>I&apos;ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.</string>
+			<string>Courage is the most important of all virtues because without courage, you can&apos;t practice any other virtue consistently.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Pierre Trudeau</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Pierre_Trudeau</string>
+		<key>quotes</key>
+		<array>
+			<string>A country is something that is built every day out of certain basic shared values.</string>
+			<string>We aimed far and high, but we did not miss the mark.</string>
+			<string>Some things I never learned to like. I didn&apos;t like to kiss babies, though I didn&apos;t mind kissing their mothers.</string>
+			<string>I must say that &apos;Give Peace a Chance&apos; has always seemed to me to be sensible advice.</string>
+			<string>Democracy demands that elected members be able to realize fully the role for which they have been chosen.</string>
+			<string>Criminal law... cannot be based on the notion of sin; it is crimes that it must define.</string>
+			<string>I believe a constitution can permit the co-existence of several cultures and ethnic groups with a single state.</string>
+			<string>The essential ingredient of politics is timing.</string>
+			<string>Our hopes are high. Our faith in people is great. Our courage is strong. And our dreams for this beautiful county will never die.</string>
+			<string>If Canada is to survive, it can only survive in mutual respect and in love for one another.</string>
+			<string>I&apos;ve been called worse things by better people.</string>
+			<string>A society which emphasizes uniformity is one which creates intolerance and hate.</string>
+			<string>What could be more absurd than the concept of an &apos;all Canadian&apos; boy or girl?</string>
+			<string>Let us overthrow the totems, break the taboos. Or better, let us consider them cancelled. Coldly, let us be intelligent.</string>
+			<string>It is our future in which we will find our greatness.</string>
+			<string>The past is to be respected and acknowledged, but not to be worshipped.</string>
+			<string>Liberalism is the philosophy for our time... because it is prepared to experiment and innovate and because it knows that the past is less important than the future.</string>
+			<string>The attainment of a just society is the cherished hope of civilized men.</string>
+			<string>There&apos;s no place for the state in the bedrooms of the nation.</string>
+			<string>What sets a canoeing expedition apart is that it purifies you more rapidly and inescapably than any other. </string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Beyoncé</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Beyonce</string>
+		<key>quotes</key>
+		<array>
+			<string>If everything was perfect, you would never learn and you would never grow.</string>
+			<string>&apos;Power&apos; is not given to you. You have to take it.</string>
+			<string>I don&apos;t want to be a hot girl. I want to be iconic.</string>
+			<string>I can never be safe; I always try and go against the grain.</string>
+			<string>As soon as I accomplish one thing, I just set a higher goal.</string>
+			<string>I embrace mistakes, they make you who you are.</string>
+			<string>We have to step up as women and take the lead.</string>
+			<string>The most alluring thing a woman can have is confidence.</string>
+			<string>I&apos;m not bossy. I&apos;m the boss.</string>
+			<string>...we have to teach our girls that they can reach as high as humanly possible.</string>
+			<string>We have to teach our boys the rules of equality and respect, so that as they grow up gender equality becomes a natural way of life.</string>
+			<string>If you&apos;ve been doing all you can and it&apos;s not happening for you, go out and have you a good old time.</string>
+			<string>Put on your sexy dress and move on.</string>
+			<string>I can do what I want. I can say what I want. I can retire if I want. That&apos;s why I&apos;ve worked hard.</string>
+			<string>I don&apos;t feel like I have to please anyone. I feel free.</string>
+			<string>I don&apos;t like to gamble, but if there&apos;s one thing I&apos;m willing to bet on, it&apos;s myself.</string>
+			<string>We all have our imperfections.</string>
+			<string>It&apos;s really about who you are, and the human being, that makes you beautiful.</string>
+			<string>I have learned that it is no one else&apos;s job to take care of me but me.</string>
+			<string>It is so liberating to really know what I want, what truly makes me happy, what I will not tolerate.</string>
+			<string>I don&apos;t have to prove anything to anyone, I only have to follow my heart and concentrate on what I want to say to the world.</string>
+			<string>I run my world.</string>
+			<string>The reality is: sometimes you lose.</string>
+			<string>...let&apos;s face it, money gives men the power to run the show.</string>
+			<string>Women have to work much harder to make it in this world.</string>
+			<string>We have to reshape our own perception of how we view ourselves.</string>
+			<string>Why do you have to choose what type of woman you are? Why do you have to label yourself anything?</string>
+			<string>I felt like it was time to set up my future, so I set a goal. My goal was independence.</string>
+			<string>Do what you were born to do. You just have to trust yourself.</string>
+			<string>I&apos;m a workaholic and I don&apos;t believe in &apos;No.&apos;</string>
+			<string>How can we live if we don&apos;t change?</string>
+			<string>Take all the rules away.</string>
+			<string>I use the negativity to fuel the transformation into a better me.</string>
+			<string>When I&apos;m not feeling my best I ask myself, &apos;What are you gonna do about it?&apos;</string>
+			<string>You don&apos;t have to depend on someone telling you who you are.</string>
+			<string>Your self-worth is determined by you.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Mary Wollstonecraft</string>
 		<key>wiki</key>
 		<string>https://en.wikipedia.org/wiki/Mary_Wollstonecraft</string>

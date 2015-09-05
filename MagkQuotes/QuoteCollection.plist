@@ -4,6 +4,77 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Barack Obama</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Barack_Obama</string>
+		<key>quotes</key>
+		<array>
+			<string>I need a dance partner here - and the floor is empty.</string>
+			<string>The presidency has a funny way of making a person feel the need to pray.</string>
+			<string>Let&apos;s try common sense. A novel concept.</string>
+			<string>Prosperity without freedom is just another form of poverty.</string>
+			<string>Let us reach for the world that ought to be - that spark of the divine that still stirs within each of our souls.</string>
+			<string>Only a just peace based on the inherent rights and dignity of every individual can truly be lasting. </string>
+			<string>Peace requires responsibility. Peace entails sacrifice.</string>
+			<string>...war itself is never glorious, and we must never trumpet it as such.</string>
+			<string>We have the power to make the world we seek, but only if we have the courage to make a new beginning.</string>
+			<string>All of us share this world for but a brief moment in time.</string>
+			<string>All of us must recognize that that education and innovation will be the currency of the 21st Century.</string>
+			<string>...our daughters can contribute just as much to society as our sons.</string>
+			<string>A woman who is denied an education is denied equality.</string>
+			<string>Suppressing ideas never succeeds in making them go away.</string>
+			<string>Words alone cannot meet the needs of our people.</string>
+			<string>...the interests we share as human beings are far more powerful than the forces that drive us apart.</string>
+			<string>Together we can do it.</string>
+			<string>Human destiny will be what we make of it.</string>
+			<string>When we fail to pursue peace, then it stays forever beyond our grasp.</string>
+			<string>...moral leadership is more powerful than any weapon.</string>
+			<string>With hope and virtue, let us brave once more the icy currents, and endure what storms may come.</string>
+			<string>...the world has changed, and we must change with it.</string>
+			<string>...greatness is never a given. It must be earned.</string>
+			<string>Each society must search for its own path, and no path is perfect.</string>
+			<string>...while the future is unknowable, the winds always blow in the direction of human progress.</string>
+			<string>The essential truth of democracy is that each nation determines its own destiny.</string>
+			<string>Don&apos;t shortchange the future, because of fear in the present.</string>
+			<string>We can shape our future, or let events shape it for us.</string>
+			<string>True partnership and true progress requires constant work and sustained sacrifice.</string>
+			<string>Contrary to the rumours that you&apos;ve heard, I was not born in a manger. I was actually born on Krypton...</string>
+			<string>...here in America, our destiny is not written for us, but by us.</string>
+			<string>The journey will be difficult. The road will be long.</string>
+			<string>I am reminded every day of my life, if not by events, then by my wife, that I am not a perfect man.</string>
+			<string>...true unity cannot be so easily won. It starts with a change in attitudes - a broadening of our minds, and a broadening of our hearts.</string>
+			<string>...no matter what obstacles lie in our way, nothing can stand in the way of the power of millions of voices calling for change.</string>
+			<string>Hope is that thing inside use that insists, despite all evidence to the contrary, the something better awaits us if we have the courage to reach for it...</string>
+			<string>...it bothers me when I hear people say that government is the enemy. They don&apos;t understand its fundamental role.</string>
+			<string>People who love their country can change it.</string>
+			<string>...it&apos;s only when you hitch your wagon to something larger than yourself that you realize your true potential.</string>
+			<string>Focusing your life solely on making a buck shows a certain poverty of ambition. It asks too little of yourself.</string>
+			<string>Do we participate in a politics of cynicism or a politics of hope?</string>
+			<string>That is the true genius of America, a faith in the simple dreams of its people, the insistence on small miracles.</string>
+			<string>There is not a liberal America and a conservative America - there is a United States of America.</string>
+			<string>A good compromise, a good piece of legislation, is like a good sentence; or a good piece of music. Everybody can recognize it.</string>
+			<string>The suburbs bore me.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Jimi Hendrix</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Jimi_Hendrix</string>
+		<key>quotes</key>
+		<array>
+			<string>When things get too heavy just call me helium...</string>
+			<string>Not necessarily stoned, but beautiful.</string>
+			<string>I don&apos;t really live on compliments. As a matter of fact, they have a way of distracting me.</string>
+			<string>...there are so many sleeping people.</string>
+			<string>We want our sound to go into the soul of the audience, and see if it can awaken some little thing in their minds...</string>
+			<string>Pretty soon I believe people will have to rely on music to get some kind of peace of mind, or satisfaction, or direction...</string>
+			<string>I try to get up everyday.</string>
+			<string>Blues is easy to play, but hard to feel.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Jim Morrison</string>
 		<key>wiki</key>
 		<string>https://en.wikipedia.org/wiki/Jim_Morrison</string>

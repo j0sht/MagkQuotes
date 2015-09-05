@@ -62,5 +62,4 @@ extension UIView {
         self.addShadowParallaxMotionEffect(amount)
         self.addParallaxMotionEffect(amount)
     }
-    
 }

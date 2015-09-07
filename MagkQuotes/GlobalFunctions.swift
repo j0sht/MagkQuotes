@@ -44,6 +44,12 @@ extension Int {
     }
 }
 
+extension String {
+    func removeTrailingWhiteSpace() -> String {
+        return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+    }
+}
+
 // MARK:- Global Functions
 func chainedAnimationsWith(#duration: NSTimeInterval, #completion: (Bool -> Void)?, #animations: [(() -> Void)]) {
     let headAndTail = animations.headAndTail

@@ -4,6 +4,225 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Jackie Kennedy</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Jacqueline_Kennedy_Onassis</string>
+		<key>quotes</key>
+		<array>
+			<string>...what&apos;s the line between history and drama?</string>
+			<string>...for Jack history was full of heroes. And if it made him this way, if it made him see the heroes, maybe other little boys will see.</string>
+			<string>There&apos;ll never be another Camelot again...</string>
+			<string>I thought how funny, red roses... all the seat was full of blood and red roses.</string>
+			<string>We should all do something to right the wrongs that we see and not just complain about them.</string>
+			<string>I think my biggest achievement is that, after going through a rather difficult time, I consider myself comparatively sane.</string>
+			<string>The river of sludge will go on and on.</string>
+			<string>The trouble with me is that I’m an outsider. And that’s a very hard thing to be in American life.</string>
+			<string>One must not let oneself be overwhelmed by sadness.</string>
+			<string>What is sad for women of my generation is that they weren’t supposed to work if they had families. What were they to do when the children were grown?</string>
+			<string>The one thing I do not want to be called is First Lady. It sounds like a saddle horse.</string>
+			<string>I want minimum information given with maximum politeness.</string>
+			<string>A camel makes an elephant feel like a jet plane.</string>
+			<string>One man can make a difference and every man should try.</string>
+			<string>...he is a legend when he would have preferred to be a man.</string>
+			<string>Now, I think that I should have known that he was magic all along.</string>
+			<string>Dear God, please take care of your servant John Fitzgerald Kennedy.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Michelle Obama</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Michelle_Obama</string>
+		<key>quotes</key>
+		<array>
+			<string>I loved Barack just the way he was.</string>
+			<string>Black girls rock! We rock! We rock!</string>
+			<string>No matter who you are, no matter where you come from, you are beautiful, you are powerful, you are brilliant, you are funny!</string>
+			<string>A lot of young people think they&apos;re invincible, but the truth is young people are knuckleheads.</string>
+			<string>My dad was our rock.</string>
+			<string>Think. Listen. The game of politics is to make you afraid so that you don’t think.</string>
+			<string>If my future were determined just by my performance on a standardized test, I wouldn&apos;t be here. I guarantee you that.</string>
+			<string>We need to fix our souls. Our souls are broken in this nation.</string>
+			<string>All I have to do is look into the faces of my children, and I realize how much work we need to do.</string>
+			<string>We need to change the game, because the game is broken.</string>
+			<string>...if you want the power to control your own destiny, then you&apos;ve got to be involved. You got to be at the table.</string>
+			<string>When we pull ourselves out of those lowest emotional depths, and we channel our frustrations into studying and organizing... we can build ourselves and our communities up.</string>
+			<string>I had to ignore all of the noise and be true to myself - and the rest would work itself out.</string>
+			<string>I had a lot of sleepless nights, worrying about what people thought of me...</string>
+			<string>To succumb to feelings of despair and anger only means that, in the end, we lose.</string>
+			<string>Just do what works for you, because there will always be someone who thinks differently.</string>
+			<string>Good relationships feel good. They feel right. They don&apos;t hurt. They&apos;re not painful.</string>
+			<string>Do not bring people in your life who weigh you down.</string>
+			<string>...it is okay to put yourself a little higher on your priority list.</string>
+			<string>I am so tired of fear. And I don&apos;t want my girls to live in a country, in a world, based on fear.</string>
+			<string>There are still many causes worth sacrificing for, so much history yet to be made.</string>
+			<string>Success is only meaningful and enjoyable if it feels like your own.</string>
+			<string>...each of us has something to contribute to the life of this nation.</string>
+			<string>...in my own life, in my own small way, I&apos;ve tried to give back to this country that has given me so much.</string>
+			<string>Whether you come from a council estate or a country estate, your success will be determined by your own confidence and fortitude.</string>
+			<string>I never cut class. I loved getting A&apos;s, I liked being smart. I liked being on time. I thought being smart is cooler than anything in the world.</string>
+			<string>We need to do a better job of putting ourselves higher on our own &apos;to do&apos; list.</string>
+			<string>I was surrounded by extraordinary women in my life who taught me about quiet strength and dignity.</string>
+			<string>I am an example of what is possible when girls from the very beginning of their lives are loved and nurtured by people around them.</string>
+			<string>...when I hear about negative and false attacks, I really don&apos;t invest any energy in them, because I know who I am.</string>
+			<string>...stay true to yourself and never let what somebody else says distract you from your goals.</string>
+			<string>...don&apos;t ever underestimate the importance you can have because history has shown us that courage can be contagious and hope can take on a life of its own.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Madame de Staël</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Germaine_de_Stael</string>
+		<key>quotes</key>
+		<array>
+			<string>The search for the truth is the noblest of occupations, and its publication a duty.</string>
+			<string>The rules are only barriers to keep children from falling.</string>
+			<string>The voice of conscience is so delicate that it is easy to stifle it; but it is also so clear that it is impossible to mistake it.</string>
+			<string>Innocence in genius, and candor in power, are both noble qualities.</string>
+			<string>Understanding everything makes one very indulgent.</string>
+			<string>Ought not every woman, like every man, to follow the bent of her own talents?</string>
+			<string>Danger is like wine, it goes to your head.</string>
+			<string>A religious life is a struggle and not a hymn.</string>
+			<string>Atheism exists only in coldness, selfishness, and baseness.</string>
+			<string>Let us then blend everything: love, religion, genius, with sunshine, perfume, music, and poetry.</string>
+			<string>Beauty is one in the universe, and, whatever form it assumes, it always arouses a religious feeling in the hearts of mankind.</string>
+			<string>Love is the emblem of eternity; it confounds all notion of time...</string>
+			<string>Genius is essentially creative; it bears the stamp of the individual who possesses it.</string>
+			<string>When men do wrong, it is out of hardness; when women do wrong, it is out of weakness.</string>
+			<string>You do not reach the sublime by degrees; the distance between it and the merely beautiful is infinite.</string>
+			<string>When once enthusiasm has been turned into ridicule, everything is undone except money and power.</string>
+			<string>All that is natural is varied.</string>
+			<string>Men do not change; they unmask themselves.</string>
+			<string>Sow good services: sweet remembrances will grow from them.</string>
+			<string>Life often seems like a long shipwreck, of which the débris are friendship, fame, and love.</string>
+			<string>In matters of the heart, nothing is true except the improbable.</string>
+			<string>A man must know how to fly in the face of opinion; a woman to submit to it.</string>
+			<string>One must, in one&apos;s life, make a choice between boredom and suffering.</string>
+			<string>Either morality is a fable, or the more enlightened we are, the more attached to it we become.</string>
+			<string>Love is the whole history of a woman&apos;s life; it is an episode in a man&apos;s.</string>
+			<string>We cease loving ourselves if no one loves us.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Simone de Beauvoir</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Simone_de_Beauvoir</string>
+		<key>quotes</key>
+		<array>
+			<string>Society cares about the individual only in so far as he is profitable. The young know this.</string>
+			<string>Death does away with time.</string>
+			<string>Old age is life&apos;s parody, whereas death transforms life into a destiny...</string>
+			<string>It is old age, rather than death, that is to be contrasted with life.</string>
+			<string>I want this adventure that is the context of my life to go on without end.</string>
+			<string>I am incapable of conceiving infinity, and yet I do not accept finity.</string>
+			<string>To emancipate woman is to refuse to confine her to the relations she bears to man, not to deny them to her...</string>
+			<string>It is vain to apportion praise and blame.</string>
+			<string>All oppression creates a state of war.</string>
+			<string>To &apos;catch&apos; a husband is an art; to &apos;hold&apos; him is a job.</string>
+			<string>Sex pleasure in woman, as I have said, is a kind of magic spell; it demands complete abandon...</string>
+			<string>One is not born, but rather becomes, a woman.</string>
+			<string>One is not born a genius, one becomes a genius...</string>
+			<string>It is doubtless impossible to approach any human problems with a mind free from bias.</string>
+			<string>The present enshrines the past—and in the past all history has been made by men.</string>
+			<string>Yes, women on the whole are today inferior to men; that is, their situation affords them fewer possibilities. The question is: should that state of affairs continue?</string>
+			<string>Science condemns itself to failure when, yielding to the infatuation of the serious, it aspires to attain being, to contain it, and to possess it...</string>
+			<string>In order for the artist to have a world to express he must first be situated in this world, oppressed or oppressing, resigned or rebellious, a man among men.</string>
+			<string>We must not confuse the present with the past.</string>
+			<string>With regard to the past, no further action is possible.</string>
+			<string>In the original helplessness from which man surges up, nothing is useful, nothing is useless.</string>
+			<string>One does not offer an ethics to a God.</string>
+			<string>Cowardice doesn’t pay.</string>
+			<string>Every day men are born and others die.</string>
+			<string>If you live long enough, you&apos;ll see that every victory turns into a defeat.</string>
+			<string>That&apos;s what I consider true generosity. You give your all, and yet you always feel as if it costs you nothing.</string>
+			<string>It is impossible to do anything for anyone.</string>
+			<string>The Universe was somewhere else, always somewhere else! And it isn&apos;t anywhere: there are only men, men eternally divided.</string>
+			<string>There is only one good. And that is to act according to the dictates of one&apos;s conscience.</string>
+			<string>You&apos;re unique like all other women.</string>
+			<string>Dare to believe me. Dare!</string>
+			<string>I&apos;m never afraid. But in my case it&apos;s nothing to be proud of.</string>
+			<string>If I had amnesia, I&apos;d be almost like other men. Perhaps I&apos;d even be able to love you.</string>
+			<string>Time is beginning to flow again.</string>
+			<string>Change your life today. Don&apos;t gamble on the future, act now, without delay.</string>
+			<string>One&apos;s life has value so long as one attributes value to the life of others, by means of love, friendship, indignation and compassion.</string>
+			<string>I tore myself away from the safe comfort of certainties through my love for truth — and truth rewarded me.</string>
+			<string>What is an adult? A child blown up by age.</string>
+			<string>Self-knowledge is no guarantee of happiness, but it is on the side of happiness and can supply the courage to fight for it.</string>
+			<string>I wish that every human life might be pure transparent freedom.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>John F. Kennedy</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/John_F._Kennedy</string>
+		<key>quotes</key>
+		<array>
+			<string>I am the man who accompanied Jacqueline Kennedy to Paris, and I have enjoyed it.</string>
+			<string>Peace is a daily, a weekly, a monthly process, gradually changing opinions, slowly eroding old barriers, quietly building new structures.</string>
+			<string>The truth doesn&apos;t die.</string>
+			<string>The scholar, the teacher, the intellectual, have a higher duty than any of the others, for society has trained you to think as well as do.</string>
+			<string>This is one country. It has become one country because all of us and all the people who came here had an equal chance to develop their talents.</string>
+			<string>...this Nation, for all its hopes and all its boasts, will not be fully free until all its citizens are free.</string>
+			<string>Let us examine our attitude toward peace itself. Too many of us think it is impossible. Too many think it unreal. But that is a dangerous, defeatist belief.</string>
+			<string>As the idealism of our youth has served world peace, so can it serve the domestic tranquility.</string>
+			<string>This country cannot afford to be materially rich and spiritually poor.</string>
+			<string>Things don&apos;t just happen, they are made to happen.</string>
+			<string>Children are the world&apos;s most valuable resource and its best hope for the future.</string>
+			<string>Ideas have endurance without death.</string>
+			<string>A man may die, nations may rise and fall, but an idea lives on.</string>
+			<string>The greater our knowledge increases the greater our ignorance unfolds.</string>
+			<string>Those who make peaceful revolution impossible will make violent revolution inevitable.</string>
+			<string>We enjoy the comfort of opinion without the discomfort of thought.</string>
+			<string>Life is unfair.</string>
+			<string>Self-determination is but a slogan if the future holds no hope.</string>
+			<string>Political sovereignty is but a mockery without the means of meeting poverty and illiteracy and disease.</string>
+			<string>Mankind must put an end to war — or war will put an end to mankind.</string>
+			<string>...man will be what he was born to be: free and independent.</string>
+			<string>The very word &quot;secrecy&quot; is repugnant in a free and open society...</string>
+			<string>The complacent, the self-indulgent, the soft societies are about to be swept away with the debris of history.</string>
+			<string>If a free society cannot help the many who are poor, it cannot save the few who are rich.</string>
+			<string>United, there is little we cannot do in a host of cooperative ventures. Divided, there is little we can do...</string>
+			<string>Let the word go forth from this time and place, to friend and foe alike, that the torch has been passed to a new generation of Americans...</string>
+			<string>For of those to whom much is given, much is required.</string>
+			<string>We must use time as a tool, not as a couch.</string>
+			<string>The great revolution in the history of man, past, present and future, is the revolution of those determined to be free.</string>
+			<string>The human mind is our fundamental resource.</string>
+			<string>Our progress as a nation can be no swifter than our progress in education.</string>
+			<string>...physical fitness is not only one of the most important keys to a healthy body; it is the basis of dynamic and creative intellectual activity.</string>
+			<string>...the physical vigor of our citizens is one of America&apos;s most precious resources.</string>
+			<string>...softness on the part of individual citizens can help to strip and destroy the vitality of a nation.</string>
+			<string>I believe in an America where religious intolerance will someday end - where all men and all churches are treated as equal...</string>
+			<string>I believe in an America where the separation of church and state is absolute...</string>
+			<string>...war and hunger and ignorance and despair know no religious barriers.</string>
+			<string>...we can have faith in the future only if we have faith in ourselves.</string>
+			<string>...the only valid test of leadership is the ability to lead, and lead vigorously.</string>
+			<string>...the world is changing. The old era is ending.</string>
+			<string>We are not here to curse the darkness, but to light the candle that can guide us through that darkness to a safe and sane future.</string>
+			<string>We must know all the facts and hear all the alternatives and listen to all the criticisms.</string>
+			<string>Let us welcome controversial books and controversial authors. For the Bill of Rights is the guardian of our security as well as our liberty.</string>
+			<string>There is a connection, hard to explain logically but easy to feel, between achievement in public life and progress in the arts.</string>
+			<string>...effort and courage are not enough without purpose and direction.</string>
+			<string>...if we do not soon begin to move forward again, we will inevitably be left behind.</string>
+			<string>...although a country may stand still, history never stands still.</string>
+			<string>It took toil and courage and determination to build this country - and it will take those same qualities if we are to maintain it.</string>
+			<string>My call is not to those who believe they belong to the past. My call is to those who believe in the future.</string>
+			<string>&apos;Pursue peace,&apos; the Bible tells us, and we shall pursue it with every effort and every energy that we possess.</string>
+			<string>In a world of danger and trial, peace is our deepest aspiration...</string>
+			<string>We celebrate the past to awaken the future.</string>
+			<string>In a crisis, be aware of the danger - but recognize the opportunity.</string>
+			<string>Let us not seek to fix the blame for the past - let us accept our own responsibility for the future.</string>
+			<string>Let us not seek the Republican answer or the Democratic answer but the right answer.</string>
+			<string>Let us not despair but act.</string>
+			<string>The courage of life is often a less dramatic spectacle than the courage of a final moment; but it is no less a magnificent mixture of triumph and tragedy.</string>
+			<string>The true democracy, living and growing and inspiring, puts its faith in the people...</string>
+			<string>If more politicians knew poetry, and more poets knew politics, I am convinced the world would be a little better place in which to live. </string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Barack Obama</string>
 		<key>wiki</key>
 		<string>https://en.wikipedia.org/wiki/Barack_Obama</string>
@@ -225,7 +444,7 @@
 			<string>Nature gives you the face you have at twenty. Life shapes the face you have at thirty. But at fifty you get the face you deserve.</string>
 			<string>Since everything is in our heads, we had better not lose them.</string>
 			<string>Men always remember a woman who caused them concern and uneasiness.</string>
-			<string>A woman can be over dressed by never over elegant.</string>
+			<string>A woman can be over dressed but never over elegant.</string>
 			<string>You can be gorgeous at thirty, charming at forty, and irresistible for the rest of your life.</string>
 			<string>A girl should be two things: who and what she wants.</string>
 			<string>There is time for work. And time for love. That leaves no other time.</string>
@@ -373,7 +592,7 @@
 			<string>Every natural fact is a symbol of some spiritual fact.</string>
 			<string>Beauty is the mark God sets upon virtue.</string>
 			<string>Blessed are those who have no talent!</string>
-			<string>I hate quotation. Tell me what you know.</string>
+			<string>I hate quotations. Tell me what you know.</string>
 			<string>Poetry must be new as foam, and as old as the rock.</string>
 			<string>It is easy to live for others; everybody does. I call on you to live for yourselves.</string>
 			<string>The best effect of fine persons is felt after we have left their presence.</string>
@@ -617,7 +836,6 @@
 			<string>To be fond of dancing was a certain step towards falling in love.</string>
 			<string>Without music, life would be a blank to me.</string>
 			<string>The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.</string>
-			<string>Every savage can dance.</string>
 			<string>Life seems but a quick succession of busy nothings.</string>
 			<string>I have no notion of loving people by halves, it is not my nature.</string>
 			<string>There is nothing I would not do for those who are really my friends.</string>

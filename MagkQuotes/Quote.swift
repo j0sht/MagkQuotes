@@ -15,7 +15,7 @@ struct Quote: Printable {
     var date: String?
     
     init(quote: String) {
-        self.quote = quote
+        self.quote = quote.removeTrailingWhiteSpace()
     }
     
     var description: String {

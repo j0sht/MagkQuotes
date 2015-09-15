@@ -263,7 +263,7 @@ private extension UIColor {
             (red: 239, green: 70, blue: 63)
         ]
         let codes = colors.randomElement()
-        println("code.red: \(codes.red) | codes.blue \(codes.blue) | codes.green \(codes.green)")
+        //println("code.red: \(codes.red) | codes.blue \(codes.blue) | codes.green \(codes.green)")
         return UIColor(red: codes.red, green: codes.green, blue: codes.blue)
     }
 }

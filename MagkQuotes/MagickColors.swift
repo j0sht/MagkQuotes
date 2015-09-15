@@ -27,7 +27,7 @@ extension UIColor {
         let red = Int.randomIntBetween(min, and: max, inclusive: true)
         let blue = Int.randomIntBetween(min, and: max, inclusive: true)
         let green = Int.randomIntBetween(min, and: max, inclusive: true)
-        println("r = \(red) | g = \(green) | b = \(blue)")
+        //println("r = \(red) | g = \(green) | b = \(blue)")
         return UIColor(red: red, green: green, blue: blue)
     }
 }

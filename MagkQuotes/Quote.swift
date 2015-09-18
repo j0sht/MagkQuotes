@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Quote: Printable {
+struct Quote: CustomStringConvertible {
     
     let quote: String
     var source: String?

@@ -46,7 +46,7 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
         title = "Loading..."
         webView.navigationDelegate = self
         view.insertSubview(webView, atIndex: 0)
-        webView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        webView.translatesAutoresizingMaskIntoConstraints = false
         
         let width = NSLayoutConstraint(item: webView, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 1, constant: 0)
 
@@ -67,8 +67,8 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
             displayError()
         }
         
-        let barButtons = toolBar.items as! [UIBarButtonItem]
-        for (index,button) in enumerate(barButtons) {
+        let barButtons = toolBar.items as [UIBarButtonItem]!
+        for (index,button) in barButtons.enumerate() {
             if button === refreshButton {
                 refreshButtonIndex = index
                 break
@@ -83,7 +83,7 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
         actionButton.enabled = false
     }
     
-    override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         
         if keyPath == KeyPaths.EstimatedProgress {
             progressView.hidden = webView.estimatedProgress == 1
@@ -189,7 +189,7 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
     private func launchActivityVC(url: NSURL) {
         let activityVC = UIActivityViewController(activityItems: [url], applicationActivities: nil)
         activityVC.completionWithItemsHandler = {
-            (s: String!, ok: Bool, items: [AnyObject]!, err: NSError!) -> Void in
+            _ -> Void in
             // Where you do something when the activity view is completed.
         }
         presentViewController(activityVC, animated: true, completion: nil)
@@ -204,7 +204,7 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
 private extension String {
     func isWiki() -> Bool {
         let words = self.componentsSeparatedByString(" ")
-        return contains(words, "Wikipedia,")
+        return words.contains("Wikipedia,")
     }
 
     func getWikiTitle() -> String {

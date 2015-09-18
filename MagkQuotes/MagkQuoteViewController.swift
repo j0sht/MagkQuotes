@@ -208,7 +208,7 @@ class MagkQuoteViewController: UIViewController {
     }
     
     // MARK: Private Methods
-    private func generateScreenShot(#before: (() -> Void)?, after: (() -> Void)?) -> UIImage {
+    private func generateScreenShot(before before: (() -> Void)?, after: (() -> Void)?) -> UIImage {
         
         if let before = before { before() }
         
@@ -267,7 +267,7 @@ class MagkQuoteViewController: UIViewController {
                 // Keep testing!!
                 let activityVC = UIActivityViewController(activityItems: [msg,screenshot], applicationActivities: nil)
                 activityVC.completionWithItemsHandler = {
-                    (s: String!, ok: Bool, items: [AnyObject]!, err: NSError!) -> Void in
+                    _ -> Void in
                     // Where you do something when the activity view is completed.
                     self.animateFadeQuote()
                     self.takingScreenShot = false

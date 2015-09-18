@@ -23,8 +23,8 @@ extension UIView {
         
         let multipliedAmount = 10.0*amount;
         
-        var motionX = UIInterpolatingMotionEffect(keyPath: "layer.shadowOffset.width", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
-        var motionY = UIInterpolatingMotionEffect(keyPath: "later.shadowOffset.height", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
+        let motionX = UIInterpolatingMotionEffect(keyPath: "layer.shadowOffset.width", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
+        let motionY = UIInterpolatingMotionEffect(keyPath: "later.shadowOffset.height", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
         
         motionX.maximumRelativeValue = multipliedAmount
         motionX.minimumRelativeValue = -multipliedAmount
@@ -32,7 +32,7 @@ extension UIView {
         motionY.maximumRelativeValue = multipliedAmount
         motionY.minimumRelativeValue = -multipliedAmount
         
-        var group = UIMotionEffectGroup()
+        let group = UIMotionEffectGroup()
         group.motionEffects = [motionX, motionY]
         
         self.addMotionEffect(group)
@@ -42,8 +42,8 @@ extension UIView {
         
         let multipliedAmount = 10.0*amount;
         
-        var verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
-        var horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
+        let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
+        let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
         
         verticalMotionEffect.maximumRelativeValue = multipliedAmount
         verticalMotionEffect.minimumRelativeValue = -multipliedAmount
@@ -51,7 +51,7 @@ extension UIView {
         horizontalMotionEffect.maximumRelativeValue = multipliedAmount
         horizontalMotionEffect.minimumRelativeValue = -multipliedAmount
         
-        var group = UIMotionEffectGroup()
+        let group = UIMotionEffectGroup()
         group.motionEffects = [horizontalMotionEffect, verticalMotionEffect]
         
         self.addMotionEffect(group)

@@ -10,23 +10,24 @@ import UIKit
 
 // MARK:- Extensions
 extension Array {
-    var headAndTail: (head: T, tail: [T])? {
+    var headAndTail: (head: Element, tail: [Element])? {
         return count > 0 ? (self[0], Array(self[1..<count])) : nil
     }
 }
 
 extension Array {
-    func randomElement() -> T {
+    func randomElement() -> Element {
         let index = Int.randomInt(self.count)
         return self[index]
     }
 }
 
-extension Array {
+extension MutableCollectionType where Index == Int {
     mutating func shuffle() {
         if count < 2 { return }
         for i in 0..<(count - 1) {
             let j = Int(arc4random_uniform(UInt32(count - i))) + i
+            guard i != j else { continue }
             swap(&self[i], &self[j])
         }
     }
@@ -51,7 +52,7 @@ extension String {
 }
 
 // MARK:- Global Functions
-func chainedAnimationsWith(#duration: NSTimeInterval, #completion: (Bool -> Void)?, #animations: [(() -> Void)]) {
+func chainedAnimationsWith(duration duration: NSTimeInterval, completion: (Bool -> Void)?, animations: [(() -> Void)]) {
     let headAndTail = animations.headAndTail
     switch headAndTail {
     case .Some(let head, let tail) where tail.isEmpty:

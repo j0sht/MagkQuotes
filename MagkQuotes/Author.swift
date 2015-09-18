@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Author: Printable {
+struct Author: CustomStringConvertible {
     
     let name: String
     var wiki: NSURL?
@@ -31,13 +31,13 @@ struct Author: Printable {
     func hashtagName() -> String {
         let punctuation = [".","-"]
         var result = ""
-        for char in name {
-            if contains(punctuation, String(char)) {
+        for char in name.characters {
+            if punctuation.contains(String(char)) {
                 continue
             }
             result += String(char)
         }
-        result = join("", result.componentsSeparatedByString(" "))
+        result = result.componentsSeparatedByString(" ").joinWithSeparator("")
         return "#" + result
     }
     

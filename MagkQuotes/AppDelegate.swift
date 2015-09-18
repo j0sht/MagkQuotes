@@ -41,11 +41,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> Int {
+    func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> UIInterfaceOrientationMask {
         
         let notIpad = !(UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad)
-        let portrait = Int(UIInterfaceOrientationMask.Portrait.rawValue)
-        let all = Int(UIInterfaceOrientationMask.All.rawValue)
+        let portrait = UIInterfaceOrientationMask.Portrait
+        let all = UIInterfaceOrientationMask.All
         
         if notIpad {
             if let navVC = self.window?.rootViewController?.presentedViewController as? UINavigationController {

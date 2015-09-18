@@ -18,10 +18,10 @@ extension UILabel {
         let text = self.text ?? "" as NSString
         
         // get array of words separate by spaces
-        let words = text.componentsSeparatedByString(" ") as! [NSString]
+        let words = text.componentsSeparatedByString(" ") as [NSString]
         
         // I will need to find the largest word and its width in points
-        var largestWord : NSString = ""
+        var largestWord = ""
         var largestWordWidth : CGFloat = 0
         
         // iterate over the words to find the largest one
@@ -34,7 +34,7 @@ extension UILabel {
             // check if this word is the largest one
             if wordWidth > largestWordWidth{
                 largestWordWidth = wordWidth
-                largestWord = word
+                largestWord = word as String
             }
         }
         

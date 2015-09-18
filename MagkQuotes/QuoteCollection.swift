@@ -8,7 +8,7 @@
 
 import Foundation
 
-class QuoteCollection: Printable {
+class QuoteCollection: CustomStringConvertible {
     
     private(set)var authors: [Author] = []
     private var authorQuotePairs: [(author: Author, quote: Quote)]!
@@ -75,7 +75,7 @@ class QuoteCollection: Printable {
     private func printStats() {
         let quoteCount = authorQuotePairs.count
         let authorCount = authors.count
-        println("Number of author-quote pairs: \(quoteCount)")
-        println("Number of quotes per author: \(Double(quoteCount) / Double(authorCount))")
+        print("Number of author-quote pairs: \(quoteCount)")
+        print("Number of quotes per author: \(Double(quoteCount) / Double(authorCount))")
     }
 }

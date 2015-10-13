@@ -95,6 +95,7 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
         super.viewWillDisappear(animated)
         webView.removeObserver(self, forKeyPath: KeyPaths.EstimatedProgress)
         if loading { stoppedLoading() }
+        clearWebsiteData()
     }
     
     // MARK:- IBActions
@@ -197,6 +198,16 @@ class WikiViewController: UIViewController, WKNavigationDelegate, UIGestureRecog
     
     private func dismissWikiVC() {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    private func clearWebsiteData() {
+        if #available(iOS 9.0, *) {
+            let websiteDataTypes = WKWebsiteDataStore.allWebsiteDataTypes()
+            let dateFrom = NSDate(timeIntervalSince1970: 0)
+            WKWebsiteDataStore.defaultDataStore().removeDataOfTypes(websiteDataTypes, modifiedSince: dateFrom, completionHandler: {})
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
 

@@ -4,11 +4,114 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Elvis Presley</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Elvis_Presley</string>
+		<key>quotes</key>
+		<array>
+			<string>You only pass through this life once, you don&apos;t come back for an encore.</string>
+			<string>The closest I ever came to getting married was just before I started singing. In fact, my first record saved my neck. </string>
+			<string>The army teaches boys to think like men. </string>
+			<string>Rock and roll music, if you like it, if you feel it, you can&apos;t help but move to it.</string>
+			<string>Rhythm is something you either have or don&apos;t have, but when you have it, you have it all over.</string>
+			<string>More than anything else, I want the folks back at home to think right of me. 
+</string>
+			<string>Money&apos;s meant to be spread around. The more happiness it helps to create, the more it&apos;s worth.</string>
+			<string>Man, I really like Vegas. </string>
+			<string>...I do have four Cadillacs. I haven&apos;t got any use for four. Maybe some day I&apos;ll go broke and I can sell a couple of &apos;em.</string>
+			<string>I was training to be an electrician. I suppose I got wired the wrong way round somewhere along the line. </string>
+			<string>It&apos;s human nature to gripe, but I&apos;m going ahead and doing the best I can. </string>
+			<string>I think I have something tonight that&apos;s not quite correct for evening wear. Blue suede shoes. 
+</string>
+			<string>I have no use for bodyguards, but I have very specific use for two highly trained certified public accountants. </string>
+			<string>I happened to come along in the music business when there was no trend. 
+</string>
+			<string>You have to be careful out in the world. It&apos;s so easy to get turned. </string>
+			<string>I&apos;m not trying to be sexy. It&apos;s just my way of expressing myself when I move around. 
+</string>
+			<string>I&apos;ll never make it, it will never happen, because they&apos;re never going to hear me &apos;cause they&apos;re screaming all the time. </string>
+			<string>I&apos;m so lucky to be in the position to give. It&apos;s really a gift to give.</string>
+			<string>Don&apos;t criticize what you don&apos;t understand, son. You never walked in that man&apos;s shoes.</string>
+			<string>Ambition is a dream with a V8 engine.</string>
+			<string>Adversity is sometimes hard upon a man; but for one man who can stand prosperity, there are a hundred that will stand adversity. </string>
+			<string>Don&apos;t be cruel to a heart that&apos;s true.</string>
+			<string>Truth is like the sun. You can shut it out for a time, but it ain&apos;t going away.</string>
+			<string>There is a season for everything, patience will reward you and reveal all answers to your questions.</string>
+			<string>To judge a man by his weakest link or deed is like judging the power of the ocean by one wave.</string>
+			<string>A live concert to me is exciting because of all the electricity that is generated in the crowd and on stage.</string>
+			<string>The image is one thing and the human being is another... it&apos;s very hard to live up to an image.</string>
+			<string>The first time that I appeared on stage, it scared me to death. I really didn&apos;t know what all the yelling was about.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Madonna</string>
+		<key>wiki</key>
+		<string>https://en.wikipedia.org/wiki/Madonna_(entertainer)</string>
+		<key>quotes</key>
+		<array>
+			<string>I sometimes think I was born to live up to my name. How could I be anything else but what I am having been named Madonna?</string>
+			<string>I&apos;d like to think I am taking people on a journey; I am not just entertaining people, but giving them something to think about when they leave.</string>
+			<string>I think you can be defiant and rebellious and still be strong and positive.</string>
+			<string>I think my biggest flaw is my insecurity. I&apos;m terribly insecure. I&apos;m plagued with insecurities 24/7.</string>
+			<string>Ever since my daughter was born I feel the fleetingness of time. And I don&apos;t want to waste it on getting the perfect lip color.</string>
+			<string>If I was a girl again, I would like to be like my fans, I would like to be like Madonna.</string>
+			<string>It&apos;s not my nature to just kick back.</string>
+			<string>I&apos;ve never really lived a conventional life, so I think it&apos;s quite foolish for me or anyone else to start thinking that I am going to start making conventional choices.</string>
+			<string>I&apos;m not going to compromise my artistic integrity.</string>
+			<string>I worked really hard and my dream came true.</string>
+			<string>I&apos;d love to be a memorable figure in the history of entertainment in some sexual, comic, tragic way.</string>
+			<string>Catholicism is not a soothing religion. It&apos;s a painful religion. We&apos;re all gluttons for punishment.</string>
+			<string>I feel just as hungry today as I did the day I left home.</string>
+			<string>Children always understand. They have open minds.</string>
+			<string>I&apos;m not interested in being Wonder Woman in the delivery room. Give me drugs.</string>
+			<string>We all bleed the same color. We all want to love and be loved.</string>
+			<string>I would like to see the Pope wearing my T-shirt.</string>
+			<string>Never forget to dream.</string>
+			<string>I wouldn&apos;t have turned out the way I was if I didn&apos;t have all those old-fashioned values to rebel against.</string>
+			<string>I am my own experiment. I am my own work of art.</string>
+			<string>Only love can last.</string>
+			<string>I don&apos;t think one should ever aspire to being famous.</string>
+			<string>Fame is a byproduct. Fame is something that should happen because you do work that speaks to people and people want to know about your work.</string>
+			<string>I have the same goal I&apos;ve had ever since I was a girl. I want to rule the world.</string>
+			<string>Everyone probably thinks that I&apos;m a raving nymphomaniac, that I have an insatiable sexual appetite, when the truth is I&apos;d rather read a book.</string>
+			<string>...your soulmate is the person that pushes all your buttons, pisses you off on a regular basis, and makes you face your shit.</string>
+			<string>Power is being told you&apos;re not loved and not being destroyed by it.</string>
+			<string>I&apos;ve been popular &amp; unpopular, successful &amp; unsuccessful, loved &amp; loathed, and I know how meaningless it all is. Therefore, I feel free to take whatever risks I want.</string>
+			<string>Only when I&apos;m dancing can I feel this free.</string>
+			<string>To me, the whole process of being a brush stroke in someone else&apos;s painting is a little difficult.</string>
+			<string>I stand for freedom of expression, doing what you believe in, and going after your dreams.</string>
+			<string>...you have to laugh, especially at yourself.</string>
+			<string>I laugh at myself. I don&apos;t take myself completely seriously.</string>
+			<string>To just give. That takes courage, because we don&apos;t want to fall on our faces or leave ourselves open to hurt.</string>
+			<string>To be brave is to love someone unconditionally, without expecting anything in return.</string>
+			<string>No matter who you are, no matter what you did, no matter where you&apos;ve come from, you can always change, become a better version of yourself.</string>
+			<string>I&apos;m tough, I&apos;m ambitious, and I know exactly what I want. If that makes me a bitch, okay.</string>
+			<string>A lot of people are afraid to say what they want. That&apos;s why they don&apos;t get what they want.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Grace Jones</string>
 		<key>wiki</key>
 		<string>https://en.wikipedia.org/wiki/Grace_Jones</string>
 		<key>quotes</key>
 		<array>
+			<string>I think it&apos;s great if a man can cry.</string>
+			<string>If you feel like crying and you can&apos;t cry, that&apos;s a weakness.</string>
+			<string>Crying is not a weakness. It&apos;s something that should be able to work for you.</string>
+			<string>I like sensitive men. They have to be able to understand themselves.</string>
+			<string>Good trick, crying. You cry and you get anything you want.</string>
+			<string>You have to create a lot of energy in one second. Otherwise it&apos;s a waste of time.</string>
+			<string>Once you think you&apos;re mature and you know everything, then you don&apos;t put up the antenna, it&apos;s no longer out there receiving for you...</string>
+			<string>I don&apos;t know what &apos;mature&apos; means.</string>
+			<string>If you think in color, then everyone around you is going to think in color and that puts limits on the way you think.</string>
+			<string>I have just as much woman in me as I have man. It&apos;s just a matter of channeling the energy into which way you use it.</string>
+			<string>You can be a boy, a girl, whatever you want.</string>
+			<string>I don&apos;t care. I like dressing like a guy. I love it.</string>
+			<string>What is teaching but passing on your knowledge to those who are at the beginning?</string>
+			<string>For me, a diva is like the great opera singer, the great film star - out of reach, in their own world... so special and inimitable it verges on the alien.</string>
+			<string>If the f*ck don&apos;t feel right, don&apos;t f*ck it.</string>
 			<string>No matter what you do in your life, don&apos;t ever let anybody take your creative people away from you.</string>
 		</array>
 	</dict>
